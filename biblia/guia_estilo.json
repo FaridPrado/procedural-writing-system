@@ -1,10 +1,10 @@
 {
   "proyecto": "Ecos del Alma",
-  "descripcion": "Colección de escritos breves, poemas y reflexiones íntimas para una web personal de contenido generativo.",
+  "descripcion": "Colección de escritos breves, poemas y reflexiones íntimas para una web personal.",
   "tono_estilo": {
-    "genero": "poesía contemporánea, prosa poética y reflexión íntima",
+    "genero": "prosa poética contemporánea y reflexión íntima",
     "atmosfera": "cercana, honesta, vulnerable, visual y contenida",
-    "longitud": "entre 50 y 140 palabras; frases con ritmo, pausas y respiración",
+    "longitud": "entre 45 y 95 palabras; frases con ritmo, pausas y respiración",
     "voz": "primera persona ocasional o segunda persona cercana; nunca tono de manual ni discurso motivacional",
     "recursos_permitidos": [
       "imagen sensorial",
@@ -62,7 +62,7 @@
     "Abrir con una imagen concreta: una taza, una ventana, una calle, una camisa, una llamada no contestada.",
     "Conectar esa imagen con una emoción sin explicarla demasiado.",
     "Evitar moralejas directas; dejar que el lector complete el sentido.",
-    "Cerrar con una frase que invite a guardar silencio unos segundos."
+    "Cerrar con una frase breve que deje una pausa."
   ],
   "hashtags_sugeridos": [
     "#ecosdelalma",

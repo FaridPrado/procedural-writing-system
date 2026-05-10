@@ -52,17 +52,11 @@ def crear_markdown(
     tema: str,
     texto: str,
     imagen_relativa: str | None,
-    prompt_visual: str | None,
-    comentario_editorial: str | None,
+    prompt_visual: str | None = None,
+    comentario_editorial: str | None = None,
 ) -> str:
     fecha_frontmatter = fecha.strftime("%Y-%m-%d %H:%M:%S %z")
     image_line = f"image: {yaml_quote(imagen_relativa)}\n" if imagen_relativa else ""
-    prompt_line = f"prompt_visual: {yaml_quote(prompt_visual)}\n" if prompt_visual else ""
-    comentario_line = (
-        f"comentario_editorial: {yaml_quote(comentario_editorial)}\n"
-        if comentario_editorial
-        else ""
-    )
 
     return f"""---
 layout: post
@@ -70,7 +64,7 @@ title: {yaml_quote(titulo)}
 date: {fecha_frontmatter}
 categories: [ecos-del-alma]
 tema: {yaml_quote(tema)}
-{image_line}{prompt_line}{comentario_line}---
+{image_line}---
 
 {texto.strip()}
 """
@@ -108,19 +102,20 @@ def main() -> None:
     nombre_archivo = f"{ahora.strftime('%Y-%m-%d')}-escrito-{nuevo_id:04d}.md"
     ruta_publicacion = POSTS_DIR / nombre_archivo
 
-    imagen_relativa = None
+    imagen_url = None
     prompt_visual = None
     try:
         imagen_url, prompt_visual = agente_visualizador(texto_final, tema_final)
-        imagen_relativa = generar_tarjeta_social(
-            texto=texto_final,
-            tema=tema_final["nombre"],
-            imagen_url=imagen_url,
-            publicacion_id=nuevo_id,
-        )
-        print(f"🖼️ Tarjeta visual creada: docs{imagen_relativa}")
     except Exception as exc:
-        print(f"⚠️ No se pudo crear la tarjeta visual: {exc}")
+        print(f"⚠️ No se pudo crear la imagen base: {exc}")
+
+    imagen_relativa = generar_tarjeta_social(
+        texto=texto_final,
+        tema=tema_final["nombre"],
+        imagen_url=imagen_url,
+        publicacion_id=nuevo_id,
+    )
+    print(f"🖼️ Tarjeta visual creada: docs{imagen_relativa}")
 
     contenido_md = crear_markdown(
         titulo=tema_final["nombre"],

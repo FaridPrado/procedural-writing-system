@@ -85,6 +85,7 @@ Descripción: {tema_elegido['descripcion']}
 
 ## Reglas de salida
 - Devuelve solo el texto final.
+- Escribe entre 45 y 95 palabras.
 - No incluyas título.
 - No incluyas firma.
 - No expliques el proceso.
@@ -101,7 +102,7 @@ Descripción: {tema_elegido['descripcion']}
             },
         ],
         temperature=0.9,
-        max_tokens=360,
+        max_tokens=260,
     )
 
     texto = limpiar_respuesta(response.choices[0].message.content or "")
@@ -126,7 +127,7 @@ Tema: {tema['nombre']} - {tema['descripcion']}
 3. Suena humano, vulnerable y natural.
 4. Respeta la restricción: {GUIA['restriccion_adicional']}
 5. No parece texto corporativo ni autoayuda genérica.
-6. Mantiene una extensión razonable para una publicación poética breve.
+6. Tiene entre 45 y 95 palabras, salvo que una frase final necesite cerrar con naturalidad.
 
 ## Texto
 {texto}
@@ -181,7 +182,7 @@ Create an English image prompt for a square editorial artwork that accompanies t
 Theme: {tema['nombre']}
 Text: {texto[:500]}
 
-Visual style: emotional editorial poster, soft paper texture, subtle grain, warm minimalism, muted tones, cinematic natural light, no readable text, no logos, no detailed faces.
+Visual style: quiet editorial photograph, soft paper texture, subtle grain, warm minimalism, muted earth tones, natural window light, no readable text, no logos, no detailed faces.
 
 Return only the image prompt. Maximum 70 words.
 """

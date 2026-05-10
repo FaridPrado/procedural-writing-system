@@ -11,7 +11,7 @@
   <header class="site-header">
     <h1 class="site-title">{{ site.title }}</h1>
     <div class="site-divider"></div>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Navegación principal">
       <a href="{{ '/' | relative_url }}">Inicio</a>
       <a href="{{ '/proceso/' | relative_url }}">Proceso</a>
       <a href="{{ site.repo_url }}">Código</a>
@@ -20,14 +20,16 @@
 
   <main class="container">
     <article class="post-container">
-      <div class="post-date">{{ page.date | date: "%d · %m · %Y" }}</div>
-      <h1 class="post-title">{{ page.title }}</h1>
+      <header class="post-head">
+        <div class="post-date">{{ page.date | date: "%d · %m · %Y" }}</div>
+        <h1 class="post-title">{{ page.title }}</h1>
+      </header>
 
       {% if page.image %}
         {% if page.image contains '://' %}
-          <img src="{{ page.image }}" alt="Ilustración para {{ page.title }}" class="post-image" loading="lazy">
+          <img src="{{ page.image }}" alt="{{ page.title }}" class="post-image" loading="lazy">
         {% else %}
-          <img src="{{ page.image | relative_url }}" alt="Ilustración para {{ page.title }}" class="post-image" loading="lazy">
+          <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="post-image" loading="lazy">
         {% endif %}
       {% endif %}
 
@@ -36,18 +38,17 @@
       </div>
 
       <div class="post-meta">
-        <strong>Tema:</strong> {{ page.tema }}<br>
-        {% if page.comentario_editorial %}
-          <strong>Nota editorial:</strong> {{ page.comentario_editorial }}
-        {% endif %}
+        <span>{{ page.tema }}</span>
       </div>
 
-      <a href="{{ '/' | relative_url }}" class="back-link">← Volver al inicio</a>
+      <div class="post-meta">
+        <a href="{{ '/' | relative_url }}" class="back-link">Volver al inicio</a>
+      </div>
     </article>
   </main>
 
   <footer class="site-footer">
-    <p>Hecho por {{ site.author }} · Ecos del Alma.</p>
+    <p>Farid Prado · Ecos del Alma</p>
   </footer>
 </body>
 </html>

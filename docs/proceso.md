@@ -8,26 +8,26 @@ permalink: /proceso/
 
 # Proceso
 
-Este proyecto funciona como una pequeña cadena editorial automatizada. La idea no fue escribir textos sueltos, sino crear un flujo que pudiera repetirse sin perder dirección.
+Este proyecto está armado como una pequeña rutina editorial. La intención no es producir textos sueltos, sino cuidar una voz, evitar repeticiones y dejar cada publicación lista para la web.
 
 ## 1. Guía de estilo
 
-La base está en `biblia/guia_estilo.json`. Ahí definí el tono, los temas, la longitud, los recursos permitidos y lo que el sistema debe evitar.
+La base está en `biblia/guia_estilo.json`. Ahí se definen los temas, el tono, la extensión, los recursos literarios y las frases que prefiero evitar.
 
 ## 2. Escritura
 
-El primer agente, **El Poeta**, toma un tema y genera un texto breve. La intención es que el resultado se sienta cercano, visual y menos genérico.
+El primer módulo toma un tema y escribe una pieza breve. La prioridad es que el texto se sienta cercano, visual y fácil de leer.
 
 ## 3. Revisión
 
-El segundo agente, **El Guardián de la Emoción**, revisa el texto antes de publicarlo. Si detecta clichés, falta de imágenes concretas o un tono demasiado artificial, el sistema intenta de nuevo.
+Antes de publicarse, el texto pasa por una revisión. Si suena genérico, repetitivo o demasiado forzado, se descarta y se vuelve a intentar.
 
-## 4. Dirección visual
+## 4. Imagen
 
-El tercer agente, **El Visualizador**, crea una dirección visual para la pieza. Después se genera una imagen base y se compone una tarjeta cuadrada lista para web o redes.
+Cuando el texto está listo, se crea una dirección visual y se compone una tarjeta cuadrada para acompañar la publicación.
 
 ## 5. Publicación
 
-El sistema crea un archivo Markdown dentro de `docs/_posts/`. GitHub Pages se encarga de convertirlo en una publicación visible en la web.
+La pieza final se guarda como Markdown dentro de `docs/_posts/`. La web lee esos archivos y los muestra en orden cronológico.
 
 </section>

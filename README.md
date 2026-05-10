@@ -1,6 +1,6 @@
 # Ecos del Alma
 
-Sistema de escritura generativa que crea, revisa, ilustra y publica escritos breves de forma automática.
+Escritos breves, imágenes editoriales y publicación web automática.
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
 ![Groq](https://img.shields.io/badge/Groq-Llama_3.3_70B-orange)
@@ -15,11 +15,11 @@ Sistema de escritura generativa que crea, revisa, ilustra y publica escritos bre
 
 ## Sobre el proyecto
 
-**Ecos del Alma** nació como un experimento personal para crear contenido poético con una estructura más cuidada que un prompt aislado.
+**Ecos del Alma** es un cuaderno digital de textos breves sobre memoria, vínculos, despedidas y regreso a uno mismo.
 
-La idea es dirigir un sistema creativo completo: definir una voz, generar textos, revisarlos, crear una pieza visual y publicarlos en una web sin repetir todo el proceso manualmente.
+La idea fue construir un flujo propio para escribir, revisar, acompañar visualmente y publicar cada pieza sin repetir el proceso manualmente desde cero.
 
-El proyecto combina escritura, dirección editorial, generación visual, automatización y publicación web.
+El resultado combina escritura, criterio editorial, composición visual, automatización y publicación web.
 
 ## Qué hace
 
@@ -28,17 +28,15 @@ Cada ejecución sigue este flujo:
 1. Carga una guía de estilo propia.
 2. Revisa los temas usados recientemente.
 3. Elige un nuevo tema.
-4. Genera un escrito breve.
-5. Revisa si el texto cumple el tono y evita clichés.
+4. Escribe una pieza breve.
+5. Revisa si el texto tiene tono, claridad y evita frases demasiado genéricas.
 6. Si no pasa la revisión, vuelve a intentarlo.
-7. Genera una dirección visual.
-8. Crea una tarjeta cuadrada lista para web o redes.
+7. Crea una dirección visual.
+8. Compone una tarjeta cuadrada de 1080x1080 px.
 9. Publica el texto en `docs/_posts/`.
-10. Actualiza la memoria del sistema.
+10. Actualiza la memoria del proyecto.
 
-## Agentes
-
-El sistema trabaja con tres agentes:
+## Módulos principales
 
 ### El Poeta
 
@@ -46,11 +44,11 @@ Genera el texto principal a partir del tema seleccionado y de la guía de estilo
 
 ### El Guardián de la Emoción
 
-Revisa el texto antes de publicarlo. Evalúa si suena natural, si usa imágenes concretas y si evita frases demasiado genéricas.
+Revisa el texto antes de publicarlo. Evalúa si suena natural, si usa imágenes concretas y si evita frases demasiado planas.
 
 ### El Visualizador
 
-Convierte el texto aprobado en una dirección visual. Luego el sistema genera una tarjeta cuadrada de 1080x1080 px para acompañar la publicación.
+Crea una dirección visual para la pieza. Después, el proyecto compone una tarjeta cuadrada lista para la web o redes.
 
 ## Arquitectura
 
@@ -66,7 +64,7 @@ flowchart TD
     G --> H{¿Texto aprobado?}
     H -- No --> E
     H -- Sí --> I[El Visualizador]
-    I --> J[Prompt visual]
+    I --> J[Dirección visual]
     J --> K[Imagen base]
     K --> L[Tarjeta 1080x1080]
     L --> M[Markdown en docs/_posts]
@@ -101,7 +99,8 @@ ecos-del-alma/
 │   ├── estado_publicacion.json
 │   └── temas_usados.json
 ├── utils/
-│   └── render_social.py
+│   ├── render_social.py
+│   └── rebuild_cards.py
 ├── config.py
 ├── main.py
 ├── requirements.txt
@@ -143,7 +142,7 @@ Algunos temas incluidos:
 - **Python 3.11+** para orquestar el flujo.
 - **Groq API** para generación y revisión de texto.
 - **Llama 3.3 70B Versatile** como modelo principal.
-- **Pollinations.ai** para generar una imagen base.
+- **Pollinations.ai** para crear una imagen base.
 - **Pillow** para componer tarjetas visuales de 1080x1080 px.
 - **Markdown + Jekyll** para publicar los escritos.
 - **GitHub Pages** para alojar la web.
@@ -178,7 +177,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ### 3. Instalar dependencias
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### 4. Configurar variables de entorno
@@ -219,6 +218,16 @@ Y una tarjeta visual en:
 docs/assets/social/
 ```
 
+## Reconstruir tarjetas existentes
+
+Si cambias el diseño visual y quieres actualizar las imágenes de publicaciones anteriores:
+
+```bash
+python utils/rebuild_cards.py
+```
+
+Este comando vuelve a crear las tarjetas en `docs/assets/social/` y actualiza el campo `image` de cada publicación.
+
 ## Automatización
 
 El workflow está en:
@@ -256,27 +265,27 @@ Folder: /docs
 
 ## Por qué está hecho así
 
-El valor del proyecto no está solo en que genera textos. La parte interesante es el flujo completo:
+El valor del proyecto está en el flujo completo:
 
 - una guía de estilo editable;
-- roles separados para escribir, revisar y visualizar;
+- módulos separados para escribir, revisar y visualizar;
 - memoria para no repetir temas;
 - publicación web automática;
 - creación de piezas visuales reutilizables.
 
-Es una forma de convertir la IA en una herramienta dirigida, no en un resultado aleatorio.
+La intención es tener una herramienta propia, dirigida por reglas claras y con una estética consistente.
 
 ## Posibles siguientes mejoras
 
 - Publicación automática en Instagram o Threads.
-- Variantes visuales para stories verticales.
+- Variantes verticales para stories.
 - Dashboard con métricas de temas y publicaciones.
 - Selector de líneas editoriales.
-- Modo oscuro en la web.
+- Modo oscuro.
 - Feed RSS.
 
 ## Autor
 
 **Farid Prado**
 
-Proyecto personal de escritura generativa, automatización creativa y publicación web.
+Proyecto personal de escritura, automatización creativa y publicación web.
