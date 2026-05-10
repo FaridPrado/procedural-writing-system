@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from utils.render_social import build_background_image_url, generar_tarjeta_social
+from utils.render_social import generar_tarjeta_social
 
 POSTS_DIR = ROOT / "docs" / "_posts"
 
@@ -19,6 +19,7 @@ def parse_frontmatter(raw: str):
     _, front, body = raw.split("---", 2)
 
     data = {}
+
     for line in front.strip().splitlines():
         if ":" not in line:
             continue
@@ -51,10 +52,6 @@ def build_frontmatter(data: dict[str, str]) -> str:
 
             lines.append(f"{key}: {value}")
 
-    for key, value in data.items():
-        if key not in order and value != "":
-            lines.append(f"{key}: {value}")
-
     lines.append("---")
 
     return "\n".join(lines) + "\n\n"
@@ -78,20 +75,18 @@ def main() -> None:
 
     for post in posts:
         raw = post.read_text(encoding="utf-8")
+
         data, body = parse_frontmatter(raw)
 
         publicacion_id = post_id_from_name(post)
-        tema = data.get("tema") or data.get("title") or "Ecos del Alma"
+
+        tema = (
+            data.get("tema")
+            or data.get("title")
+            or "Ecos del Alma"
+        )
 
         background_image = data.get("background_image")
-
-        if not background_image:
-            background_image = build_background_image_url(
-                texto=body,
-                tema=tema,
-                publicacion_id=publicacion_id,
-            )
-            data["background_image"] = background_image
 
         image = generar_tarjeta_social(
             texto=body,
@@ -102,12 +97,14 @@ def main() -> None:
 
         data["image"] = image
 
+        fixed = build_frontmatter(data) + body.strip() + "\n"
+
         post.write_text(
-            build_frontmatter(data) + body.strip() + "\n",
+            fixed,
             encoding="utf-8",
         )
 
-        print(f"Actualizado con fondo: {post.name} -> {image}")
+        print(f"Actualizado: {post.name} -> {image}")
 
 
 if __name__ == "__main__":

@@ -14,43 +14,47 @@ title: Inicio
   </p>
 </section>
 
-<section class="posts-list">
-  {% for post in site.posts %}
-    <article class="post-card">
-      <div class="post-card-content">
-        <p class="post-date">{{ post.date | date: "%d · %m · %Y" }}</p>
-
-        <h2 class="post-card-title">
-          <a href="{{ post.url | relative_url }}">
-            {% if post.title %}
-              {{ post.title }}
-            {% elsif post.tema %}
-              {{ post.tema }}
-            {% else %}
-              Escrito
-            {% endif %}
-          </a>
-        </h2>
-
-        {% if post.excerpt %}
-          <p class="post-excerpt">
-            {{ post.excerpt | strip_html | truncate: 180 }}
-          </p>
-        {% endif %}
-
+{% if site.posts.size > 0 %}
+  <section class="post-list">
+    {% for post in site.posts %}
+      <article class="post-card">
         {% if post.image %}
-          <a href="{{ post.url | relative_url }}" class="post-image-link" aria-label="Leer {{ post.title }}">
+          <a href="{{ post.url | relative_url }}" class="post-card-image-link" aria-label="Leer {{ post.title | default: post.tema | default: 'escrito' }}">
             <img
               src="{{ post.image | relative_url }}"
-              alt="{{ post.title | default: post.tema }}"
-              class="post-card-image"
+              alt="{{ post.title | default: post.tema | default: 'Ecos del Alma' }}"
+              class="card-image"
               loading="lazy"
             >
           </a>
+        {% else %}
+          <a href="{{ post.url | relative_url }}" class="post-card-image-link" aria-label="Leer {{ post.title | default: post.tema | default: 'escrito' }}">
+            <div class="missing-image-card small">
+              {{ post.title | default: post.tema | default: 'Ecos del Alma' }}
+            </div>
+          </a>
         {% endif %}
 
-        <a class="read-more" href="{{ post.url | relative_url }}">Leer completo →</a>
-      </div>
-    </article>
-  {% endfor %}
-</section>
+        <div class="post-card-copy">
+          <p class="post-date">{{ post.date | date: "%d · %m · %Y" }}</p>
+
+          <h2>
+            <a href="{{ post.url | relative_url }}">
+              {{ post.title | default: post.tema | default: 'Escrito' }}
+            </a>
+          </h2>
+
+          <p class="post-excerpt">
+            {{ post.excerpt | strip_html | normalize_whitespace | truncate: 210 }}
+          </p>
+
+          <a class="read-link" href="{{ post.url | relative_url }}">Leer completo</a>
+        </div>
+      </article>
+    {% endfor %}
+  </section>
+{% else %}
+  <section class="empty-state">
+    <p>Todavía no hay escritos publicados.</p>
+  </section>
+{% endif %}

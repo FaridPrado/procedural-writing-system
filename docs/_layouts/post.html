@@ -2,47 +2,33 @@
 layout: default
 ---
 
-<article class="single-post">
-  <header class="single-post-header">
+<article class="post-container">
+  <header>
     <p class="post-date">{{ page.date | date: "%d · %m · %Y" }}</p>
-
-    <h1 class="single-post-title">
-      {% if page.title %}
-        {{ page.title }}
-      {% elsif page.tema %}
-        {{ page.tema }}
-      {% else %}
-        Escrito
-      {% endif %}
-    </h1>
+    <h1 class="post-title">{{ page.title | default: page.tema | default: 'Escrito' }}</h1>
   </header>
 
   {% if page.image %}
-    <figure class="single-post-image">
-      <img
-        src="{{ page.image | relative_url }}"
-        alt="{{ page.title | default: page.tema }}"
-      >
-    </figure>
+    <img
+      src="{{ page.image | relative_url }}"
+      alt="{{ page.title | default: page.tema | default: 'Ecos del Alma' }}"
+      class="post-image"
+    >
+  {% else %}
+    <div class="missing-image-card">
+      {{ page.title | default: page.tema | default: 'Ecos del Alma' }}
+    </div>
   {% endif %}
 
-  <div class="single-post-body">
+  <div class="poem-text">
     {{ content }}
   </div>
 
-  {% if page.tema or page.nota_editorial %}
-    <footer class="post-meta-box">
-      {% if page.tema %}
-        <p><strong>Tema:</strong> {{ page.tema }}</p>
-      {% endif %}
-
-      {% if page.nota_editorial %}
-        <p><strong>Nota:</strong> {{ page.nota_editorial }}</p>
-      {% endif %}
-    </footer>
+  {% if page.tema %}
+    <div class="post-meta">
+      <span>{{ page.tema }}</span>
+    </div>
   {% endif %}
 
-  <p class="back-link">
-    <a href="{{ '/' | relative_url }}">← Volver al inicio</a>
-  </p>
+  <a class="back-link" href="{{ '/' | relative_url }}">Volver al inicio</a>
 </article>
