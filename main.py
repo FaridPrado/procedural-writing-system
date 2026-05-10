@@ -46,7 +46,7 @@ if not relato_ok:
 # --- Publicar ---
 hoy = datetime.now().strftime("%Y-%m-%d")
 nuevo_id = memoria['ultimo_id'] + 1
-titulo_archivo = f"escrito-{nuevo_id:04d}_{hoy}.md"
+titulo_archivo = f"{hoy}-escrito-{nuevo_id:04d}.md"
 ruta_publicacion = f"docs/_posts/{titulo_archivo}"
 
 # Generar ilustración
@@ -57,17 +57,19 @@ except Exception as e:
     print(f"⚠️ Fallo al generar imagen: {e}")
 
 # Construir Markdown
+imagen_linea = f"image: {url_ilustracion}" if url_ilustracion else ""
+
 contenido_md = f"""---
 layout: post
 title: "{tema['nombre']} - {hoy}"
 date: {hoy} 08:00:00 -0000
 categories: ecos-del-alma
+{imagen_linea}
 ---
 
 {texto_final}
 
 """
-
 if url_ilustracion:
     contenido_md += f"![Ilustración]({url_ilustracion})\n\n"
 
