@@ -61,9 +61,10 @@ imagen_linea = f"image: {url_ilustracion}" if url_ilustracion else ""
 
 contenido_md = f"""---
 layout: post
-title: "{tema['nombre']} - {hoy}"
+title: "{tema['nombre']}"
 date: {hoy} 08:00:00 -0000
 categories: ecos-del-alma
+tema: {tema['nombre']}
 {imagen_linea}
 ---
 
@@ -73,7 +74,7 @@ categories: ecos-del-alma
 if url_ilustracion:
     contenido_md += f"![Ilustración]({url_ilustracion})\n\n"
 
-contenido_md += f"*Tema: {tema['nombre']} | Generado autónomamente por Ecos del Alma*"
+contenido_md += "---"
 
 os.makedirs(os.path.dirname(ruta_publicacion), exist_ok=True)
 with open(ruta_publicacion, 'w', encoding='utf-8') as f:

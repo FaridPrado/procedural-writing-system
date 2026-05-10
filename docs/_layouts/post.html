@@ -45,10 +45,20 @@
       font-size: 2.4rem;
       font-weight: 500;
       color: #5a4736;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       line-height: 1.3;
       border-bottom: 1px solid #e5d9c6;
       padding-bottom: 0.8rem;
+    }
+    .post-image {
+      max-width: 450px;
+      width: 100%;
+      height: auto;
+      border-radius: 18px;
+      margin: 2rem auto;
+      display: block;
+      border: 1px solid #f0e5d2;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.03);
     }
     .poem-text {
       font-family: 'Cormorant Garamond', serif;
@@ -58,20 +68,20 @@
       white-space: pre-line;
       margin-bottom: 2rem;
     }
-    .post-image {
-      width: 100%;
-      border-radius: 18px;
-      margin: 2rem 0 1.5rem;
-      border: 1px solid #f0e5d2;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.03);
-    }
     .post-meta {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: #8b775a;
       font-style: italic;
       margin-top: 1.5rem;
       padding-top: 1rem;
       border-top: 1px dashed #e5d9c6;
+    }
+    .post-authors {
+      font-size: 1rem;
+      color: #b2976a;
+      margin-top: 0.5rem;
+      font-style: normal;
+      letter-spacing: 0.5px;
     }
     .back-link {
       display: inline-block;
@@ -105,12 +115,15 @@
       {{ content }}
     </div>
     <div class="post-meta">
-      Tema: {{ page.categories | join: ', ' }}
+      Tema: {{ page.tema }}
+    </div>
+    <div class="post-authors">
+      Por: 🖋️ El Poeta · 🛡️ El Guardián de la Emoción · 🎨 El Visualizador
     </div>
     <a href="{{ site.baseurl }}/" class="back-link">← Volver al inicio</a>
   </article>
   <footer class="footer">
-    <p>🖋️ El Poeta · 🛡️ El Guardián de la Emoción · 🎨 El Visualizador</p>
+    <p>Generado con inteligencia artificial · Actualizado diariamente</p>
   </footer>
 </body>
 </html>
