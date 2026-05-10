@@ -1,6 +1,6 @@
 # Ecos del Alma
 
-Sistema de escritura generativa que crea, revisa, ilustra y publica textos poéticos breves de forma automática.
+Sistema de escritura generativa que crea, revisa, ilustra y publica escritos breves de forma automática.
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
 ![Groq](https://img.shields.io/badge/Groq-Llama_3.3_70B-orange)
@@ -15,32 +15,42 @@ Sistema de escritura generativa que crea, revisa, ilustra y publica textos poét
 
 ## Sobre el proyecto
 
-**Ecos del Alma** nació como un experimento personal para explorar cómo usar inteligencia artificial de una forma más estructurada que simplemente pedirle textos a un modelo.
+**Ecos del Alma** nació como un experimento personal para crear contenido poético con una estructura más cuidada que un prompt aislado.
 
-La idea es simple: crear un sistema que pueda escribir publicaciones poéticas breves, revisarlas, generar una imagen relacionada y publicarlas en una web sin tener que hacerlo todo manualmente cada vez.
+La idea es dirigir un sistema creativo completo: definir una voz, generar textos, revisarlos, crear una pieza visual y publicarlos en una web sin repetir todo el proceso manualmente.
 
-El proyecto trabaja con tres partes principales:
-
-- **El Poeta**, que genera el texto.
-- **El Guardián de la Emoción**, que revisa si el texto mantiene el tono, evita clichés y cumple la guía de estilo.
-- **El Visualizador**, que crea una imagen atmosférica para acompañar la publicación.
-
-Cada texto se genera a partir de una guía de estilo propia y de una pequeña memoria que ayuda a no repetir los mismos temas todo el tiempo.
+El proyecto combina escritura, dirección editorial, generación visual, automatización y publicación web.
 
 ## Qué hace
 
-El flujo completo es este:
+Cada ejecución sigue este flujo:
 
-1. Se carga la guía de estilo del proyecto.
-2. Se revisan los temas usados recientemente.
-3. El sistema elige un tema para el nuevo escrito.
-4. El Poeta genera un texto breve.
-5. El Guardián de la Emoción lo evalúa.
-6. Si el texto no cumple, se vuelve a intentar.
-7. Si el texto es aprobado, se genera una imagen relacionada.
-8. Se crea una publicación en Markdown.
-9. Se guarda en `docs/_posts/`.
-10. GitHub Pages publica el contenido en la web.
+1. Carga una guía de estilo propia.
+2. Revisa los temas usados recientemente.
+3. Elige un nuevo tema.
+4. Genera un escrito breve.
+5. Revisa si el texto cumple el tono y evita clichés.
+6. Si no pasa la revisión, vuelve a intentarlo.
+7. Genera una dirección visual.
+8. Crea una tarjeta cuadrada lista para web o redes.
+9. Publica el texto en `docs/_posts/`.
+10. Actualiza la memoria del sistema.
+
+## Agentes
+
+El sistema trabaja con tres agentes:
+
+### El Poeta
+
+Genera el texto principal a partir del tema seleccionado y de la guía de estilo.
+
+### El Guardián de la Emoción
+
+Revisa el texto antes de publicarlo. Evalúa si suena natural, si usa imágenes concretas y si evita frases demasiado genéricas.
+
+### El Visualizador
+
+Convierte el texto aprobado en una dirección visual. Luego el sistema genera una tarjeta cuadrada de 1080x1080 px para acompañar la publicación.
 
 ## Arquitectura
 
@@ -48,7 +58,7 @@ El flujo completo es este:
 flowchart TD
     A[GitHub Actions o ejecución manual] --> B[main.py]
     B --> C[Cargar guía de estilo]
-    B --> D[Cargar memoria de temas]
+    B --> D[Cargar memoria]
     C --> E[El Poeta]
     D --> E
     E --> F[Texto generado]
@@ -57,11 +67,47 @@ flowchart TD
     H -- No --> E
     H -- Sí --> I[El Visualizador]
     I --> J[Prompt visual]
-    J --> K[Imagen con Pollinations.ai]
-    K --> L[Crear archivo Markdown]
-    L --> M[Guardar en docs/_posts]
+    J --> K[Imagen base]
+    K --> L[Tarjeta 1080x1080]
+    L --> M[Markdown en docs/_posts]
     M --> N[Actualizar memoria]
-    N --> O[Publicar con GitHub Pages]
+    N --> O[GitHub Pages]
+```
+
+## Estructura
+
+```text
+ecos-del-alma/
+├── .github/
+│   └── workflows/
+│       └── daily-escrito.yml
+├── agentes/
+│   └── agentes.py
+├── biblia/
+│   └── guia_estilo.json
+├── docs/
+│   ├── _config.yml
+│   ├── index.md
+│   ├── proceso.md
+│   ├── _layouts/
+│   │   ├── default.html
+│   │   └── post.html
+│   ├── _posts/
+│   └── assets/
+│       ├── css/
+│       │   └── style.css
+│       └── social/
+├── memoria/
+│   ├── estado_publicacion.json
+│   └── temas_usados.json
+├── utils/
+│   └── render_social.py
+├── config.py
+├── main.py
+├── requirements.txt
+├── .env.example
+├── .gitignore
+└── README.md
 ```
 
 ## Guía de estilo
@@ -72,91 +118,37 @@ La base creativa está en:
 biblia/guia_estilo.json
 ```
 
-Ahí se define la identidad del proyecto:
+Ahí se define:
 
 - tono general;
-- tipo de textos;
 - temas disponibles;
 - longitud esperada;
 - recursos literarios permitidos;
-- estilos o frases que se deben evitar;
+- frases o estilos que se deben evitar;
 - estructura sugerida para cada escrito.
 
-Algunos temas incluidos son:
+Algunos temas incluidos:
 
-- amor consciente;
-- despedidas y duelos;
-- soledad fértil;
-- esperanza realista;
-- vínculos humanos.
+- Amor consciente
+- Despedidas y duelos
+- Soledad fértil
+- Esperanza realista
+- Vínculos humanos
+- Cicatrices
+- Volver a mí
+- Lo que no dije
 
-La guía permite que los textos mantengan una línea parecida, aunque cada publicación sea diferente.
-
-## Agentes
-
-### El Poeta
-
-Genera el escrito principal a partir del tema elegido y de la guía de estilo.
-
-Su objetivo es crear textos breves, emocionales y fáciles de conectar con experiencias cotidianas, evitando sonar genérico o demasiado forzado.
-
-### El Guardián de la Emoción
-
-Funciona como una revisión editorial automática.
-
-Evalúa si el texto:
-
-- evita clichés;
-- usa imágenes concretas;
-- mantiene el tono del proyecto;
-- se siente natural;
-- respeta las restricciones de la guía.
-
-Si el texto no pasa la revisión, el sistema genera otro intento.
-
-### El Visualizador
-
-Toma el texto aprobado y crea un prompt visual en inglés. Con ese prompt se genera una imagen usando Pollinations.ai.
-
-La intención no es crear una imagen literal, sino una pieza visual que acompañe el ambiente del escrito.
-
-## Estructura del proyecto
-
-```text
-ecos-del-alma/
-├── .github/
-│   └── workflows/
-│       └── daily-fabula.yml
-├── agentes/
-│   └── agentes.py
-├── biblia/
-│   └── guia_estilo.json
-├── docs/
-│   ├── _config.yml
-│   ├── index.md
-│   ├── _layouts/
-│   │   ├── default.html
-│   │   └── post.html
-│   └── _posts/
-├── memoria/
-│   ├── estado_publicacion.json
-│   └── temas_usados.json
-├── main.py
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
-
-## Tecnologías usadas
+## Tecnologías
 
 - **Python 3.11+** para orquestar el flujo.
-- **Groq API** para generar y revisar textos.
+- **Groq API** para generación y revisión de texto.
 - **Llama 3.3 70B Versatile** como modelo principal.
-- **Pollinations.ai** para generar imágenes desde una URL.
-- **Markdown + Jekyll** para crear las publicaciones.
-- **GitHub Pages** para publicar la web.
+- **Pollinations.ai** para generar una imagen base.
+- **Pillow** para componer tarjetas visuales de 1080x1080 px.
+- **Markdown + Jekyll** para publicar los escritos.
+- **GitHub Pages** para alojar la web.
 - **GitHub Actions** para automatizar la ejecución.
-- **JSON** para la guía de estilo y la memoria del sistema.
+- **JSON** para configuración y memoria.
 
 ## Instalación local
 
@@ -167,7 +159,7 @@ git clone https://github.com/faridSprado/ecos-del-alma.git
 cd ecos-del-alma
 ```
 
-### 2. Crear un entorno virtual
+### 2. Crear entorno virtual
 
 En Windows PowerShell:
 
@@ -189,46 +181,55 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 pip install -r requirements.txt
 ```
 
-### 4. Crear el archivo `.env`
+### 4. Configurar variables de entorno
 
-En la raíz del proyecto, crear un archivo llamado `.env` con este contenido:
+Copia el archivo de ejemplo:
+
+```bash
+copy .env.example .env
+```
+
+Dentro de `.env`, agrega tu clave de Groq:
 
 ```env
 GROQ_API_KEY=gsk_tu_clave_de_groq
+GROQ_MODEL=llama-3.3-70b-versatile
+PROJECT_TIMEZONE=America/Bogota
+MAX_INTENTOS=3
+TEMAS_RECIENTES_A_EVITAR=3
 ```
 
-Este archivo no se debe subir a GitHub.
+El archivo `.env` no se sube a GitHub.
 
-### 5. Ejecutar el proyecto
+### 5. Ejecutar
 
 ```bash
 python main.py
 ```
 
-Si todo está bien configurado, se generará una nueva publicación dentro de:
+Si todo está bien, se creará una nueva publicación en:
 
 ```text
 docs/_posts/
 ```
 
+Y una tarjeta visual en:
+
+```text
+docs/assets/social/
+```
+
 ## Automatización
 
-El proyecto incluye un workflow de GitHub Actions en:
+El workflow está en:
 
 ```text
 .github/workflows/daily-escrito.yml
 ```
 
-Ese workflow se encarga de:
+Se puede ejecutar manualmente desde la pestaña **Actions** de GitHub o dejarlo programado para correr una vez al día.
 
-1. descargar el código del repositorio;
-2. instalar Python y las dependencias;
-3. ejecutar `python main.py`;
-4. guardar el nuevo escrito;
-5. actualizar la memoria;
-6. hacer commit y push de los cambios.
-
-Para que funcione en GitHub, hay que crear un secreto llamado:
+Para que funcione en GitHub Actions, el repositorio necesita un secret llamado:
 
 ```text
 GROQ_API_KEY
@@ -237,65 +238,45 @@ GROQ_API_KEY
 Ruta en GitHub:
 
 ```text
-Settings > Secrets and variables > Actions > New repository secret
+Settings → Secrets and variables → Actions → New repository secret
 ```
 
 ## GitHub Pages
 
-La web está pensada para publicarse desde la carpeta:
-
-```text
-docs/
-```
+La web se publica desde la carpeta `docs/`.
 
 Configuración recomendada:
 
-- **Source:** Deploy from a branch
-- **Branch:** main
-- **Folder:** /docs
-
-URL del proyecto:
-
 ```text
-https://faridSprado.github.io/ecos-del-alma/
+Settings → Pages
+Source: Deploy from a branch
+Branch: main
+Folder: /docs
 ```
 
-## Ejemplo de publicación
+## Por qué está hecho así
 
-```markdown
----
-layout: post
-title: "Vínculos humanos"
-date: 2026-05-10 08:00:00 -0000
-categories: ecos-del-alma
-tema: Vínculos humanos
-image: https://image.pollinations.ai/prompt/...
----
+El valor del proyecto no está solo en que genera textos. La parte interesante es el flujo completo:
 
-A veces alguien llega sin hacer ruido.
-No trae respuestas.
-Trae una silla, una tarde, una forma distinta de quedarse.
+- una guía de estilo editable;
+- roles separados para escribir, revisar y visualizar;
+- memoria para no repetir temas;
+- publicación web automática;
+- creación de piezas visuales reutilizables.
 
-Y uno aprende que hay refugios que no tienen paredes,
-solo una voz diciendo:
-respira, estoy aquí.
-```
+Es una forma de convertir la IA en una herramienta dirigida, no en un resultado aleatorio.
 
-## Ideas pendientes
+## Posibles siguientes mejoras
 
-Algunas mejoras que me gustaría agregar más adelante:
-
-- generar imágenes cuadradas listas para Instagram;
-- poner texto sobre la imagen automáticamente;
-- crear varias líneas editoriales;
-- guardar la puntuación emocional de cada texto;
-- agregar filtros por tema;
-- mejorar el diseño visual de la web;
-- generar un feed RSS;
-- publicar automáticamente en redes sociales.
+- Publicación automática en Instagram o Threads.
+- Variantes visuales para stories verticales.
+- Dashboard con métricas de temas y publicaciones.
+- Selector de líneas editoriales.
+- Modo oscuro en la web.
+- Feed RSS.
 
 ## Autor
 
 **Farid Prado**
 
-Proyecto personal de escritura generativa, automatización creativa e inteligencia artificial aplicada.
+Proyecto personal de escritura generativa, automatización creativa y publicación web.

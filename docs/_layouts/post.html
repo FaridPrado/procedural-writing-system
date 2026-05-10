@@ -4,126 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | {{ site.title }}</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400&display=swap');
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #fdfaf5;
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e5d9c6' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      color: #3a332a;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .post-container {
-      max-width: 700px;
-      width: 90%;
-      margin: 3rem auto;
-      background: rgba(255,255,255,0.9);
-      backdrop-filter: blur(4px);
-      padding: 3rem;
-      border-radius: 24px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.04);
-      border: 1px solid #ede3d1;
-      animation: fadeUp 0.7s ease;
-    }
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(25px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .post-date {
-      color: #b2976a;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 0.85rem;
-      margin-bottom: 1.2rem;
-    }
-    .post-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2.4rem;
-      font-weight: 500;
-      color: #5a4736;
-      margin-bottom: 1.5rem;
-      line-height: 1.3;
-      border-bottom: 1px solid #e5d9c6;
-      padding-bottom: 0.8rem;
-    }
-    .post-image {
-      max-width: 450px;
-      width: 100%;
-      height: auto;
-      border-radius: 18px;
-      margin: 2rem auto;
-      display: block;
-      border: 1px solid #f0e5d2;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.03);
-    }
-    .poem-text {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.3rem;
-      line-height: 2.1;
-      color: #4d3c2c;
-      white-space: pre-line;
-      margin-bottom: 2rem;
-    }
-    .post-meta {
-      font-size: 0.95rem;
-      color: #8b775a;
-      font-style: italic;
-      margin-top: 1.5rem;
-      padding-top: 1rem;
-      border-top: 1px dashed #e5d9c6;
-    }
-    .post-authors {
-      font-size: 1rem;
-      color: #b2976a;
-      margin-top: 0.5rem;
-      font-style: normal;
-      letter-spacing: 0.5px;
-    }
-    .back-link {
-      display: inline-block;
-      margin-top: 1.8rem;
-      color: #b2976a;
-      font-size: 0.95rem;
-      border-bottom: 1px solid #d9c29e;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .back-link:hover { color: #7a623f; }
-    .footer {
-      width: 100%;
-      text-align: center;
-      padding: 1.8rem;
-      background: #f7f0e4;
-      border-top: 1px solid #e5d9c6;
-      color: #8b775a;
-      font-size: 0.85rem;
-    }
-  </style>
+  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <article class="post-container">
-    <div class="post-date">{{ page.date | date: "%d · %m · %Y" }}</div>
-    <h1 class="post-title">{{ page.title }}</h1>
-    {% if page.image %}
-      <img src="{{ page.image }}" alt="Ilustración para {{ page.title }}" class="post-image" loading="lazy">
-    {% endif %}
-    <div class="poem-text">
-      {{ content }}
-    </div>
-    <div class="post-meta">
-      Tema: {{ page.tema }}
-    </div>
-    <div class="post-authors">
-      Por: 🖋️ El Poeta · 🛡️ El Guardián de la Emoción · 🎨 El Visualizador
-    </div>
-    <a href="{{ site.baseurl }}/" class="back-link">← Volver al inicio</a>
-  </article>
-  <footer class="footer">
-    <p>Generado con inteligencia artificial · Actualizado diariamente</p>
+  <header class="site-header">
+    <h1 class="site-title">{{ site.title }}</h1>
+    <div class="site-divider"></div>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}">Inicio</a>
+      <a href="{{ '/proceso/' | relative_url }}">Proceso</a>
+      <a href="{{ site.repo_url }}">Código</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="post-container">
+      <div class="post-date">{{ page.date | date: "%d · %m · %Y" }}</div>
+      <h1 class="post-title">{{ page.title }}</h1>
+
+      {% if page.image %}
+        {% if page.image contains '://' %}
+          <img src="{{ page.image }}" alt="Ilustración para {{ page.title }}" class="post-image" loading="lazy">
+        {% else %}
+          <img src="{{ page.image | relative_url }}" alt="Ilustración para {{ page.title }}" class="post-image" loading="lazy">
+        {% endif %}
+      {% endif %}
+
+      <div class="poem-text">
+        {{ content }}
+      </div>
+
+      <div class="post-meta">
+        <strong>Tema:</strong> {{ page.tema }}<br>
+        {% if page.comentario_editorial %}
+          <strong>Nota editorial:</strong> {{ page.comentario_editorial }}
+        {% endif %}
+      </div>
+
+      <a href="{{ '/' | relative_url }}" class="back-link">← Volver al inicio</a>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>Hecho por {{ site.author }} · Ecos del Alma.</p>
   </footer>
 </body>
 </html>

@@ -1,92 +1,161 @@
+from __future__ import annotations
+
 from datetime import datetime
 import json
-import os
-from dotenv import load_dotenv
-from groq import Groq
-from agentes.agentes import agente_poeta, agente_guardian, agente_visualizador
+from typing import Any
+from zoneinfo import ZoneInfo
 
-load_dotenv()
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-MODELO = "llama-3.3-70b-versatile"
+from agentes.agentes import agente_guardian, agente_poeta, agente_visualizador
+from config import (
+    MAX_INTENTOS,
+    MEMORIA_PUBLICACION_PATH,
+    MEMORIA_TEMAS_PATH,
+    POSTS_DIR,
+    PROJECT_TIMEZONE,
+    TEMAS_RECIENTES_A_EVITAR,
+)
+from utils.render_social import generar_tarjeta_social
 
-# Cargar guía
-with open('biblia/guia_estilo.json', 'r', encoding='utf-8') as f:
-    GUIA = json.load(f)
 
-# Memoria de publicación
-MEMORIA_PATH = 'memoria/estado_publicacion.json'
-try:
-    with open(MEMORIA_PATH, 'r', encoding='utf-8') as f:
-        memoria = json.load(f)
-except FileNotFoundError:
-    memoria = {
-        "ultimo_id": 0,
-        "fecha_ultima_publicacion": "",
-        "publicaciones": []
-    }
+def cargar_json(path, valor_por_defecto: dict[str, Any]) -> dict[str, Any]:
+    if not path.exists():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        guardar_json(path, valor_por_defecto)
+        return valor_por_defecto
 
-# --- Flujo de agentes ---
-relato_ok = False
-intentos = 0
-max_intentos = 3
+    with open(path, "r", encoding="utf-8") as archivo:
+        return json.load(archivo)
 
-while not relato_ok and intentos < max_intentos:
-    intentos += 1
-    texto, tema = agente_poeta()
-    texto_final, es_valido = agente_guardian(texto, tema)
-    if es_valido:
-        relato_ok = True
-        print("🎉 Texto aprobado.")
-    else:
-        print(f"⏳ Reintentando ({intentos}/{max_intentos})...")
 
-if not relato_ok:
-    raise Exception("No se logró un texto válido.")
+def guardar_json(path, data: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as archivo:
+        json.dump(data, archivo, indent=2, ensure_ascii=False)
+        archivo.write("\n")
 
-# --- Publicar ---
-hoy = datetime.now().strftime("%Y-%m-%d")
-nuevo_id = memoria['ultimo_id'] + 1
-titulo_archivo = f"{hoy}-escrito-{nuevo_id:04d}.md"
-ruta_publicacion = f"docs/_posts/{titulo_archivo}"
 
-# Generar ilustración
-url_ilustracion = None
-try:
-    url_ilustracion, _ = agente_visualizador(texto_final)
-except Exception as e:
-    print(f"⚠️ Fallo al generar imagen: {e}")
+def yaml_quote(value: str) -> str:
+    return json.dumps(value, ensure_ascii=False)
 
-# Construir Markdown
-imagen_linea = f"image: {url_ilustracion}" if url_ilustracion else ""
 
-contenido_md = f"""---
+def actualizar_temas_usados(memoria_temas: dict[str, Any], tema: str) -> dict[str, Any]:
+    ultimos = memoria_temas.get("ultimos_temas", [])
+    ultimos.append(tema)
+    memoria_temas["ultimos_temas"] = ultimos[-TEMAS_RECIENTES_A_EVITAR:]
+    return memoria_temas
+
+
+def crear_markdown(
+    *,
+    titulo: str,
+    fecha: datetime,
+    tema: str,
+    texto: str,
+    imagen_relativa: str | None,
+    prompt_visual: str | None,
+    comentario_editorial: str | None,
+) -> str:
+    fecha_frontmatter = fecha.strftime("%Y-%m-%d %H:%M:%S %z")
+    image_line = f"image: {yaml_quote(imagen_relativa)}\n" if imagen_relativa else ""
+    prompt_line = f"prompt_visual: {yaml_quote(prompt_visual)}\n" if prompt_visual else ""
+    comentario_line = (
+        f"comentario_editorial: {yaml_quote(comentario_editorial)}\n"
+        if comentario_editorial
+        else ""
+    )
+
+    return f"""---
 layout: post
-title: "{tema['nombre']}"
-date: {hoy} 08:00:00 -0000
-categories: ecos-del-alma
-tema: {tema['nombre']}
-{imagen_linea}
----
+title: {yaml_quote(titulo)}
+date: {fecha_frontmatter}
+categories: [ecos-del-alma]
+tema: {yaml_quote(tema)}
+{image_line}{prompt_line}{comentario_line}---
 
-{texto_final}
-
----
+{texto.strip()}
 """
 
-os.makedirs(os.path.dirname(ruta_publicacion), exist_ok=True)
-with open(ruta_publicacion, 'w', encoding='utf-8') as f:
-    f.write(contenido_md)
-print(f"📄 Publicado en {ruta_publicacion}")
 
-# Actualizar memoria
-memoria['ultimo_id'] = nuevo_id
-memoria['fecha_ultima_publicacion'] = hoy
-memoria['publicaciones'].append({
-    "id": nuevo_id,
-    "fecha": hoy,
-    "tema": tema['nombre']
-})
+def main() -> None:
+    memoria_publicacion = cargar_json(
+        MEMORIA_PUBLICACION_PATH,
+        {"ultimo_id": 0, "fecha_ultima_publicacion": "", "publicaciones": []},
+    )
+    memoria_temas = cargar_json(MEMORIA_TEMAS_PATH, {"ultimos_temas": []})
 
-with open(MEMORIA_PATH, 'w', encoding='utf-8') as f:
-    json.dump(memoria, f, indent=2, ensure_ascii=False)
-print("🧠 Memoria de publicación actualizada.")
+    texto_final = None
+    tema_final = None
+    revision_final = None
+
+    for intento in range(1, MAX_INTENTOS + 1):
+        texto, tema = agente_poeta(memoria_temas.get("ultimos_temas", []))
+        resultado, es_valido, revision = agente_guardian(texto, tema)
+
+        if es_valido:
+            texto_final = str(resultado)
+            tema_final = tema
+            revision_final = revision
+            print(f"🎉 Texto aprobado en el intento {intento}.")
+            break
+
+        print(f"⏳ Reintentando ({intento}/{MAX_INTENTOS})...")
+
+    if not texto_final or not tema_final:
+        raise RuntimeError("No se logró generar un texto válido después de varios intentos.")
+
+    ahora = datetime.now(ZoneInfo(PROJECT_TIMEZONE))
+    nuevo_id = int(memoria_publicacion.get("ultimo_id", 0)) + 1
+    nombre_archivo = f"{ahora.strftime('%Y-%m-%d')}-escrito-{nuevo_id:04d}.md"
+    ruta_publicacion = POSTS_DIR / nombre_archivo
+
+    imagen_relativa = None
+    prompt_visual = None
+    try:
+        imagen_url, prompt_visual = agente_visualizador(texto_final, tema_final)
+        imagen_relativa = generar_tarjeta_social(
+            texto=texto_final,
+            tema=tema_final["nombre"],
+            imagen_url=imagen_url,
+            publicacion_id=nuevo_id,
+        )
+        print(f"🖼️ Tarjeta visual creada: docs{imagen_relativa}")
+    except Exception as exc:
+        print(f"⚠️ No se pudo crear la tarjeta visual: {exc}")
+
+    contenido_md = crear_markdown(
+        titulo=tema_final["nombre"],
+        fecha=ahora,
+        tema=tema_final["nombre"],
+        texto=texto_final,
+        imagen_relativa=imagen_relativa,
+        prompt_visual=prompt_visual,
+        comentario_editorial=(revision_final or {}).get("comentario_editorial"),
+    )
+
+    POSTS_DIR.mkdir(parents=True, exist_ok=True)
+    with open(ruta_publicacion, "w", encoding="utf-8") as archivo:
+        archivo.write(contenido_md)
+
+    memoria_publicacion["ultimo_id"] = nuevo_id
+    memoria_publicacion["fecha_ultima_publicacion"] = ahora.date().isoformat()
+    memoria_publicacion.setdefault("publicaciones", []).append(
+        {
+            "id": nuevo_id,
+            "fecha": ahora.isoformat(),
+            "tema": tema_final["nombre"],
+            "archivo": str(ruta_publicacion.relative_to(POSTS_DIR.parent.parent)),
+            "imagen": imagen_relativa,
+            "puntuacion_emocional": (revision_final or {}).get("puntuacion_emocional"),
+        }
+    )
+    guardar_json(MEMORIA_PUBLICACION_PATH, memoria_publicacion)
+
+    memoria_temas = actualizar_temas_usados(memoria_temas, tema_final["nombre"])
+    guardar_json(MEMORIA_TEMAS_PATH, memoria_temas)
+
+    print(f"📄 Publicado en {ruta_publicacion}")
+    print("🧠 Memoria actualizada.")
+
+
+if __name__ == "__main__":
+    main()

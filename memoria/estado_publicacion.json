@@ -1,21 +1,35 @@
 {
-  "ultimo_id": 3,
+  "ultimo_id": 4,
   "fecha_ultima_publicacion": "2026-05-10",
   "publicaciones": [
     {
       "id": 1,
       "fecha": "2026-05-09",
-      "tema": "Vínculos humanos"
+      "tema": "Vínculos humanos",
+      "archivo": "docs/_posts/2026-05-09-escrito-0001.md",
+      "imagen": "/assets/social/escrito-0001.png"
     },
     {
       "id": 2,
       "fecha": "2026-05-10",
-      "tema": "Soledad fértil"
+      "tema": "Soledad fértil",
+      "archivo": "docs/_posts/2026-05-10-escrito-0002.md",
+      "imagen": "/assets/social/escrito-0002.png"
     },
     {
       "id": 3,
       "fecha": "2026-05-10",
-      "tema": "Esperanza realista"
+      "tema": "Esperanza realista",
+      "archivo": "docs/_posts/2026-05-10-escrito-0003.md",
+      "imagen": "/assets/social/escrito-0003.png"
+    },
+    {
+      "id": 4,
+      "fecha": "2026-05-10T01:32:20.247972-05:00",
+      "tema": "Volver a mí",
+      "archivo": "docs\\_posts\\2026-05-10-escrito-0004.md",
+      "imagen": "/assets/social/escrito-0004.png",
+      "puntuacion_emocional": 8
     }
   ]
 }

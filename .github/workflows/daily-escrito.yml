@@ -1,8 +1,9 @@
-name: Generar y Publicar Ecos del Alma
+name: Generar y publicar Ecos del Alma
 
 on:
   schedule:
-    - cron: '0 8 * * *'
+    # 13:00 UTC = 8:00 a. m. Colombia
+    - cron: "0 13 * * *"
   workflow_dispatch:
 
 jobs:
@@ -10,29 +11,34 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    
+
     steps:
-      - name: 📥 Descargar código
+      - name: Descargar repositorio
         uses: actions/checkout@v4
         with:
           persist-credentials: true
 
-      - name: 🐍 Instalar Python
+      - name: Instalar Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-          
-      - name: 📦 Instalar dependencias
-        run: pip install groq==0.15.0 python-dotenv==1.0.1 requests==2.32.3
+          python-version: "3.11"
+          cache: "pip"
 
-      - name: 🖋️ Ejecutar generación
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generar nuevo escrito
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: llama-3.3-70b-versatile
+          PROJECT_TIMEZONE: America/Bogota
         run: python main.py
 
-      - name: 📤 Subir cambios
+      - name: Guardar publicación generada
         run: |
-          git config --global user.name 'El Poeta Bot'
-          git config --global user.email 'poeta@ecosdelalma.arte'
-          git add docs/_posts/ memoria/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "✨ Nuevo escrito generado [skip ci]" && git push)
+          git config --global user.name "Ecos del Alma Bot"
+          git config --global user.email "bot@ecosdelalma.local"
+          git add docs/_posts/ docs/assets/social/ memoria/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Nuevo escrito generado" && git push)

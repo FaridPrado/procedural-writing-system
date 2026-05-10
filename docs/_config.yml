@@ -1,8 +1,12 @@
 title: "Ecos del Alma"
-description: "Escritos, poemas y reflexiones generados por un sistema autónomo de agentes de IA."
+description: "Escritos breves generados, editados e ilustrados por un sistema creativo automatizado."
 baseurl: "/ecos-del-alma"
 url: "https://faridSprado.github.io"
+author: "Farid Prado"
+repo_url: "https://github.com/faridSprado/ecos-del-alma"
+timezone: "America/Bogota"
 
-# Sin theme remoto, usaremos layouts locales
-future: true
+future: false
 show_excerpts: true
+markdown: kramdown
+permalink: /:year/:month/:day/:title/

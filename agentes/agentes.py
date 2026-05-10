@@ -1,145 +1,203 @@
 import json
-import os
-from dotenv import load_dotenv
-from groq import Groq
+import random
+import re
+from typing import Any
 from urllib.parse import quote
 
-load_dotenv()
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-MODELO = "llama-3.3-70b-versatile"
+from groq import Groq
 
-# Cargar la guía de estilo (antes canon)
-with open('biblia/guia_estilo.json', 'r', encoding='utf-8') as f:
-    GUIA = json.load(f)
+from config import BIBLIA_PATH, GROQ_API_KEY, GROQ_MODEL, PROJECT_NAME
 
-# Memoria simple: llevará un registro de temas usados recientemente para variar
-MEMORIA_TEMAS_PATH = 'memoria/temas_usados.json'
-try:
-    with open(MEMORIA_TEMAS_PATH, 'r', encoding='utf-8') as f:
-        temas_usados = json.load(f)
-except FileNotFoundError:
-    temas_usados = {"ultimos_temas": []}
-    with open(MEMORIA_TEMAS_PATH, 'w', encoding='utf-8') as f:
-        json.dump(temas_usados, f)
+
+if not GROQ_API_KEY:
+    raise RuntimeError(
+        "Falta GROQ_API_KEY. Crea un archivo .env local o configura el secret en GitHub Actions."
+    )
+
+client = Groq(api_key=GROQ_API_KEY)
+
+
+def cargar_guia() -> dict[str, Any]:
+    with open(BIBLIA_PATH, "r", encoding="utf-8") as archivo:
+        return json.load(archivo)
+
+
+GUIA = cargar_guia()
+
+
+def limpiar_respuesta(texto: str) -> str:
+    texto = texto.strip()
+    if texto.startswith("```"):
+        partes = texto.split("```")
+        if len(partes) >= 2:
+            texto = partes[1].strip()
+            if texto.lower().startswith("json"):
+                texto = texto[4:].strip()
+    return texto.strip().strip('"').strip()
+
+
+def extraer_json(texto: str) -> dict[str, Any]:
+    limpio = limpiar_respuesta(texto)
+    try:
+        return json.loads(limpio)
+    except json.JSONDecodeError:
+        match = re.search(r"\{.*\}", limpio, flags=re.DOTALL)
+        if match:
+            return json.loads(match.group(0))
+        raise
+
+
+def seleccionar_tema(temas_recientes: list[str] | None = None) -> dict[str, str]:
+    temas_recientes = temas_recientes or []
+    temas_disponibles = GUIA["temas"]
+    temas_filtrados = [
+        tema for tema in temas_disponibles if tema["nombre"] not in temas_recientes
+    ]
+    return random.choice(temas_filtrados if temas_filtrados else temas_disponibles)
+
 
 # --- Agente 1: El Poeta ---
-def agente_poeta():
+def agente_poeta(temas_recientes: list[str] | None = None) -> tuple[str, dict[str, str]]:
     print("🖋️ El Poeta comienza a escribir...")
-    
-    # Seleccionar un tema al azar, evitando los dos últimos para variedad
-    temas_disponibles = GUIA['temas']
-    ultimos = temas_usados['ultimos_temas']
-    temas_filtrados = [t for t in temas_disponibles if t['nombre'] not in ultimos]
-    import random
-    tema_elegido = random.choice(temas_filtrados if temas_filtrados else temas_disponibles)
-    
-    # Actualizar memoria de temas
-    ultimos.append(tema_elegido['nombre'])
-    if len(ultimos) > 2:
-        ultimos.pop(0)
-    temas_usados['ultimos_temas'] = ultimos
-    with open(MEMORIA_TEMAS_PATH, 'w', encoding='utf-8') as f:
-        json.dump(temas_usados, f)
-    
+
+    tema_elegido = seleccionar_tema(temas_recientes)
     print(f"   Tema elegido: {tema_elegido['nombre']}")
 
     system_prompt = f"""
-Eres 'El Poeta', creador de 'Ecos del Alma'. Escribirás un texto poético breve siguiendo esta guía estricta:
+Eres El Poeta, la voz editorial de {PROJECT_NAME}.
 
-## REGLAS DE ESTILO
+Tu trabajo es escribir un texto poético breve, íntimo y publicable. No escribes frases motivacionales genéricas: escribes escenas pequeñas que alguien podría sentir como propias.
+
+## Guía de estilo
 - Género: {GUIA['tono_estilo']['genero']}
+- Atmósfera: {GUIA['tono_estilo']['atmosfera']}
 - Longitud: {GUIA['tono_estilo']['longitud']}
 - Recursos permitidos: {', '.join(GUIA['tono_estilo']['recursos_permitidos'])}
-- PROHIBIDO: {', '.join(GUIA['tono_estilo']['prohibido'])}
+- Evitar: {', '.join(GUIA['tono_estilo']['prohibido'])}
 - Restricción especial: {GUIA['restriccion_adicional']}
 
-## TEMA DEL DÍA
+## Tema de hoy
 Nombre: {tema_elegido['nombre']}
 Descripción: {tema_elegido['descripcion']}
 
-## ESTRUCTURA
-{chr(10).join(GUIA['estructura_poetica'])}
+## Estructura sugerida
+{chr(10).join(f'- {item}' for item in GUIA['estructura_poetica'])}
 
-Escribe SOLO el texto poético, sin título ni firma. Debe ser auténtico, sin caer en frases hechas. Usa imágenes sensoriales concretas.
+## Reglas de salida
+- Devuelve solo el texto final.
+- No incluyas título.
+- No incluyas firma.
+- No expliques el proceso.
+- No uses hashtags dentro del texto.
 """
-    
+
     response = client.chat.completions.create(
-        model=MODELO,
+        model=GROQ_MODEL,
         messages=[
             {"role": "system", "content": system_prompt},
-            {"role": "user", "content": f"Escribe un texto sobre el tema: {tema_elegido['nombre']}."}
+            {
+                "role": "user",
+                "content": f"Escribe un texto nuevo sobre: {tema_elegido['nombre']}.",
+            },
         ],
-        temperature=0.95,
-        max_tokens=300
+        temperature=0.9,
+        max_tokens=360,
     )
-    texto = response.choices[0].message.content.strip()
-    print(f"✅ Texto generado: {texto[:60]}...")
+
+    texto = limpiar_respuesta(response.choices[0].message.content or "")
+    print(f"✅ Texto generado: {texto[:70]}...")
     return texto, tema_elegido
 
+
 # --- Agente 2: El Guardián de la Emoción ---
-def agente_guardian(texto, tema):
+def agente_guardian(
+    texto: str, tema: dict[str, str]
+) -> tuple[str | list[str], bool, dict[str, Any]]:
     print("🛡️ El Guardián de la Emoción revisa...")
-    
+
     check_prompt = f"""
-Eres un editor sensible. Revisa este texto poético y evalúa si cumple la calidad emocional.
+Actúa como editor literario. Evalúa si este texto puede publicarse en {PROJECT_NAME}.
+
 Tema: {tema['nombre']} - {tema['descripcion']}
 
-## CRITERIOS DE CALIDAD
-1. ¿Evita clichés y frases hechas?
-2. ¿Usa imágenes sensoriales concretas (no solo conceptos abstractos)?
-3. ¿La emoción se siente genuina, no forzada?
-4. ¿Cumple la restricción especial: "{GUIA['restriccion_adicional']}"?
-5. ¿Respeta la longitud y el tono definidos?
+## Criterios
+1. Evita clichés y frases hechas.
+2. Usa imágenes sensoriales concretas.
+3. Suena humano, vulnerable y natural.
+4. Respeta la restricción: {GUIA['restriccion_adicional']}
+5. No parece texto corporativo ni autoayuda genérica.
+6. Mantiene una extensión razonable para una publicación poética breve.
 
-## TEXTO A EVALUAR
+## Texto
 {texto}
 
-Responde ÚNICAMENTE con JSON:
+Responde únicamente con JSON válido, sin markdown, con esta estructura exacta:
 {{
-  "es_valido": true/false,
-  "violaciones": ["descripción de cada violación encontrada"],
-  "puntuacion_emocional": 1-10
+  "es_valido": true,
+  "violaciones": [],
+  "puntuacion_emocional": 8,
+  "comentario_editorial": "comentario breve"
 }}
 """
+
     response = client.chat.completions.create(
-        model=MODELO,
+        model=GROQ_MODEL,
         messages=[{"role": "user", "content": check_prompt}],
         temperature=0.0,
-        max_tokens=200
+        max_tokens=260,
     )
-    raw = response.choices[0].message.content.strip()
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-    resultado = json.loads(raw)
-    
-    if resultado['es_valido'] and resultado.get('puntuacion_emocional', 0) >= 6:
-        print(f"✅ Aprobado (puntuación emocional: {resultado['puntuacion_emocional']}/10)")
-        return texto, True
-    else:
-        print(f"❌ Rechazado: {resultado['violaciones']}")
-        return resultado['violaciones'], False
 
-# --- Agente 3: El Visualizador (imágenes abstractas/atmosféricas) ---
-def agente_visualizador(texto):
-    print("🎨 El Visualizador crea la ilustración...")
-    
-    prompt_visual = client.chat.completions.create(
-        model=MODELO,
-        messages=[{
-            "role": "user",
-            "content": f"""Crea un prompt en INGLÉS para generar una imagen artística que acompañe este texto poético. 
-Estilo: minimalista, aesthetic, tonos pastel o blanco y negro, textura de papel o acuarela ligera, sin rostros, sin texto en la imagen.
-Basado en: {texto[:200]}
-Solo el prompt, máximo 60 palabras."""
-        }],
-        temperature=0.8,
-        max_tokens=100
+    raw = response.choices[0].message.content or "{}"
+
+    try:
+        resultado = extraer_json(raw)
+    except Exception as exc:
+        resultado = {
+            "es_valido": False,
+            "violaciones": [f"No se pudo interpretar la revisión editorial: {exc}"],
+            "puntuacion_emocional": 0,
+            "comentario_editorial": "Respuesta inválida del revisor.",
+        }
+
+    es_valido = bool(resultado.get("es_valido"))
+    puntuacion = int(resultado.get("puntuacion_emocional", 0) or 0)
+
+    if es_valido and puntuacion >= 7:
+        print(f"✅ Aprobado ({puntuacion}/10)")
+        return texto, True, resultado
+
+    violaciones = resultado.get("violaciones") or ["No alcanzó la puntuación mínima."]
+    print(f"❌ Rechazado: {violaciones}")
+    return violaciones, False, resultado
+
+
+# --- Agente 3: El Visualizador ---
+def agente_visualizador(texto: str, tema: dict[str, str]) -> tuple[str, str]:
+    print("🎨 El Visualizador crea la dirección visual...")
+
+    prompt = f"""
+Create an English image prompt for a square editorial artwork that accompanies this Spanish poetic text.
+
+Theme: {tema['nombre']}
+Text: {texto[:500]}
+
+Visual style: emotional editorial poster, soft paper texture, subtle grain, warm minimalism, muted tones, cinematic natural light, no readable text, no logos, no detailed faces.
+
+Return only the image prompt. Maximum 70 words.
+"""
+
+    response = client.chat.completions.create(
+        model=GROQ_MODEL,
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.75,
+        max_tokens=130,
     )
-    prompt_imagen = prompt_visual.choices[0].message.content.strip()
-    print(f"   Prompt visual: {prompt_imagen[:80]}...")
-    
-    imagen_url = f"https://image.pollinations.ai/prompt/{quote(prompt_imagen)}?width=1080&height=1080&nologo=true"
-    print(f"✅ Ilustración creada: {imagen_url}")
+
+    prompt_imagen = limpiar_respuesta(response.choices[0].message.content or "")
+    imagen_url = (
+        "https://image.pollinations.ai/prompt/"
+        f"{quote(prompt_imagen)}?width=1080&height=1080&nologo=true&enhance=true"
+    )
+
+    print(f"   Prompt visual: {prompt_imagen[:90]}...")
     return imagen_url, prompt_imagen

@@ -1,46 +1,75 @@
 {
   "proyecto": "Ecos del Alma",
-  "descripcion": "Escritos y poemas breves de alto impacto emocional para redes sociales.",
+  "descripcion": "Colección de escritos breves, poemas y reflexiones íntimas para una web personal de contenido generativo.",
   "tono_estilo": {
-    "genero": "Poesía contemporánea / reflexión íntima",
-    "atmosfera": "Cercana, vulnerable, luminosa incluso en la melancolía",
-    "longitud": "Entre 40 y 150 palabras. Frases cortas, ritmo pausado.",
-    "recursos_permitidos": ["metáfora", "anáfora", "imagen sensorial", "pregunta retórica", "paralelismo"],
+    "genero": "poesía contemporánea, prosa poética y reflexión íntima",
+    "atmosfera": "cercana, honesta, vulnerable, visual y contenida",
+    "longitud": "entre 50 y 140 palabras; frases con ritmo, pausas y respiración",
+    "voz": "primera persona ocasional o segunda persona cercana; nunca tono de manual ni discurso motivacional",
+    "recursos_permitidos": [
+      "imagen sensorial",
+      "metáfora cotidiana",
+      "anáfora sutil",
+      "pregunta íntima",
+      "contraste emocional",
+      "silencio o pausa como cierre"
+    ],
     "prohibido": [
-      "clichés como 'todo pasa por algo' o 'el amor todo lo puede'",
-      "rimas forzadas o cursis",
-      "lenguaje excesivamente abstracto sin anclaje sensorial",
-      "tono de autoayuda barata"
+      "frases hechas como 'todo pasa por algo'",
+      "consejos de autoayuda genérica",
+      "rimas forzadas",
+      "lenguaje demasiado dramático",
+      "exceso de signos de exclamación",
+      "explicaciones sobre el significado del texto",
+      "sonar como publicidad o texto corporativo"
     ]
   },
   "temas": [
     {
       "nombre": "Amor consciente",
-      "descripcion": "Amor maduro, elección diaria, no idealización. Vínculo que suma."
+      "descripcion": "Amor tranquilo, elección diaria, cuidado mutuo, presencia sin idealizar."
     },
     {
       "nombre": "Despedidas y duelos",
-      "descripcion": "Pérdida, soltar, nostalgia que sana, cicatrices que enseñan."
+      "descripcion": "Soltar sin negar lo vivido; nostalgia, cierre, pérdida y aprendizaje emocional."
     },
     {
       "nombre": "Soledad fértil",
-      "descripcion": "Estar solo no es vacío, es reencuentro. Autodescubrimiento."
+      "descripcion": "Estar a solas como espacio de escucha, reencuentro y reconstrucción personal."
     },
     {
       "nombre": "Esperanza realista",
-      "descripcion": "Luz en lo cotidiano, resistir sin endulzar. Pequeños triunfos."
+      "descripcion": "Luz pequeña en medio de días difíciles; seguir sin vender felicidad falsa."
     },
     {
       "nombre": "Vínculos humanos",
-      "descripcion": "Amistad, familia elegida, abrazos que salvan. Conexiones auténticas."
+      "descripcion": "Amistad, familia elegida, compañía silenciosa y personas que se vuelven hogar."
+    },
+    {
+      "nombre": "Cicatrices",
+      "descripcion": "Marcas que no desaparecen, pero ya no duelen de la misma forma."
+    },
+    {
+      "nombre": "Volver a mí",
+      "descripcion": "Recuperar hábitos, límites, calma y una versión propia menos ajena."
+    },
+    {
+      "nombre": "Lo que no dije",
+      "descripcion": "Palabras guardadas, conversaciones pendientes, cartas que nunca salieron."
     }
   ],
   "estructura_poetica": [
-    "Iniciar con una imagen sensorial concreta (un café, una ventana, un gesto).",
-    "Desarrollar una emoción ligada a esa imagen, usando una metáfora fresca.",
-    "Cerrar con una verdad íntima, una pregunta o un giro que invite a la pausa.",
-    "Evitar títulos explícitos; el texto debe sostenerse solo."
+    "Abrir con una imagen concreta: una taza, una ventana, una calle, una camisa, una llamada no contestada.",
+    "Conectar esa imagen con una emoción sin explicarla demasiado.",
+    "Evitar moralejas directas; dejar que el lector complete el sentido.",
+    "Cerrar con una frase que invite a guardar silencio unos segundos."
   ],
-  "hashtags_sugeridos": ["#ecosdelalma", "#poesia", "#reflexion", "#sentires"],
-  "restriccion_adicional": "NUNCA uses la palabra 'alma' en el texto. Debe sugerir, no nombrar."
+  "hashtags_sugeridos": [
+    "#ecosdelalma",
+    "#poesia",
+    "#prosaPoetica",
+    "#reflexiones",
+    "#sentires"
+  ],
+  "restriccion_adicional": "No usar la palabra 'alma' dentro del texto generado. El proyecto puede llamarse así, pero los escritos deben sugerir sin nombrar."
 }
