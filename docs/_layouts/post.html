@@ -5,25 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}">
+  {% if page.image %}
+    {% if page.image contains '://' %}
+      <meta property="og:image" content="{{ page.image }}">
+    {% else %}
+      <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
+    {% endif %}
+  {% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <header class="site-header">
-    <h1 class="site-title">{{ site.title }}</h1>
-    <div class="site-divider"></div>
+  <header class="site-header compact-header">
+    <a href="{{ '/' | relative_url }}" class="site-title-link" aria-label="Volver al inicio">
+      <h1 class="site-title">{{ site.title }}</h1>
+    </a>
     <nav class="site-nav" aria-label="Navegación principal">
       <a href="{{ '/' | relative_url }}">Inicio</a>
       <a href="{{ '/proceso/' | relative_url }}">Proceso</a>
-      <a href="{{ site.repo_url }}">Código</a>
+      <a href="{{ site.repo_url }}" target="_blank" rel="noopener">Código</a>
     </nav>
   </header>
 
-  <main class="container">
+  <main class="container narrow-container">
     <article class="post-container">
-      <header class="post-head">
-        <div class="post-date">{{ page.date | date: "%d · %m · %Y" }}</div>
-        <h1 class="post-title">{{ page.title }}</h1>
-      </header>
+      <div class="post-date">{{ page.date | date: "%d · %m · %Y" }}</div>
+      <h1 class="post-title">{{ page.title }}</h1>
 
       {% if page.image %}
         {% if page.image contains '://' %}
@@ -31,24 +37,28 @@
         {% else %}
           <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="post-image" loading="lazy">
         {% endif %}
+      {% else %}
+        <div class="missing-image-card">
+          <span>{{ page.title }}</span>
+        </div>
       {% endif %}
 
       <div class="poem-text">
         {{ content }}
       </div>
 
+      {% if page.tema %}
       <div class="post-meta">
         <span>{{ page.tema }}</span>
       </div>
+      {% endif %}
 
-      <div class="post-meta">
-        <a href="{{ '/' | relative_url }}" class="back-link">Volver al inicio</a>
-      </div>
+      <a href="{{ '/' | relative_url }}" class="back-link">Volver al inicio</a>
     </article>
   </main>
 
   <footer class="site-footer">
-    <p>Farid Prado · Ecos del Alma</p>
+    <p>Hecho por {{ site.author }}.</p>
   </footer>
 </body>
 </html>

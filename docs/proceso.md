@@ -4,30 +4,57 @@ title: Proceso
 permalink: /proceso/
 ---
 
-<section class="content-card">
+<section class="process-hero">
+  <span class="section-label">Proceso</span>
+  <h1>Una pequeña rutina editorial</h1>
+  <p>
+    Ecos del Alma funciona como un cuaderno vivo: cada escrito pasa por una idea, una revisión,
+    una imagen y una publicación. Todo está pensado para que la voz se mantenga constante sin
+    convertir el resultado en algo frío.
+  </p>
+</section>
 
-# Proceso
+<section class="process-grid" aria-label="Etapas del proceso">
+  <article class="process-card">
+    <span>01</span>
+    <h2>Guía</h2>
+    <p>El punto de partida es una guía de estilo. Ahí se define el tono, los temas, la extensión y lo que prefiero evitar.</p>
+  </article>
 
-Este proyecto está armado como una pequeña rutina editorial. La intención no es producir textos sueltos, sino cuidar una voz, evitar repeticiones y dejar cada publicación lista para la web.
+  <article class="process-card">
+    <span>02</span>
+    <h2>Escritura</h2>
+    <p>El sistema elige un tema y escribe una pieza breve a partir de imágenes concretas: una taza, una ventana, una ausencia.</p>
+  </article>
 
-## 1. Guía de estilo
+  <article class="process-card">
+    <span>03</span>
+    <h2>Revisión</h2>
+    <p>Antes de publicar, el texto se revisa para evitar frases hechas, excesos y tonos que no encajan con el proyecto.</p>
+  </article>
 
-La base está en `biblia/guia_estilo.json`. Ahí se definen los temas, el tono, la extensión, los recursos literarios y las frases que prefiero evitar.
+  <article class="process-card">
+    <span>04</span>
+    <h2>Imagen</h2>
+    <p>Luego se crea una pieza visual cuadrada. No intenta explicar el texto; lo acompaña como una portada silenciosa.</p>
+  </article>
 
-## 2. Escritura
+  <article class="process-card">
+    <span>05</span>
+    <h2>Publicación</h2>
+    <p>El escrito queda guardado como una entrada de la web, junto con su tarjeta visual y su tema correspondiente.</p>
+  </article>
 
-El primer módulo toma un tema y escribe una pieza breve. La prioridad es que el texto se sienta cercano, visual y fácil de leer.
+  <article class="process-card">
+    <span>06</span>
+    <h2>Memoria</h2>
+    <p>Al final se actualiza un registro sencillo para no repetir temas demasiado pronto y mantener variedad entre publicaciones.</p>
+  </article>
+</section>
 
-## 3. Revisión
-
-Antes de publicarse, el texto pasa por una revisión. Si suena genérico, repetitivo o demasiado forzado, se descarta y se vuelve a intentar.
-
-## 4. Imagen
-
-Cuando el texto está listo, se crea una dirección visual y se compone una tarjeta cuadrada para acompañar la publicación.
-
-## 5. Publicación
-
-La pieza final se guarda como Markdown dentro de `docs/_posts/`. La web lee esos archivos y los muestra en orden cronológico.
-
+<section class="process-note">
+  <p>
+    La intención no es llenar la web de textos al azar. Es construir un archivo con una voz reconocible,
+    una estética tranquila y un flujo que pueda sostenerse con el tiempo.
+  </p>
 </section>
