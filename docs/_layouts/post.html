@@ -1,64 +1,48 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}">
-  {% if page.image %}
-    {% if page.image contains '://' %}
-      <meta property="og:image" content="{{ page.image }}">
-    {% else %}
-      <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
-    {% endif %}
-  {% endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-<body>
-  <header class="site-header compact-header">
-    <a href="{{ '/' | relative_url }}" class="site-title-link" aria-label="Volver al inicio">
-      <h1 class="site-title">{{ site.title }}</h1>
-    </a>
-    <nav class="site-nav" aria-label="Navegación principal">
-      <a href="{{ '/' | relative_url }}">Inicio</a>
-      <a href="{{ '/proceso/' | relative_url }}">Proceso</a>
-      <a href="{{ site.repo_url }}" target="_blank" rel="noopener">Código</a>
-    </nav>
+---
+layout: default
+---
+
+<article class="single-post">
+  <header class="single-post-header">
+    <p class="post-date">{{ page.date | date: "%d · %m · %Y" }}</p>
+
+    <h1 class="single-post-title">
+      {% if page.title %}
+        {{ page.title }}
+      {% elsif page.tema %}
+        {{ page.tema }}
+      {% else %}
+        Escrito
+      {% endif %}
+    </h1>
   </header>
 
-  <main class="container narrow-container">
-    <article class="post-container">
-      <div class="post-date">{{ page.date | date: "%d · %m · %Y" }}</div>
-      <h1 class="post-title">{{ page.title }}</h1>
+  {% if page.image %}
+    <figure class="single-post-image">
+      <img
+        src="{{ page.image | relative_url }}"
+        alt="{{ page.title | default: page.tema }}"
+      >
+    </figure>
+  {% endif %}
 
-      {% if page.image %}
-        {% if page.image contains '://' %}
-          <img src="{{ page.image }}" alt="{{ page.title }}" class="post-image" loading="lazy">
-        {% else %}
-          <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="post-image" loading="lazy">
-        {% endif %}
-      {% else %}
-        <div class="missing-image-card">
-          <span>{{ page.title }}</span>
-        </div>
-      {% endif %}
+  <div class="single-post-body">
+    {{ content }}
+  </div>
 
-      <div class="poem-text">
-        {{ content }}
-      </div>
-
+  {% if page.tema or page.nota_editorial %}
+    <footer class="post-meta-box">
       {% if page.tema %}
-      <div class="post-meta">
-        <span>{{ page.tema }}</span>
-      </div>
+        <p><strong>Tema:</strong> {{ page.tema }}</p>
       {% endif %}
 
-      <a href="{{ '/' | relative_url }}" class="back-link">Volver al inicio</a>
-    </article>
-  </main>
+      {% if page.nota_editorial %}
+        <p><strong>Nota:</strong> {{ page.nota_editorial }}</p>
+      {% endif %}
+    </footer>
+  {% endif %}
 
-  <footer class="site-footer">
-    <p>Hecho por {{ site.author }}.</p>
-  </footer>
-</body>
-</html>
+  <p class="back-link">
+    <a href="{{ '/' | relative_url }}">← Volver al inicio</a>
+  </p>
+</article>
