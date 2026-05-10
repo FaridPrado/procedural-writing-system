@@ -14,7 +14,7 @@ from config import (
     PROJECT_TIMEZONE,
     TEMAS_RECIENTES_A_EVITAR,
 )
-from utils.render_social import generar_tarjeta_social
+from utils.render_social import build_background_image_url, generar_tarjeta_social
 
 
 def cargar_json(path, valor_por_defecto: dict[str, Any]) -> dict[str, Any]:
@@ -52,11 +52,11 @@ def crear_markdown(
     tema: str,
     texto: str,
     imagen_relativa: str | None,
-    prompt_visual: str | None = None,
-    comentario_editorial: str | None = None,
+    background_image: str | None = None,
 ) -> str:
     fecha_frontmatter = fecha.strftime("%Y-%m-%d %H:%M:%S %z")
     image_line = f"image: {yaml_quote(imagen_relativa)}\n" if imagen_relativa else ""
+    background_line = f"background_image: {yaml_quote(background_image)}\n" if background_image else ""
 
     return f"""---
 layout: post
@@ -64,7 +64,7 @@ title: {yaml_quote(titulo)}
 date: {fecha_frontmatter}
 categories: [ecos-del-alma]
 tema: {yaml_quote(tema)}
-{image_line}---
+{image_line}{background_line}---
 
 {texto.strip()}
 """
@@ -104,10 +104,19 @@ def main() -> None:
 
     imagen_url = None
     prompt_visual = None
+
     try:
         imagen_url, prompt_visual = agente_visualizador(texto_final, tema_final)
     except Exception as exc:
-        print(f"⚠️ No se pudo crear la imagen base: {exc}")
+        print(f"⚠️ No se pudo crear la imagen base con el visualizador: {exc}")
+
+    # Si el visualizador falla, igual se crea una imagen alusiva a partir del texto.
+    if not imagen_url:
+        imagen_url = build_background_image_url(
+            texto=texto_final,
+            tema=tema_final["nombre"],
+            publicacion_id=nuevo_id,
+        )
 
     imagen_relativa = generar_tarjeta_social(
         texto=texto_final,
@@ -123,8 +132,7 @@ def main() -> None:
         tema=tema_final["nombre"],
         texto=texto_final,
         imagen_relativa=imagen_relativa,
-        prompt_visual=prompt_visual,
-        comentario_editorial=(revision_final or {}).get("comentario_editorial"),
+        background_image=imagen_url,
     )
 
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -140,6 +148,8 @@ def main() -> None:
             "tema": tema_final["nombre"],
             "archivo": str(ruta_publicacion.relative_to(POSTS_DIR.parent.parent)),
             "imagen": imagen_relativa,
+            "background_image": imagen_url,
+            "prompt_visual": prompt_visual,
             "puntuacion_emocional": (revision_final or {}).get("puntuacion_emocional"),
         }
     )
