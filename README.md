@@ -1,54 +1,75 @@
-# Ecos del Alma
+# Procedural Writing System
 
-Escritos breves, imágenes editoriales y publicación web automática.
+Sistema de escritura procedural con agentes de inteligencia artificial, validación editorial, memoria externa, generación visual y publicación web automática.
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
 ![Groq](https://img.shields.io/badge/Groq-Llama_3.3_70B-orange)
 ![GitHub Actions](https://img.shields.io/badge/Automation-GitHub_Actions-black)
 ![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub_Pages-2ea44f)
+![Pillow](https://img.shields.io/badge/Images-Pillow-brown)
 ![Status](https://img.shields.io/badge/status-en_desarrollo-brightgreen)
 
 ## Demo
 
-- **Web:** https://faridSprado.github.io/ecos-del-alma/
-- **Repositorio:** https://github.com/faridSprado/ecos-del-alma.git
+- **Web:** https://faridSprado.github.io/procedural-writing-system/
+- **Repositorio:** https://github.com/faridSprado/procedural-writing-system.git
 
 ## Sobre el proyecto
 
-**Ecos del Alma** es un cuaderno digital de textos breves sobre memoria, vínculos, despedidas y regreso a uno mismo.
+**Procedural Writing System** es un proyecto experimental de inteligencia artificial que automatiza un flujo editorial completo: genera textos breves, los revisa, crea una dirección visual, compone una tarjeta gráfica y publica el resultado en una web estática.
 
-La idea fue construir un flujo propio para escribir, revisar, acompañar visualmente y publicar cada pieza sin repetir el proceso manualmente desde cero.
+El sistema usa como caso de aplicación una publicación digital llamada **Ecos del Alma**, una colección de escritos breves sobre memoria, vínculos, despedidas y regreso a uno mismo.
 
-El resultado combina escritura, criterio editorial, composición visual, automatización y publicación web.
+La intención no es generar texto con un único prompt, sino construir una arquitectura controlada donde cada salida pase por reglas, memoria, validación y publicación automatizada.
+
+## Objetivo
+
+El objetivo principal es demostrar cómo un modelo de lenguaje puede formar parte de un sistema creativo más amplio.
+
+El proyecto aborda varios problemas comunes en la generación automática de contenido:
+
+- falta de consistencia entre publicaciones;
+- textos demasiado genéricos o con clichés;
+- errores de idioma o mezclas inesperadas;
+- repetición de temas;
+- dependencia de procesos manuales para publicar;
+- ausencia de una identidad visual consistente.
+
+Para resolverlo, el sistema combina agentes especializados, una guía de estilo en JSON, memoria externa, validación editorial, generación visual y automatización con GitHub Actions.
 
 ## Qué hace
 
 Cada ejecución sigue este flujo:
 
-1. Carga una guía de estilo propia.
+1. Carga una guía de estilo desde `biblia/guia_estilo.json`.
 2. Revisa los temas usados recientemente.
-3. Elige un nuevo tema.
-4. Escribe una pieza breve.
-5. Revisa si el texto tiene tono, claridad y evita frases demasiado genéricas.
-6. Si no pasa la revisión, vuelve a intentarlo.
-7. Crea una dirección visual.
-8. Compone una tarjeta cuadrada de 1080x1080 px.
-9. Publica el texto en `docs/_posts/`.
-10. Actualiza la memoria del proyecto.
+3. Selecciona un nuevo tema.
+4. Genera un texto breve en español.
+5. Aplica una corrección de idioma.
+6. Detecta palabras o fragmentos sospechosos fuera del español.
+7. Revisa el texto con un agente editorial.
+8. Si el texto no cumple los criterios, vuelve a intentarlo.
+9. Genera una dirección visual para acompañar el escrito.
+10. Crea una imagen base.
+11. Compone una tarjeta editorial de 1080x1080 px.
+12. Crea una publicación Markdown en `docs/_posts/`.
+13. Actualiza la memoria del sistema.
+14. Publica la nueva entrada mediante GitHub Pages.
 
-## Módulos principales
+## Caso de uso: Ecos del Alma
 
-### El Poeta
+**Ecos del Alma** es la publicación generada por el sistema.
 
-Genera el texto principal a partir del tema seleccionado y de la guía de estilo.
+Cada entrada contiene:
 
-### El Guardián de la Emoción
+- un tema;
+- un escrito breve;
+- una tarjeta visual;
+- una página individual;
+- fecha de publicación;
+- metadatos para reconstruir o actualizar la pieza.
 
-Revisa el texto antes de publicarlo. Evalúa si suena natural, si usa imágenes concretas y si evita frases demasiado planas.
-
-### El Visualizador
-
-Crea una dirección visual para la pieza. Después, el proyecto compone una tarjeta cuadrada lista para la web o redes.
+Este caso de uso permite probar el sistema en un escenario real: una línea editorial definida, estética consistente, generación periódica y publicación automática.
 
 ## Arquitectura
 
@@ -56,26 +77,175 @@ Crea una dirección visual para la pieza. Después, el proyecto compone una tarj
 flowchart TD
     A[GitHub Actions o ejecución manual] --> B[main.py]
     B --> C[Cargar guía de estilo]
-    B --> D[Cargar memoria]
-    C --> E[El Poeta]
+    B --> D[Cargar memoria de temas]
+    C --> E[Agente: El Poeta]
     D --> E
     E --> F[Texto generado]
-    F --> G[El Guardián de la Emoción]
-    G --> H{¿Texto aprobado?}
-    H -- No --> E
-    H -- Sí --> I[El Visualizador]
-    I --> J[Dirección visual]
-    J --> K[Imagen base]
-    K --> L[Tarjeta 1080x1080]
-    L --> M[Markdown en docs/_posts]
-    M --> N[Actualizar memoria]
-    N --> O[GitHub Pages]
+    F --> G[Corrección de idioma]
+    G --> H[Validación de español]
+    H --> I[Agente: Guardián de la Emoción]
+    I --> J{¿Texto aprobado?}
+    J -- No --> E
+    J -- Sí --> K[Agente: El Visualizador]
+    K --> L[Prompt visual]
+    L --> M[Imagen base]
+    M --> N[Composición con Pillow]
+    N --> O[Tarjeta 1080x1080]
+    O --> P[Publicación Markdown]
+    P --> Q[Actualizar memoria]
+    Q --> R[Commit automático]
+    R --> S[GitHub Pages]
 ```
 
-## Estructura
+## Módulos principales
+
+### `main.py`
+
+Orquesta el flujo completo.
+
+Responsabilidades:
+
+- cargar memorias;
+- ejecutar los agentes;
+- controlar reintentos;
+- generar la publicación Markdown;
+- guardar la tarjeta visual;
+- actualizar los archivos de memoria;
+- dejar todo listo para commit automático.
+
+### `agentes/agentes.py`
+
+Contiene los agentes de inteligencia artificial y las capas de validación.
+
+Incluye:
+
+- generación del texto;
+- corrección de idioma;
+- detección de palabras sospechosas;
+- revisión editorial;
+- generación de prompt visual.
+
+### `utils/render_social.py`
+
+Compone la tarjeta visual final.
+
+Toma:
+
+- el texto;
+- el tema;
+- la imagen base;
+- el ID de publicación.
+
+Y genera una tarjeta cuadrada en:
 
 ```text
-ecos-del-alma/
+docs/assets/social/
+```
+
+### `utils/rebuild_cards.py`
+
+Reconstruye tarjetas existentes cuando cambia el diseño visual o se corrige un texto publicado.
+
+También actualiza el campo `image` dentro del front matter de cada publicación.
+
+### `biblia/guia_estilo.json`
+
+Funciona como guía de estilo y configuración creativa.
+
+Define:
+
+- tono general;
+- temas disponibles;
+- recursos literarios permitidos;
+- estilos a evitar;
+- estructura sugerida;
+- restricciones de lenguaje.
+
+### `memoria/estado_publicacion.json`
+
+Registra publicaciones generadas:
+
+- ID;
+- fecha;
+- tema;
+- archivo;
+- imagen;
+- background usado;
+- puntuación editorial.
+
+### `memoria/temas_usados.json`
+
+Evita repetir temas cercanos entre publicaciones.
+
+## Agentes del sistema
+
+### 1. El Poeta
+
+Genera el texto principal a partir del tema seleccionado y de la guía de estilo.
+
+Recibe instrucciones sobre:
+
+- tono;
+- longitud;
+- recursos literarios;
+- restricciones;
+- idioma;
+- estructura esperada.
+
+Su salida debe ser únicamente el texto final, sin título, firma ni explicación.
+
+### 2. Corrector de idioma
+
+Después de generar el texto, el sistema aplica una pasada de seguridad para mantener la salida completamente en español.
+
+Esta capa intenta corregir:
+
+- palabras sueltas en inglés;
+- spanglish;
+- tokens extraños;
+- mezclas tipo `calleOutside`;
+- respuestas con formato no deseado.
+
+### 3. El Guardián de la Emoción
+
+Revisa si el texto puede publicarse.
+
+Evalúa:
+
+- naturalidad;
+- calidad emocional;
+- ausencia de clichés;
+- uso de imágenes concretas;
+- coherencia con el tema;
+- cumplimiento de la guía de estilo;
+- uso completo del español.
+
+Si el texto no pasa la revisión, se rechaza y el flujo vuelve a generar.
+
+### 4. El Visualizador
+
+Genera un prompt visual para crear una imagen base relacionada con el texto.
+
+Esa imagen no se publica directamente: se usa como fondo para crear una tarjeta editorial con diseño consistente.
+
+## Control de calidad
+
+El proyecto incluye varias capas para reducir errores:
+
+- prompt de generación con restricciones claras;
+- corrección automática de idioma;
+- detección local de tokens sospechosos;
+- agente revisor con salida JSON;
+- puntuación mínima para aprobar;
+- reintentos automáticos;
+- memoria de temas recientes;
+- front matter estructurado;
+- reconstrucción de tarjetas cuando cambia el diseño.
+
+## Estructura del proyecto
+
+```text
+procedural-writing-system/
 ├── .github/
 │   └── workflows/
 │       └── daily-escrito.yml
@@ -109,53 +279,26 @@ ecos-del-alma/
 └── README.md
 ```
 
-## Guía de estilo
-
-La base creativa está en:
-
-```text
-biblia/guia_estilo.json
-```
-
-Ahí se define:
-
-- tono general;
-- temas disponibles;
-- longitud esperada;
-- recursos literarios permitidos;
-- frases o estilos que se deben evitar;
-- estructura sugerida para cada escrito.
-
-Algunos temas incluidos:
-
-- Amor consciente
-- Despedidas y duelos
-- Soledad fértil
-- Esperanza realista
-- Vínculos humanos
-- Cicatrices
-- Volver a mí
-- Lo que no dije
-
 ## Tecnologías
 
-- **Python 3.11+** para orquestar el flujo.
-- **Groq API** para generación y revisión de texto.
-- **Llama 3.3 70B Versatile** como modelo principal.
-- **Pollinations.ai** para crear una imagen base.
-- **Pillow** para componer tarjetas visuales de 1080x1080 px.
-- **Markdown + Jekyll** para publicar los escritos.
-- **GitHub Pages** para alojar la web.
-- **GitHub Actions** para automatizar la ejecución.
-- **JSON** para configuración y memoria.
+- **Python 3.11+**: orquestación del flujo.
+- **Groq API**: generación y revisión de texto.
+- **Llama 3.3 70B Versatile**: modelo principal de lenguaje.
+- **Pollinations.ai**: generación de imagen base mediante URL.
+- **Pillow**: composición de tarjetas visuales.
+- **Markdown**: formato de publicación.
+- **Jekyll**: renderizado de la web estática.
+- **GitHub Pages**: hosting del sitio.
+- **GitHub Actions**: automatización programada.
+- **JSON**: configuración creativa y memoria externa.
 
 ## Instalación local
 
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/faridSprado/ecos-del-alma.git
-cd ecos-del-alma
+git clone https://github.com/faridSprado/procedural-writing-system.git
+cd procedural-writing-system
 ```
 
 ### 2. Crear entorno virtual
@@ -164,14 +307,14 @@ En Windows PowerShell:
 
 ```bash
 python -m venv venv
-.\venv\Scripts\Activate.ps1
+.\\venv\\Scripts\\Activate.ps1
 ```
 
 Si PowerShell bloquea la activación:
 
 ```bash
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-.\venv\Scripts\Activate.ps1
+.\\venv\\Scripts\\Activate.ps1
 ```
 
 ### 3. Instalar dependencias
@@ -188,7 +331,7 @@ Copia el archivo de ejemplo:
 copy .env.example .env
 ```
 
-Dentro de `.env`, agrega tu clave de Groq:
+Dentro de `.env`, agrega tu configuración:
 
 ```env
 GROQ_API_KEY=gsk_tu_clave_de_groq
@@ -198,37 +341,40 @@ MAX_INTENTOS=3
 TEMAS_RECIENTES_A_EVITAR=3
 ```
 
-El archivo `.env` no se sube a GitHub.
+El archivo `.env` no debe subirse al repositorio.
 
-### 5. Ejecutar
+### 5. Ejecutar localmente
 
 ```bash
 python main.py
 ```
 
-Si todo está bien, se creará una nueva publicación en:
+Si todo funciona, se creará:
 
 ```text
 docs/_posts/
-```
-
-Y una tarjeta visual en:
-
-```text
 docs/assets/social/
 ```
 
+con una nueva publicación y su tarjeta visual.
+
 ## Reconstruir tarjetas existentes
 
-Si cambias el diseño visual y quieres actualizar las imágenes de publicaciones anteriores:
+Si se cambia el diseño visual, se corrige un texto o se quiere actualizar la imagen de publicaciones anteriores:
 
 ```bash
 python utils/rebuild_cards.py
 ```
 
-Este comando vuelve a crear las tarjetas en `docs/assets/social/` y actualiza el campo `image` de cada publicación.
+Este comando vuelve a generar las tarjetas en:
 
-## Automatización
+```text
+docs/assets/social/
+```
+
+y actualiza el campo `image` de cada publicación Markdown.
+
+## Automatización con GitHub Actions
 
 El workflow está en:
 
@@ -236,15 +382,37 @@ El workflow está en:
 .github/workflows/daily-escrito.yml
 ```
 
-Se puede ejecutar manualmente desde la pestaña **Actions** de GitHub o dejarlo programado para correr una vez al día.
+El flujo automático:
 
-Para que funcione en GitHub Actions, el repositorio necesita un secret llamado:
+1. Descarga el repositorio.
+2. Instala Python.
+3. Instala dependencias.
+4. Ejecuta `python main.py`.
+5. Guarda la publicación generada.
+6. Hace commit y push de los archivos nuevos.
+
+La ejecución automática está configurada con cron.
+
+Ejemplo para generar una publicación todos los días a las 3:00 a. m. Colombia:
+
+```yaml
+schedule:
+  - cron: "0 8 * * *"
+```
+
+GitHub Actions usa UTC, por eso `08:00 UTC` corresponde a `3:00 a. m.` en Colombia.
+
+También se puede ejecutar manualmente desde la pestaña **Actions** usando `workflow_dispatch`.
+
+## Configurar secretos en GitHub
+
+Para que el workflow funcione, el repositorio necesita un secret llamado:
 
 ```text
 GROQ_API_KEY
 ```
 
-Ruta en GitHub:
+Ruta:
 
 ```text
 Settings → Secrets and variables → Actions → New repository secret
@@ -252,7 +420,11 @@ Settings → Secrets and variables → Actions → New repository secret
 
 ## GitHub Pages
 
-La web se publica desde la carpeta `docs/`.
+La web se publica desde la carpeta:
+
+```text
+docs/
+```
 
 Configuración recomendada:
 
@@ -263,29 +435,75 @@ Branch: main
 Folder: /docs
 ```
 
-## Por qué está hecho así
+## Publicaciones generadas
 
-El valor del proyecto está en el flujo completo:
+Cada publicación queda como archivo Markdown dentro de:
 
-- una guía de estilo editable;
-- módulos separados para escribir, revisar y visualizar;
-- memoria para no repetir temas;
-- publicación web automática;
-- creación de piezas visuales reutilizables.
+```text
+docs/_posts/
+```
 
-La intención es tener una herramienta propia, dirigida por reglas claras y con una estética consistente.
+Y contiene front matter similar a:
 
-## Posibles siguientes mejoras
+```yaml
+---
+layout: post
+title: "Despedidas y duelos"
+date: 2026-05-10 03:00:00 -0500
+categories: [ecos-del-alma]
+tema: "Despedidas y duelos"
+image: "/assets/social/escrito-0005.png"
+background_image: "https://image.pollinations.ai/prompt/..."
+---
+```
+
+La imagen final queda en:
+
+```text
+docs/assets/social/
+```
+
+## Decisiones técnicas
+
+### Guía de estilo en JSON
+
+La guía de estilo está separada del código para poder modificar el comportamiento creativo sin tocar la lógica del sistema.
+
+### Memoria externa
+
+El sistema guarda estado entre ejecuciones para evitar repetir temas y mantener trazabilidad de publicaciones.
+
+### Agentes separados
+
+Cada agente tiene una responsabilidad clara. Esto hace que el flujo sea más fácil de probar, modificar y depurar.
+
+### Validación posterior a la generación
+
+El texto no se publica inmediatamente después de ser generado. Primero pasa por corrección, detección de idioma y revisión editorial.
+
+### Publicación como Markdown
+
+Markdown permite que el contenido sea simple, versionable y compatible con Jekyll/GitHub Pages.
+
+### Generación visual local
+
+La imagen base se usa como fondo, pero el diseño final se compone localmente con Pillow para mantener consistencia visual.
+
+## Posibles mejoras
 
 - Publicación automática en Instagram o Threads.
-- Variantes verticales para stories.
-- Dashboard con métricas de temas y publicaciones.
+- Exportación vertical para stories.
+- Dashboard con métricas de temas, fechas y puntuaciones editoriales.
 - Selector de líneas editoriales.
-- Modo oscuro.
+- Soporte para múltiples guías de estilo.
 - Feed RSS.
+- Modo oscuro.
+- Tests automatizados para validación de front matter.
+- Interfaz web para ejecutar el sistema bajo demanda.
+- Registro de costos y tiempos de generación.
 
 ## Autor
 
 **Farid Prado**
 
-Proyecto personal de escritura, automatización creativa y publicación web.
+Proyecto personal de inteligencia artificial aplicada a escritura procedural, automatización editorial y publicación web.
