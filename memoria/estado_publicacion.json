@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 9,
-  "fecha_ultima_publicacion": "2026-05-14",
+  "ultimo_id": 10,
+  "fecha_ultima_publicacion": "2026-05-15",
   "publicaciones": [
     {
       "id": 1,
@@ -78,6 +78,16 @@
       "imagen": "/assets/social/escrito-0009.png",
       "background_image": "https://image.pollinations.ai/prompt/A%20warm%2C%20muted%20still%20life%20of%20a%20cracked%2C%20empty%20coffee%20cup%20on%20a%20worn%20table%2C%20illuminated%20by%20soft%2C%20natural%20morning%20light%2C%20with%20subtle%20shadows%20and%20texture%2C%20evoking%20a%20sense%20of%20melancholy%20and%20nostalgia.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "A warm, muted still life of a cracked, empty coffee cup on a worn table, illuminated by soft, natural morning light, with subtle shadows and texture, evoking a sense of melancholy and nostalgia.",
+      "puntuacion_emocional": 9
+    },
+    {
+      "id": 10,
+      "fecha": "2026-05-15T05:19:17.309917-05:00",
+      "tema": "Volver a mí",
+      "archivo": "docs/_posts/2026-05-15-escrito-0010.md",
+      "imagen": "/assets/social/escrito-0010.png",
+      "background_image": "https://image.pollinations.ai/prompt/A%20serene%2C%20empty%20room%20with%20a%20vacant%20chair%2C%20soft%20morning%20light%20pours%20through%20an%20open%20window%2C%20casting%20a%20warm%20glow%20on%20a%20solitary%2C%20empty%20cup%20on%20a%20wooden%20table%2C%20evoking%20a%20sense%20of%20quiet%20contemplation%20and%20self-reflection.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A serene, empty room with a vacant chair, soft morning light pours through an open window, casting a warm glow on a solitary, empty cup on a wooden table, evoking a sense of quiet contemplation and self-reflection.",
       "puntuacion_emocional": 9
     }
   ]
