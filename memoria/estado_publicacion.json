@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 13,
-  "fecha_ultima_publicacion": "2026-05-17",
+  "ultimo_id": 14,
+  "fecha_ultima_publicacion": "2026-05-19",
   "publicaciones": [
     {
       "id": 1,
@@ -61,6 +61,18 @@
       "background_image": "/assets/backgrounds/escrito-0012.jpg",
       "prompt_visual": "Quiet editorial photograph of a folded tablecloth and a chair left slightly pulled back, late afternoon light, muted earth tones, subtle paper texture, clean negative space, no text, no logo, no detailed faces.",
       "puntuacion_emocional": 9
+    },
+    {
+      "id": 14,
+      "fecha": "2026-05-19T05:59:20.189388-05:00",
+      "titulo": "La llave olvidada",
+      "tema": "Esperanza realista",
+      "archivo": "docs/_posts/2026-05-19-escrito-0014.md",
+      "imagen": "/assets/social/escrito-0014.png",
+      "background_image": "/assets/backgrounds/escrito-0014.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20forgotten%2C%20oxidized%20key%20in%20a%20worn%20leather%20bag%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring a forgotten, oxidized key in a worn leather bag, illuminated by cinematic natural light, with clean negative space for overlaid text.",
+      "puntuacion_emocional": 8
     }
   ]
 }
