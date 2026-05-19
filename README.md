@@ -11,8 +11,8 @@ Sistema de escritura procedural con agentes de inteligencia artificial, validaci
 
 ## Demo
 
-- **Web:** https://faridSprado.github.io/procedural-writing-system/
-- **Repositorio:** https://github.com/faridSprado/procedural-writing-system.git
+- **Web:** https://faridprado.github.io/procedural-writing-system/
+- **Repositorio:** https://github.com/faridprado/procedural-writing-system.git
 
 ## Sobre el proyecto
 
@@ -308,7 +308,7 @@ procedural-writing-system/
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/faridSprado/procedural-writing-system.git
+git clone https://github.com/faridprado/procedural-writing-system.git
 cd procedural-writing-system
 ```
 
