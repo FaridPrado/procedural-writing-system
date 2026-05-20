@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 14,
-  "fecha_ultima_publicacion": "2026-05-19",
+  "ultimo_id": 15,
+  "fecha_ultima_publicacion": "2026-05-20",
   "publicaciones": [
     {
       "id": 1,
@@ -72,6 +72,18 @@
       "background_image": "/assets/backgrounds/escrito-0014.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20forgotten%2C%20oxidized%20key%20in%20a%20worn%20leather%20bag%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring a forgotten, oxidized key in a worn leather bag, illuminated by cinematic natural light, with clean negative space for overlaid text.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 15,
+      "fecha": "2026-05-20T05:47:29.292497-05:00",
+      "titulo": "La cicatriz late",
+      "tema": "Cuerpo y memoria",
+      "archivo": "docs/_posts/2026-05-20-escrito-0015.md",
+      "imagen": "/assets/social/escrito-0015.png",
+      "background_image": "/assets/backgrounds/escrito-0015.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20minimalist%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20muted%20tones%20and%20cinematic%20natural%20light%2C%20with%20clean%20negative%20space%20for%20overlaid%20text%2C%20evoking%20a%20sense%20of%20nostalgic%20summer%20memories%20and%20gentle%2C%20intimate%20touch.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, minimalist editorial background with soft paper texture and subtle grain, featuring muted tones and cinematic natural light, with clean negative space for overlaid text, evoking a sense of nostalgic summer memories and gentle, intimate touch.",
       "puntuacion_emocional": 8
     }
   ]
