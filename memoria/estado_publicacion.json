@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 16,
-  "fecha_ultima_publicacion": "2026-05-21",
+  "ultimo_id": 17,
+  "fecha_ultima_publicacion": "2026-05-22",
   "publicaciones": [
     {
       "id": 1,
@@ -96,6 +96,18 @@
       "background_image": "/assets/backgrounds/escrito-0016.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20minimalistic%20scene%3A%20a%20worn%20sofa%2C%20wrinkled%20shirt%20on%20a%20chair%2C%20and%20piled%20dirty%20laundry%2C%20bathed%20in%20soft%2C%20cinematic%20natural%20light%2C%20with%20subtle%20grain%20and%20muted%20tones%2C%20evoking%20a%20sense%20of%20quiet%20fatigue.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Warm, minimalistic scene: a worn sofa, wrinkled shirt on a chair, and piled dirty laundry, bathed in soft, cinematic natural light, with subtle grain and muted tones, evoking a sense of quiet fatigue.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 17,
+      "fecha": "2026-05-22T05:46:58.214326-05:00",
+      "titulo": "La llave olvidada",
+      "tema": "Cicatrices",
+      "archivo": "docs/_posts/2026-05-22-escrito-0017.md",
+      "imagen": "/assets/social/escrito-0017.png",
+      "background_image": "/assets/backgrounds/escrito-0017.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20old%20key%20and%20frayed%20rope%20on%20a%20soft%2C%20textured%20surface%2C%20bathed%20in%20warm%2C%20cinematic%20natural%20light%2C%20with%20muted%20tones%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20melancholy%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A worn, old key and frayed rope on a soft, textured surface, bathed in warm, cinematic natural light, with muted tones and subtle grain, evoking a sense of nostalgia and melancholy, with clean negative space for overlaid text.",
       "puntuacion_emocional": 8
     }
   ]
