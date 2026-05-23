@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 17,
-  "fecha_ultima_publicacion": "2026-05-22",
+  "ultimo_id": 18,
+  "fecha_ultima_publicacion": "2026-05-23",
   "publicaciones": [
     {
       "id": 1,
@@ -108,6 +108,18 @@
       "background_image": "/assets/backgrounds/escrito-0017.jpg",
       "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20old%20key%20and%20frayed%20rope%20on%20a%20soft%2C%20textured%20surface%2C%20bathed%20in%20warm%2C%20cinematic%20natural%20light%2C%20with%20muted%20tones%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20melancholy%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "A worn, old key and frayed rope on a soft, textured surface, bathed in warm, cinematic natural light, with muted tones and subtle grain, evoking a sense of nostalgia and melancholy, with clean negative space for overlaid text.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 18,
+      "fecha": "2026-05-23T04:48:19.519632-05:00",
+      "titulo": "Puerta cerrada, puño apretado",
+      "tema": "Rabia tranquila",
+      "archivo": "docs/_posts/2026-05-23-escrito-0018.md",
+      "imagen": "/assets/social/escrito-0018.png",
+      "background_image": "/assets/backgrounds/escrito-0018.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20serene%2C%20cinematic%20scene%20with%20natural%20light%2C%20and%20clean%20negative%20space%20for%20overlaid%20text%2C%20conveying%20a%20sense%20of%20contained%20emotion%20and%20quiet%20strength.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring a serene, cinematic scene with natural light, and clean negative space for overlaid text, conveying a sense of contained emotion and quiet strength.",
       "puntuacion_emocional": 8
     }
   ]
