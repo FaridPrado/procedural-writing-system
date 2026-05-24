@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 18,
-  "fecha_ultima_publicacion": "2026-05-23",
+  "ultimo_id": 19,
+  "fecha_ultima_publicacion": "2026-05-24",
   "publicaciones": [
     {
       "id": 1,
@@ -120,6 +120,18 @@
       "background_image": "/assets/backgrounds/escrito-0018.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20serene%2C%20cinematic%20scene%20with%20natural%20light%2C%20and%20clean%20negative%20space%20for%20overlaid%20text%2C%20conveying%20a%20sense%20of%20contained%20emotion%20and%20quiet%20strength.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring a serene, cinematic scene with natural light, and clean negative space for overlaid text, conveying a sense of contained emotion and quiet strength.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 19,
+      "fecha": "2026-05-24T04:51:19.440755-05:00",
+      "titulo": "La llave olvidada",
+      "tema": "Despedidas y duelos",
+      "archivo": "docs/_posts/2026-05-24-escrito-0019.md",
+      "imagen": "/assets/social/escrito-0019.png",
+      "background_image": "/assets/backgrounds/escrito-0019.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20old%20key%20lies%20alone%20on%20a%20soft%2C%20textured%20surface%2C%20captured%20in%20warm%2C%20muted%20tones%20and%20cinematic%20natural%20light%2C%20with%20subtle%20grain%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A worn, old key lies alone on a soft, textured surface, captured in warm, muted tones and cinematic natural light, with subtle grain and clean negative space.",
       "puntuacion_emocional": 8
     }
   ]
