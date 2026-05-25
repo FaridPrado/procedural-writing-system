@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 19,
-  "fecha_ultima_publicacion": "2026-05-24",
+  "ultimo_id": 20,
+  "fecha_ultima_publicacion": "2026-05-25",
   "publicaciones": [
     {
       "id": 1,
@@ -132,6 +132,18 @@
       "background_image": "/assets/backgrounds/escrito-0019.jpg",
       "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20old%20key%20lies%20alone%20on%20a%20soft%2C%20textured%20surface%2C%20captured%20in%20warm%2C%20muted%20tones%20and%20cinematic%20natural%20light%2C%20with%20subtle%20grain%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "A worn, old key lies alone on a soft, textured surface, captured in warm, muted tones and cinematic natural light, with subtle grain and clean negative space.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 20,
+      "fecha": "2026-05-25T06:50:51.600890-05:00",
+      "titulo": "Después del silencio",
+      "tema": "Después del ruido",
+      "archivo": "docs/_posts/2026-05-25-escrito-0020.md",
+      "imagen": "/assets/social/escrito-0020.png",
+      "background_image": "/assets/backgrounds/escrito-0020.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20serene%2C%20dimly%20lit%20room%20with%20quiet%2C%20cinematic%20natural%20light%2C%20and%20ample%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring a serene, dimly lit room with quiet, cinematic natural light, and ample negative space for overlaid text.",
       "puntuacion_emocional": 8
     }
   ]
