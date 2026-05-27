@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 20,
-  "fecha_ultima_publicacion": "2026-05-25",
+  "ultimo_id": 21,
+  "fecha_ultima_publicacion": "2026-05-27",
   "publicaciones": [
     {
       "id": 1,
@@ -144,6 +144,18 @@
       "background_image": "/assets/backgrounds/escrito-0020.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20serene%2C%20dimly%20lit%20room%20with%20quiet%2C%20cinematic%20natural%20light%2C%20and%20ample%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring a serene, dimly lit room with quiet, cinematic natural light, and ample negative space for overlaid text.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 21,
+      "fecha": "2026-05-27T06:35:06.368432-05:00",
+      "titulo": "La llave en la oscuridad",
+      "tema": "Esperar sin romperse",
+      "archivo": "docs/_posts/2026-05-27-escrito-0021.md",
+      "imagen": "/assets/social/escrito-0021.png",
+      "background_image": "/assets/backgrounds/escrito-0021.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20forgotten%20key%20on%20a%20worn%20door%2C%20cinematic%20natural%20light%2C%20and%20clean%20negative%20space%2C%20evoking%20a%20sense%20of%20waiting%20and%20longing.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, muted editorial background with soft paper texture and subtle grain, featuring a forgotten key on a worn door, cinematic natural light, and clean negative space, evoking a sense of waiting and longing.",
       "puntuacion_emocional": 8
     }
   ]
