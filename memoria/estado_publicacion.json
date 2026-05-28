@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 21,
-  "fecha_ultima_publicacion": "2026-05-27",
+  "ultimo_id": 22,
+  "fecha_ultima_publicacion": "2026-05-28",
   "publicaciones": [
     {
       "id": 1,
@@ -156,6 +156,18 @@
       "background_image": "/assets/backgrounds/escrito-0021.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20forgotten%20key%20on%20a%20worn%20door%2C%20cinematic%20natural%20light%2C%20and%20clean%20negative%20space%2C%20evoking%20a%20sense%20of%20waiting%20and%20longing.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Warm, muted editorial background with soft paper texture and subtle grain, featuring a forgotten key on a worn door, cinematic natural light, and clean negative space, evoking a sense of waiting and longing.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 22,
+      "fecha": "2026-05-28T06:35:34.228334-05:00",
+      "titulo": "Páginas sin palabras",
+      "tema": "Lo que no dije",
+      "archivo": "docs/_posts/2026-05-28-escrito-0022.md",
+      "imagen": "/assets/social/escrito-0022.png",
+      "background_image": "/assets/backgrounds/escrito-0022.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20closed%20notebook%20lies%20on%20a%20soft%2C%20warm%20surface%2C%20with%20a%20folded%20paper%20slipped%20between%20its%20pages%2C%20illuminated%20by%20gentle%2C%20cinematic%20natural%20light%2C%20and%20surrounded%20by%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A worn, closed notebook lies on a soft, warm surface, with a folded paper slipped between its pages, illuminated by gentle, cinematic natural light, and surrounded by clean negative space.",
       "puntuacion_emocional": 8
     }
   ]
