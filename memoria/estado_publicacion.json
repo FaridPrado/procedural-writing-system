@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 24,
-  "fecha_ultima_publicacion": "2026-05-30",
+  "ultimo_id": 25,
+  "fecha_ultima_publicacion": "2026-05-31",
   "publicaciones": [
     {
       "id": 1,
@@ -193,6 +193,18 @@
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20editorial%20background%20with%20a%20soft%2C%20worn%2C%20unbuttoned%20shirt%20draped%20over%20the%20back%20of%20a%20vacant%20chair%2C%20illuminated%20by%20gentle%2C%20cinematic%20natural%20light%2C%20with%20muted%20tones%20and%20subtle%20grain%2C%20on%20a%20clean%2C%20paper-textured%20surface.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, minimalist editorial background with a soft, worn, unbuttoned shirt draped over the back of a vacant chair, illuminated by gentle, cinematic natural light, with muted tones and subtle grain, on a clean, paper-textured surface.",
       "puntuacion_emocional": 9
+    },
+    {
+      "id": 25,
+      "fecha": "2026-05-31T05:11:51.636299-05:00",
+      "titulo": "Heridas que sanan lentas",
+      "tema": "Esperanza realista",
+      "archivo": "docs/_posts/2026-05-31-escrito-0025.md",
+      "imagen": "/assets/social/escrito-0025.png",
+      "background_image": "/assets/backgrounds/escrito-0025.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20small%20potted%20plant%20with%20dry%20leaves%20in%20a%20corner%2C%20illuminated%20by%20a%20cinematic%20natural%20light%20with%20a%20shallow%20depth%20of%20field.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring a small potted plant with dry leaves in a corner, illuminated by a cinematic natural light with a shallow depth of field.",
+      "puntuacion_emocional": 8
     }
   ]
 }
