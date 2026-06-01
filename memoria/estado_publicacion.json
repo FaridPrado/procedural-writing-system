@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 25,
-  "fecha_ultima_publicacion": "2026-05-31",
+  "ultimo_id": 26,
+  "fecha_ultima_publicacion": "2026-06-01",
   "publicaciones": [
     {
       "id": 1,
@@ -204,6 +204,18 @@
       "background_image": "/assets/backgrounds/escrito-0025.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20small%20potted%20plant%20with%20dry%20leaves%20in%20a%20corner%2C%20illuminated%20by%20a%20cinematic%20natural%20light%20with%20a%20shallow%20depth%20of%20field.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring a small potted plant with dry leaves in a corner, illuminated by a cinematic natural light with a shallow depth of field.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 26,
+      "fecha": "2026-06-01T08:33:13.228146-05:00",
+      "titulo": "La llave olvidada",
+      "tema": "Alegría discreta",
+      "archivo": "docs/_posts/2026-06-01-escrito-0026.md",
+      "imagen": "/assets/social/escrito-0026.png",
+      "background_image": "/assets/backgrounds/escrito-0026.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20tones%20of%20a%20worn%2C%20wooden%20drawer%20interior%20with%20soft%2C%20folded%20paper%20and%20a%20vintage%2C%20oxidized%20key%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20with%20subtle%20grain%20and%20texture.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, muted tones of a worn, wooden drawer interior with soft, folded paper and a vintage, oxidized key, illuminated by cinematic natural light, with subtle grain and texture.",
       "puntuacion_emocional": 8
     }
   ]
