@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 26,
-  "fecha_ultima_publicacion": "2026-06-01",
+  "ultimo_id": 27,
+  "fecha_ultima_publicacion": "2026-06-02",
   "publicaciones": [
     {
       "id": 1,
@@ -216,6 +216,18 @@
       "background_image": "/assets/backgrounds/escrito-0026.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20tones%20of%20a%20worn%2C%20wooden%20drawer%20interior%20with%20soft%2C%20folded%20paper%20and%20a%20vintage%2C%20oxidized%20key%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20with%20subtle%20grain%20and%20texture.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Warm, muted tones of a worn, wooden drawer interior with soft, folded paper and a vintage, oxidized key, illuminated by cinematic natural light, with subtle grain and texture.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 27,
+      "fecha": "2026-06-02T07:01:49.896783-05:00",
+      "titulo": "Silencio en blanco",
+      "tema": "Después del ruido",
+      "archivo": "docs/_posts/2026-06-02-escrito-0027.md",
+      "imagen": "/assets/social/escrito-0027.png",
+      "background_image": "/assets/backgrounds/escrito-0027.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20an%20open%2C%20worn%20notebook%20with%20crumpled%20pages%2C%20a%20still%20pen%20beside%20it%2C%20in%20a%20minimalist%2C%20muted-toned%20room%20with%20subtle%20grain%20and%20cinematic%20shadows.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Soft, warm light on an open, worn notebook with crumpled pages, a still pen beside it, in a minimalist, muted-toned room with subtle grain and cinematic shadows.",
       "puntuacion_emocional": 8
     }
   ]
