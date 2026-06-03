@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 27,
-  "fecha_ultima_publicacion": "2026-06-02",
+  "ultimo_id": 28,
+  "fecha_ultima_publicacion": "2026-06-03",
   "publicaciones": [
     {
       "id": 1,
@@ -228,6 +228,18 @@
       "background_image": "/assets/backgrounds/escrito-0027.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20an%20open%2C%20worn%20notebook%20with%20crumpled%20pages%2C%20a%20still%20pen%20beside%20it%2C%20in%20a%20minimalist%2C%20muted-toned%20room%20with%20subtle%20grain%20and%20cinematic%20shadows.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Soft, warm light on an open, worn notebook with crumpled pages, a still pen beside it, in a minimalist, muted-toned room with subtle grain and cinematic shadows.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 28,
+      "fecha": "2026-06-03T07:39:28.055902-05:00",
+      "titulo": "La llave en mi mano",
+      "tema": "Miedo a empezar",
+      "archivo": "docs/_posts/2026-06-03-escrito-0028.md",
+      "imagen": "/assets/social/escrito-0028.png",
+      "background_image": "/assets/backgrounds/escrito-0028.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20old%20key%20rests%20on%20a%20soft%2C%20paper-like%20surface%2C%20illuminated%20by%20warm%2C%20cinematic%20natural%20light%2C%20with%20subtle%20grain%20and%20muted%20tones%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20uncertainty.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A worn, old key rests on a soft, paper-like surface, illuminated by warm, cinematic natural light, with subtle grain and muted tones, evoking a sense of nostalgia and uncertainty.",
       "puntuacion_emocional": 8
     }
   ]
