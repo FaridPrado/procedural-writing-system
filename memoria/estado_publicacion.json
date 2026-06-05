@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 29,
-  "fecha_ultima_publicacion": "2026-06-04",
+  "ultimo_id": 30,
+  "fecha_ultima_publicacion": "2026-06-05",
   "publicaciones": [
     {
       "id": 1,
@@ -253,6 +253,18 @@
       "background_source": "https://image.pollinations.ai/prompt/A%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20close-up%20of%20a%20worn%2C%20oxidized%20key%20on%20a%20rustic%20wooden%20surface%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "A warm, muted editorial background with soft paper texture and subtle grain, featuring a close-up of a worn, oxidized key on a rustic wooden surface, illuminated by cinematic natural light, with clean negative space for overlaid text.",
       "puntuacion_emocional": 9
+    },
+    {
+      "id": 30,
+      "fecha": "2026-06-05T06:24:28.553441-05:00",
+      "titulo": "La llave que queda",
+      "tema": "Despedidas y duelos",
+      "archivo": "docs/_posts/2026-06-05-escrito-0030.md",
+      "imagen": "/assets/social/escrito-0030.png",
+      "background_image": "/assets/backgrounds/escrito-0030.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20empty%20wooden%20drawer%20with%20a%20single%2C%20oxidized%20key%2C%20softly%20lit%20with%20warm%2C%20cinematic%20natural%20light%2C%20on%20a%20muted%2C%20textured%20background%2C%20with%20subtle%20grain%20and%20plenty%20of%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A worn, empty wooden drawer with a single, oxidized key, softly lit with warm, cinematic natural light, on a muted, textured background, with subtle grain and plenty of clean negative space.",
+      "puntuacion_emocional": 8
     }
   ]
 }
