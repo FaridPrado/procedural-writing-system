@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 30,
-  "fecha_ultima_publicacion": "2026-06-05",
+  "ultimo_id": 31,
+  "fecha_ultima_publicacion": "2026-06-06",
   "publicaciones": [
     {
       "id": 1,
@@ -264,6 +264,18 @@
       "background_image": "/assets/backgrounds/escrito-0030.jpg",
       "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20empty%20wooden%20drawer%20with%20a%20single%2C%20oxidized%20key%2C%20softly%20lit%20with%20warm%2C%20cinematic%20natural%20light%2C%20on%20a%20muted%2C%20textured%20background%2C%20with%20subtle%20grain%20and%20plenty%20of%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "A worn, empty wooden drawer with a single, oxidized key, softly lit with warm, cinematic natural light, on a muted, textured background, with subtle grain and plenty of clean negative space.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 31,
+      "fecha": "2026-06-06T05:00:21.320665-05:00",
+      "titulo": "Pliegues del recuerdo",
+      "tema": "Cuerpo y memoria",
+      "archivo": "docs/_posts/2026-06-06-escrito-0031.md",
+      "imagen": "/assets/social/escrito-0031.png",
+      "background_image": "/assets/backgrounds/escrito-0031.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20person%27s%20folded%20clothing%2C%20with%20subtle%20grain%20and%20paper%20texture%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20calm%2C%20with%20muted%20tones%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Soft, warm light on a person's folded clothing, with subtle grain and paper texture, evoking a sense of nostalgia and calm, with muted tones and clean negative space.",
       "puntuacion_emocional": 8
     }
   ]
