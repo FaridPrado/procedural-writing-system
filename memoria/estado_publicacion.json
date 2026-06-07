@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 31,
-  "fecha_ultima_publicacion": "2026-06-06",
+  "ultimo_id": 32,
+  "fecha_ultima_publicacion": "2026-06-07",
   "publicaciones": [
     {
       "id": 1,
@@ -276,6 +276,18 @@
       "background_image": "/assets/backgrounds/escrito-0031.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20person%27s%20folded%20clothing%2C%20with%20subtle%20grain%20and%20paper%20texture%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20calm%2C%20with%20muted%20tones%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Soft, warm light on a person's folded clothing, with subtle grain and paper texture, evoking a sense of nostalgia and calm, with muted tones and clean negative space.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 32,
+      "fecha": "2026-06-07T05:25:34.824293-05:00",
+      "titulo": "Palabras sin voz",
+      "tema": "Lo que no dije",
+      "archivo": "docs/_posts/2026-06-07-escrito-0032.md",
+      "imagen": "/assets/social/escrito-0032.png",
+      "background_image": "/assets/backgrounds/escrito-0032.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20forgotten%20notebook%20in%20a%20worn%20coat%20pocket%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A warm, muted editorial background with soft paper texture and subtle grain, featuring a forgotten notebook in a worn coat pocket, illuminated by cinematic natural light, with clean negative space for overlaid text.",
       "puntuacion_emocional": 8
     }
   ]
