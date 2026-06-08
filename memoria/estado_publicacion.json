@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 32,
-  "fecha_ultima_publicacion": "2026-06-07",
+  "ultimo_id": 33,
+  "fecha_ultima_publicacion": "2026-06-08",
   "publicaciones": [
     {
       "id": 1,
@@ -288,6 +288,18 @@
       "background_image": "/assets/backgrounds/escrito-0032.jpg",
       "background_source": "https://image.pollinations.ai/prompt/A%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20forgotten%20notebook%20in%20a%20worn%20coat%20pocket%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "A warm, muted editorial background with soft paper texture and subtle grain, featuring a forgotten notebook in a worn coat pocket, illuminated by cinematic natural light, with clean negative space for overlaid text.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 33,
+      "fecha": "2026-06-08T07:25:41.731578-05:00",
+      "titulo": "Páginas en blanco",
+      "tema": "Esperar sin romperse",
+      "archivo": "docs/_posts/2026-06-08-escrito-0033.md",
+      "imagen": "/assets/social/escrito-0033.png",
+      "background_image": "/assets/backgrounds/escrito-0033.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20rumpled%20bed%2C%20with%20a%20forgotten%20notebook%20and%20a%20single%2C%20idle%20pen%2C%20set%20against%20a%20muted%2C%20cinematic%20backdrop%20with%20subtle%20grain%20and%20texture.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Soft, warm light on a rumpled bed, with a forgotten notebook and a single, idle pen, set against a muted, cinematic backdrop with subtle grain and texture.",
       "puntuacion_emocional": 8
     }
   ]
