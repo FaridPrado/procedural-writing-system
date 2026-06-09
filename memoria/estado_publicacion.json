@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 33,
-  "fecha_ultima_publicacion": "2026-06-08",
+  "ultimo_id": 34,
+  "fecha_ultima_publicacion": "2026-06-09",
   "publicaciones": [
     {
       "id": 1,
@@ -300,6 +300,18 @@
       "background_image": "/assets/backgrounds/escrito-0033.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20rumpled%20bed%2C%20with%20a%20forgotten%20notebook%20and%20a%20single%2C%20idle%20pen%2C%20set%20against%20a%20muted%2C%20cinematic%20backdrop%20with%20subtle%20grain%20and%20texture.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Soft, warm light on a rumpled bed, with a forgotten notebook and a single, idle pen, set against a muted, cinematic backdrop with subtle grain and texture.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 34,
+      "fecha": "2026-06-09T05:57:06.677278-05:00",
+      "titulo": "Páginas de recuerdo",
+      "tema": "Vínculos humanos",
+      "archivo": "docs/_posts/2026-06-09-escrito-0034.md",
+      "imagen": "/assets/social/escrito-0034.png",
+      "background_image": "/assets/backgrounds/escrito-0034.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20editorial%20background%20with%20soft%20paper%20texture%2C%20subtle%20grain%2C%20and%20muted%20tones%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20intimacy%2C%20with%20cinematic%20natural%20light%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, minimalist editorial background with soft paper texture, subtle grain, and muted tones, evoking a sense of nostalgia and intimacy, with cinematic natural light and clean negative space.",
       "puntuacion_emocional": 8
     }
   ]
