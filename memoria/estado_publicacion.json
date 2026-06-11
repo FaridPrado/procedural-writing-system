@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 35,
-  "fecha_ultima_publicacion": "2026-06-10",
+  "ultimo_id": 36,
+  "fecha_ultima_publicacion": "2026-06-11",
   "publicaciones": [
     {
       "id": 1,
@@ -324,6 +324,18 @@
       "background_image": "/assets/backgrounds/escrito-0035.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Softly%20lit%2C%20muted%20interior%20with%20worn%20wooden%20floor%2C%20peeling%20paint%2C%20and%20a%20closed%20door%2C%20evoking%20a%20sense%20of%20quiet%20contemplation%20and%20forgotten%20memories%2C%20with%20a%20subtle%20grain%20and%20warm%2C%20cinematic%20natural%20light.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Softly lit, muted interior with worn wooden floor, peeling paint, and a closed door, evoking a sense of quiet contemplation and forgotten memories, with a subtle grain and warm, cinematic natural light.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 36,
+      "fecha": "2026-06-11T07:07:09.067723-05:00",
+      "titulo": "Líneas en el silencio",
+      "tema": "Soledad fértil",
+      "archivo": "docs/_posts/2026-06-11-escrito-0036.md",
+      "imagen": "/assets/social/escrito-0036.png",
+      "background_image": "/assets/backgrounds/escrito-0036.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20editorial%20background%20with%20soft%20paper%20texture%2C%20subtle%20grain%2C%20and%20muted%20tones%2C%20bathed%20in%20cinematic%20natural%20light%2C%20featuring%20a%20quiet%2C%20solitary%20space%20with%20a%20blank%20notebook%20or%20crumpled%20paper%2C%20inviting%20contemplation.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, minimalist editorial background with soft paper texture, subtle grain, and muted tones, bathed in cinematic natural light, featuring a quiet, solitary space with a blank notebook or crumpled paper, inviting contemplation.",
       "puntuacion_emocional": 8
     }
   ]
