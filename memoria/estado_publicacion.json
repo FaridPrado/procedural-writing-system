@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 36,
-  "fecha_ultima_publicacion": "2026-06-11",
+  "ultimo_id": 37,
+  "fecha_ultima_publicacion": "2026-06-12",
   "publicaciones": [
     {
       "id": 1,
@@ -336,6 +336,18 @@
       "background_image": "/assets/backgrounds/escrito-0036.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20editorial%20background%20with%20soft%20paper%20texture%2C%20subtle%20grain%2C%20and%20muted%20tones%2C%20bathed%20in%20cinematic%20natural%20light%2C%20featuring%20a%20quiet%2C%20solitary%20space%20with%20a%20blank%20notebook%20or%20crumpled%20paper%2C%20inviting%20contemplation.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, minimalist editorial background with soft paper texture, subtle grain, and muted tones, bathed in cinematic natural light, featuring a quiet, solitary space with a blank notebook or crumpled paper, inviting contemplation.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 37,
+      "fecha": "2026-06-12T06:41:02.674585-05:00",
+      "titulo": "Lo que queda atrás",
+      "tema": "Despedidas y duelos",
+      "archivo": "docs/_posts/2026-06-12-escrito-0037.md",
+      "imagen": "/assets/social/escrito-0037.png",
+      "background_image": "/assets/backgrounds/escrito-0037.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20tones%20of%20an%20empty%20room%20with%20abandoned%20shoes%20and%20a%20stopped%20clock%2C%20soft%20natural%20light%2C%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20longing%20and%20loss%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, muted tones of an empty room with abandoned shoes and a stopped clock, soft natural light, and subtle grain, evoking a sense of longing and loss, with clean negative space for overlaid text.",
       "puntuacion_emocional": 8
     }
   ]
