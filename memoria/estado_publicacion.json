@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 39,
-  "fecha_ultima_publicacion": "2026-06-14",
+  "ultimo_id": 40,
+  "fecha_ultima_publicacion": "2026-06-15",
   "publicaciones": [
     {
       "id": 1,
@@ -372,6 +372,18 @@
       "background_image": "/assets/backgrounds/escrito-0039.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20square%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20serene%2C%20empty%20room%20with%20a%20gently%20opened%20door%2C%20cinematic%20natural%20light%2C%20and%20muted%20tones%2C%20leaving%20ample%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, minimalist square background with soft paper texture and subtle grain, featuring a serene, empty room with a gently opened door, cinematic natural light, and muted tones, leaving ample negative space for overlaid text.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 40,
+      "fecha": "2026-06-15T08:51:24.724047-05:00",
+      "titulo": "Espacio para el silencio",
+      "tema": "Amor consciente",
+      "archivo": "docs/_posts/2026-06-15-escrito-0040.md",
+      "imagen": "/assets/social/escrito-0040.png",
+      "background_image": "/assets/backgrounds/escrito-0040.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20minimalist%20interior%20with%20soft%20natural%20light%2C%20muted%20tones%2C%20and%20subtle%20grain%2C%20featuring%20a%20quiet%2C%20intimate%20moment%20with%20gentle%20human%20presence%2C%20and%20a%20subtle%20paper%20texture%2C%20conveying%20a%20sense%20of%20calm%20and%20contemplation.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, minimalist interior with soft natural light, muted tones, and subtle grain, featuring a quiet, intimate moment with gentle human presence, and a subtle paper texture, conveying a sense of calm and contemplation.",
       "puntuacion_emocional": 8
     }
   ]
