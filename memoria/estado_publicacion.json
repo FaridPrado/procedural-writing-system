@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 40,
-  "fecha_ultima_publicacion": "2026-06-15",
+  "ultimo_id": 41,
+  "fecha_ultima_publicacion": "2026-06-16",
   "publicaciones": [
     {
       "id": 1,
@@ -384,6 +384,18 @@
       "background_image": "/assets/backgrounds/escrito-0040.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20minimalist%20interior%20with%20soft%20natural%20light%2C%20muted%20tones%2C%20and%20subtle%20grain%2C%20featuring%20a%20quiet%2C%20intimate%20moment%20with%20gentle%20human%20presence%2C%20and%20a%20subtle%20paper%20texture%2C%20conveying%20a%20sense%20of%20calm%20and%20contemplation.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Warm, minimalist interior with soft natural light, muted tones, and subtle grain, featuring a quiet, intimate moment with gentle human presence, and a subtle paper texture, conveying a sense of calm and contemplation.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 41,
+      "fecha": "2026-06-16T07:49:47.870972-05:00",
+      "titulo": "Página en blanco",
+      "tema": "Esperanza realista",
+      "archivo": "docs/_posts/2026-06-16-escrito-0041.md",
+      "imagen": "/assets/social/escrito-0041.png",
+      "background_image": "/assets/backgrounds/escrito-0041.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20blank%20notebook%2C%20resting%20on%20a%20bed%2C%20with%20subtle%20grain%20and%20muted%20tones%2C%20surrounded%20by%20clean%20negative%20space%2C%20and%20a%20blurred%20background%20with%20a%20hint%20of%20natural%20texture.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Soft, warm light on a blank notebook, resting on a bed, with subtle grain and muted tones, surrounded by clean negative space, and a blurred background with a hint of natural texture.",
       "puntuacion_emocional": 8
     }
   ]
