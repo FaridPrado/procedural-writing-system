@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 41,
-  "fecha_ultima_publicacion": "2026-06-16",
+  "ultimo_id": 42,
+  "fecha_ultima_publicacion": "2026-06-17",
   "publicaciones": [
     {
       "id": 1,
@@ -396,6 +396,18 @@
       "background_image": "/assets/backgrounds/escrito-0041.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20blank%20notebook%2C%20resting%20on%20a%20bed%2C%20with%20subtle%20grain%20and%20muted%20tones%2C%20surrounded%20by%20clean%20negative%20space%2C%20and%20a%20blurred%20background%20with%20a%20hint%20of%20natural%20texture.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Soft, warm light on a blank notebook, resting on a bed, with subtle grain and muted tones, surrounded by clean negative space, and a blurred background with a hint of natural texture.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 42,
+      "fecha": "2026-06-17T07:13:21.100447-05:00",
+      "titulo": "Pliegues de la quietud",
+      "tema": "Cansancio silencioso",
+      "archivo": "docs/_posts/2026-06-17-escrito-0042.md",
+      "imagen": "/assets/social/escrito-0042.png",
+      "background_image": "/assets/backgrounds/escrito-0042.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20serene%2C%20rumpled%20bed%20with%20a%20white%20shirt%2C%20soft%20natural%20light%2C%20and%20muted%20tones%2C%20evoking%20a%20sense%20of%20quiet%20contemplation%20and%20stillness%2C%20with%20a%20subtle%20texture%20and%20cinematic%20warmth.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A serene, rumpled bed with a white shirt, soft natural light, and muted tones, evoking a sense of quiet contemplation and stillness, with a subtle texture and cinematic warmth.",
       "puntuacion_emocional": 8
     }
   ]
