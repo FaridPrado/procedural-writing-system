@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 43,
-  "fecha_ultima_publicacion": "2026-06-18",
+  "ultimo_id": 44,
+  "fecha_ultima_publicacion": "2026-06-19",
   "publicaciones": [
     {
       "id": 1,
@@ -420,6 +420,18 @@
       "background_image": "/assets/backgrounds/escrito-0043.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20neatly%20folded%20shirt%20on%20an%20unmade%20bed%2C%20with%20a%20subtle%20blur%20and%20muted%20tones%2C%20evoking%20a%20sense%20of%20intimacy%20and%20nostalgia%2C%20with%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Soft, warm light on a neatly folded shirt on an unmade bed, with a subtle blur and muted tones, evoking a sense of intimacy and nostalgia, with clean negative space.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 44,
+      "fecha": "2026-06-19T07:02:56.282548-05:00",
+      "titulo": "La habitación en penumbra",
+      "tema": "Domingos raros",
+      "archivo": "docs/_posts/2026-06-19-escrito-0044.md",
+      "imagen": "/assets/social/escrito-0044.png",
+      "background_image": "/assets/backgrounds/escrito-0044.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Softly%20lit%2C%20muted%20room%20with%20wrinkled%20white%20shirt%20on%20chair%2C%20scattered%20papers%2C%20and%20abandoned%20shoes%2C%20evoking%20a%20sense%20of%20melancholy%20and%20introspection%2C%20with%20warm%2C%20cinematic%20natural%20light%20and%20subtle%20grain.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Softly lit, muted room with wrinkled white shirt on chair, scattered papers, and abandoned shoes, evoking a sense of melancholy and introspection, with warm, cinematic natural light and subtle grain.",
       "puntuacion_emocional": 8
     }
   ]
