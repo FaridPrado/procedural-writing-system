@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 44,
-  "fecha_ultima_publicacion": "2026-06-19",
+  "ultimo_id": 45,
+  "fecha_ultima_publicacion": "2026-06-20",
   "publicaciones": [
     {
       "id": 1,
@@ -432,6 +432,18 @@
       "background_image": "/assets/backgrounds/escrito-0044.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Softly%20lit%2C%20muted%20room%20with%20wrinkled%20white%20shirt%20on%20chair%2C%20scattered%20papers%2C%20and%20abandoned%20shoes%2C%20evoking%20a%20sense%20of%20melancholy%20and%20introspection%2C%20with%20warm%2C%20cinematic%20natural%20light%20and%20subtle%20grain.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Softly lit, muted room with wrinkled white shirt on chair, scattered papers, and abandoned shoes, evoking a sense of melancholy and introspection, with warm, cinematic natural light and subtle grain.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 45,
+      "fecha": "2026-06-20T05:29:49.973791-05:00",
+      "titulo": "La huella del verano",
+      "tema": "Cuerpo y memoria",
+      "archivo": "docs/_posts/2026-06-20-escrito-0045.md",
+      "imagen": "/assets/social/escrito-0045.png",
+      "background_image": "/assets/backgrounds/escrito-0045.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20landscape%20with%20soft%20paper%20texture%2C%20subtle%20grain%2C%20and%20cinematic%20natural%20light%2C%20featuring%20a%20serene%2C%20minimalist%20scene%20with%20gentle%2C%20tactile%20elements%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20intimacy.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, muted landscape with soft paper texture, subtle grain, and cinematic natural light, featuring a serene, minimalist scene with gentle, tactile elements, evoking a sense of nostalgia and intimacy.",
       "puntuacion_emocional": 8
     }
   ]
