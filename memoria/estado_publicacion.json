@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 46,
-  "fecha_ultima_publicacion": "2026-06-21",
+  "ultimo_id": 47,
+  "fecha_ultima_publicacion": "2026-06-22",
   "publicaciones": [
     {
       "id": 1,
@@ -456,6 +456,18 @@
       "background_image": "/assets/backgrounds/escrito-0046.jpg",
       "background_source": "https://image.pollinations.ai/prompt/A%20soft%2C%20warm%2C%20and%20minimalistic%20editorial%20background%20with%20a%20muted%2C%20cinematic%20natural%20light%2C%20featuring%20a%20worn%20door%20with%20a%20subtle%20mella%20and%20a%20forgotten%20key%2C%20set%20against%20a%20quiet%2C%20textured%20paper-like%20surface.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "A soft, warm, and minimalistic editorial background with a muted, cinematic natural light, featuring a worn door with a subtle mella and a forgotten key, set against a quiet, textured paper-like surface.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 47,
+      "fecha": "2026-06-22T08:32:10.775409-05:00",
+      "titulo": "Raíces en la sombra",
+      "tema": "Soledad fértil",
+      "archivo": "docs/_posts/2026-06-22-escrito-0047.md",
+      "imagen": "/assets/social/escrito-0047.png",
+      "background_image": "/assets/backgrounds/escrito-0047.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20soft%2C%20warm%2C%20and%20muted%20editorial%20background%20with%20a%20dry%20potted%20plant%20on%20a%20worn%20wooden%20shelf%2C%20surrounded%20by%20quiet%2C%20cinematic%20natural%20light%2C%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20stillness%20and%20contemplation.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A soft, warm, and muted editorial background with a dry potted plant on a worn wooden shelf, surrounded by quiet, cinematic natural light, and subtle grain, evoking a sense of stillness and contemplation.",
       "puntuacion_emocional": 8
     }
   ]
