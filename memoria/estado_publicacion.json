@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 47,
-  "fecha_ultima_publicacion": "2026-06-22",
+  "ultimo_id": 48,
+  "fecha_ultima_publicacion": "2026-06-23",
   "publicaciones": [
     {
       "id": 1,
@@ -468,6 +468,18 @@
       "background_image": "/assets/backgrounds/escrito-0047.jpg",
       "background_source": "https://image.pollinations.ai/prompt/A%20soft%2C%20warm%2C%20and%20muted%20editorial%20background%20with%20a%20dry%20potted%20plant%20on%20a%20worn%20wooden%20shelf%2C%20surrounded%20by%20quiet%2C%20cinematic%20natural%20light%2C%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20stillness%20and%20contemplation.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "A soft, warm, and muted editorial background with a dry potted plant on a worn wooden shelf, surrounded by quiet, cinematic natural light, and subtle grain, evoking a sense of stillness and contemplation.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 48,
+      "fecha": "2026-06-23T05:58:53.158150-05:00",
+      "titulo": "Entre las cosas quietas",
+      "tema": "La casa interior",
+      "archivo": "docs/_posts/2026-06-23-escrito-0048.md",
+      "imagen": "/assets/social/escrito-0048.png",
+      "background_image": "/assets/backgrounds/escrito-0048.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20warm%2C%20minimalist%20interior%20with%20soft%2C%20golden%20natural%20light.%20A%20folded%20white%20shirt%20on%20a%20chair%2C%20empty%20space%2C%20and%20subtle%20shadows.%20Muted%20tones%20and%20cinematic%20lighting%20evoke%20a%20sense%20of%20nostalgia%20and%20longing%2C%20with%20clean%20negative%20space%20for%20text%20overlay.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A warm, minimalist interior with soft, golden natural light. A folded white shirt on a chair, empty space, and subtle shadows. Muted tones and cinematic lighting evoke a sense of nostalgia and longing, with clean negative space for text overlay.",
       "puntuacion_emocional": 8
     }
   ]
