@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 49,
-  "fecha_ultima_publicacion": "2026-06-24",
+  "ultimo_id": 50,
+  "fecha_ultima_publicacion": "2026-06-25",
   "publicaciones": [
     {
       "id": 1,
@@ -492,6 +492,18 @@
       "background_image": "/assets/backgrounds/escrito-0049.jpg",
       "background_source": "https://image.pollinations.ai/prompt/A%20warm%2C%20minimalist%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20muted%20tones%20and%20cinematic%20natural%20light%2C%20with%20clean%20negative%20space%20for%20overlaid%20text%2C%20evoking%20a%20sense%20of%20gentle%20scars%20and%20healed%20wounds.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "A warm, minimalist background with soft paper texture and subtle grain, featuring muted tones and cinematic natural light, with clean negative space for overlaid text, evoking a sense of gentle scars and healed wounds.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 50,
+      "fecha": "2026-06-25T05:38:54.963703-05:00",
+      "titulo": "Pesar en la espalda",
+      "tema": "Rabia tranquila",
+      "archivo": "docs/_posts/2026-06-25-escrito-0050.md",
+      "imagen": "/assets/social/escrito-0050.png",
+      "background_image": "/assets/backgrounds/escrito-0050.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Serene%2C%20warm-lit%20corridor%20with%20soft%20paper%20texture%20on%20walls%2C%20muted%20tones%2C%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20quiet%20liberation%20and%20introspection%2C%20with%20a%20worn%20backpack%20or%20books%20on%20the%20floor%2C%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Serene, warm-lit corridor with soft paper texture on walls, muted tones, and subtle grain, evoking a sense of quiet liberation and introspection, with a worn backpack or books on the floor, and clean negative space.",
       "puntuacion_emocional": 8
     }
   ]
