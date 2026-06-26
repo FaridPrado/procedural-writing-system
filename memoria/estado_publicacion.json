@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 50,
-  "fecha_ultima_publicacion": "2026-06-25",
+  "ultimo_id": 51,
+  "fecha_ultima_publicacion": "2026-06-26",
   "publicaciones": [
     {
       "id": 1,
@@ -504,6 +504,18 @@
       "background_image": "/assets/backgrounds/escrito-0050.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Serene%2C%20warm-lit%20corridor%20with%20soft%20paper%20texture%20on%20walls%2C%20muted%20tones%2C%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20quiet%20liberation%20and%20introspection%2C%20with%20a%20worn%20backpack%20or%20books%20on%20the%20floor%2C%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Serene, warm-lit corridor with soft paper texture on walls, muted tones, and subtle grain, evoking a sense of quiet liberation and introspection, with a worn backpack or books on the floor, and clean negative space.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 51,
+      "fecha": "2026-06-26T05:47:22.015524-05:00",
+      "titulo": "Después del silencio",
+      "tema": "Después del ruido",
+      "archivo": "docs/_posts/2026-06-26-escrito-0051.md",
+      "imagen": "/assets/social/escrito-0051.png",
+      "background_image": "/assets/backgrounds/escrito-0051.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Empty%20hallway%20with%20a%20lone%2C%20worn%20chair%2C%20soft%20natural%20light%20casting%20a%20long%20shadow%20on%20the%20wall%2C%20warm%20muted%20tones%2C%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20quiet%20contemplation.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Empty hallway with a lone, worn chair, soft natural light casting a long shadow on the wall, warm muted tones, and subtle grain, evoking a sense of quiet contemplation.",
       "puntuacion_emocional": 8
     }
   ]
