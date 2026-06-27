@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 51,
-  "fecha_ultima_publicacion": "2026-06-26",
+  "ultimo_id": 52,
+  "fecha_ultima_publicacion": "2026-06-27",
   "publicaciones": [
     {
       "id": 1,
@@ -517,6 +517,18 @@
       "background_source": "https://image.pollinations.ai/prompt/Empty%20hallway%20with%20a%20lone%2C%20worn%20chair%2C%20soft%20natural%20light%20casting%20a%20long%20shadow%20on%20the%20wall%2C%20warm%20muted%20tones%2C%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20quiet%20contemplation.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Empty hallway with a lone, worn chair, soft natural light casting a long shadow on the wall, warm muted tones, and subtle grain, evoking a sense of quiet contemplation.",
       "puntuacion_emocional": 8
+    },
+    {
+      "id": 52,
+      "fecha": "2026-06-27T05:02:42.267894-05:00",
+      "titulo": "Peso de tu presencia",
+      "tema": "Amor consciente",
+      "archivo": "docs/_posts/2026-06-27-escrito-0052.md",
+      "imagen": "/assets/social/escrito-0052.png",
+      "background_image": "/assets/backgrounds/escrito-0052.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20serene%20bedroom%20scene%20with%20a%20subtle%20paper%20texture%2C%20muted%20tones%2C%20and%20cinematic%20natural%20light%2C%20featuring%20a%20gentle%2C%20unmade%20bed%20with%20a%20slight%20impression%20of%20a%20presence%2C%20and%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Soft, warm light on a serene bedroom scene with a subtle paper texture, muted tones, and cinematic natural light, featuring a gentle, unmade bed with a slight impression of a presence, and clean negative space for overlaid text.",
+      "puntuacion_emocional": 9
     }
   ]
 }
