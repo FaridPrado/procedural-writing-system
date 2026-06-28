@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 52,
-  "fecha_ultima_publicacion": "2026-06-27",
+  "ultimo_id": 53,
+  "fecha_ultima_publicacion": "2026-06-28",
   "publicaciones": [
     {
       "id": 1,
@@ -529,6 +529,18 @@
       "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20serene%20bedroom%20scene%20with%20a%20subtle%20paper%20texture%2C%20muted%20tones%2C%20and%20cinematic%20natural%20light%2C%20featuring%20a%20gentle%2C%20unmade%20bed%20with%20a%20slight%20impression%20of%20a%20presence%2C%20and%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Soft, warm light on a serene bedroom scene with a subtle paper texture, muted tones, and cinematic natural light, featuring a gentle, unmade bed with a slight impression of a presence, and clean negative space for overlaid text.",
       "puntuacion_emocional": 9
+    },
+    {
+      "id": 53,
+      "fecha": "2026-06-28T05:24:37.320436-05:00",
+      "titulo": "La llave en mi mano",
+      "tema": "Cuerpo y memoria",
+      "archivo": "docs/_posts/2026-06-28-escrito-0053.md",
+      "imagen": "/assets/social/escrito-0053.png",
+      "background_image": "/assets/backgrounds/escrito-0053.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20tones%20of%20a%20worn%2C%20wooden%20door%20with%20an%20old%2C%20oxidized%20key%20on%20a%20soft%2C%20paper-like%20surface%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20with%20subtle%20grain%20and%20texture.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, muted tones of a worn, wooden door with an old, oxidized key on a soft, paper-like surface, illuminated by cinematic natural light, with subtle grain and texture.",
+      "puntuacion_emocional": 8
     }
   ]
 }
