@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 54,
-  "fecha_ultima_publicacion": "2026-06-29",
+  "ultimo_id": 55,
+  "fecha_ultima_publicacion": "2026-06-30",
   "publicaciones": [
     {
       "id": 1,
@@ -552,6 +552,18 @@
       "background_image": "/assets/backgrounds/escrito-0054.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Softly%20lit%2C%20worn%20wooden%20closet%20with%20a%20gently%20rumpled%20shirt%2C%20muted%20earthy%20tones%2C%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20longing%2C%20with%20ample%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Softly lit, worn wooden closet with a gently rumpled shirt, muted earthy tones, and subtle grain, evoking a sense of nostalgia and longing, with ample negative space.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 55,
+      "fecha": "2026-06-30T05:53:50.013440-05:00",
+      "titulo": "Palabras en silencio",
+      "tema": "Lo que no dije",
+      "archivo": "docs/_posts/2026-06-30-escrito-0055.md",
+      "imagen": "/assets/social/escrito-0055.png",
+      "background_image": "/assets/backgrounds/escrito-0055.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20soft%2C%20warm%2C%20and%20cinematic%20photo%20of%20a%20closed%2C%20worn%20notebook%20on%20a%20minimalist%20desk%2C%20with%20a%20folded%20page%20and%20subtle%20natural%20light%2C%20featuring%20muted%20tones%20and%20a%20gentle%20paper%20texture%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A soft, warm, and cinematic photo of a closed, worn notebook on a minimalist desk, with a folded page and subtle natural light, featuring muted tones and a gentle paper texture, with clean negative space for overlaid text.",
       "puntuacion_emocional": 8
     }
   ]
