@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 56,
-  "fecha_ultima_publicacion": "2026-07-01",
+  "ultimo_id": 57,
+  "fecha_ultima_publicacion": "2026-07-02",
   "publicaciones": [
     {
       "id": 1,
@@ -576,6 +576,18 @@
       "background_image": "/assets/backgrounds/escrito-0056.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20minimalist%20background%20with%20soft%20paper%20texture%2C%20subtle%20grain%2C%20and%20muted%20tones%2C%20featuring%20a%20blank%20notebook%20on%20a%20lap%2C%20with%20a%20pen%20hovering%20over%20the%20page%2C%20captured%20in%20cinematic%20natural%20light%20with%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Warm, minimalist background with soft paper texture, subtle grain, and muted tones, featuring a blank notebook on a lap, with a pen hovering over the page, captured in cinematic natural light with clean negative space.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 57,
+      "fecha": "2026-07-02T05:33:45.877464-05:00",
+      "titulo": "Días sin propósito",
+      "tema": "Domingos raros",
+      "archivo": "docs/_posts/2026-07-02-escrito-0057.md",
+      "imagen": "/assets/social/escrito-0057.png",
+      "background_image": "/assets/backgrounds/escrito-0057.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20worn%2C%20wooden%20door%20with%20an%20old%20key%2C%20blurred%20background%2C%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20melancholy%20and%20abandonment%2C%20with%20muted%20tones%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Soft, warm light on a worn, wooden door with an old key, blurred background, and subtle grain, evoking a sense of melancholy and abandonment, with muted tones and clean negative space.",
       "puntuacion_emocional": 8
     }
   ]
