@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 57,
-  "fecha_ultima_publicacion": "2026-07-02",
+  "ultimo_id": 58,
+  "fecha_ultima_publicacion": "2026-07-03",
   "publicaciones": [
     {
       "id": 1,
@@ -588,6 +588,18 @@
       "background_image": "/assets/backgrounds/escrito-0057.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20worn%2C%20wooden%20door%20with%20an%20old%20key%2C%20blurred%20background%2C%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20melancholy%20and%20abandonment%2C%20with%20muted%20tones%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Soft, warm light on a worn, wooden door with an old key, blurred background, and subtle grain, evoking a sense of melancholy and abandonment, with muted tones and clean negative space.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 58,
+      "fecha": "2026-07-03T05:31:32.368883-05:00",
+      "titulo": "Páginas en silencio",
+      "tema": "Despedidas y duelos",
+      "archivo": "docs/_posts/2026-07-03-escrito-0058.md",
+      "imagen": "/assets/social/escrito-0058.png",
+      "background_image": "/assets/backgrounds/escrito-0058.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20closed%20notebook%20on%20a%20minimalist%20desk%2C%20soft%20natural%20light%2C%20warm%20tones%2C%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20longing%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A worn, closed notebook on a minimalist desk, soft natural light, warm tones, and subtle grain, evoking a sense of nostalgia and longing, with clean negative space for overlaid text.",
       "puntuacion_emocional": 8
     }
   ]
