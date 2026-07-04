@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 58,
-  "fecha_ultima_publicacion": "2026-07-03",
+  "ultimo_id": 59,
+  "fecha_ultima_publicacion": "2026-07-04",
   "publicaciones": [
     {
       "id": 1,
@@ -600,6 +600,18 @@
       "background_image": "/assets/backgrounds/escrito-0058.jpg",
       "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20closed%20notebook%20on%20a%20minimalist%20desk%2C%20soft%20natural%20light%2C%20warm%20tones%2C%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20longing%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "A worn, closed notebook on a minimalist desk, soft natural light, warm tones, and subtle grain, evoking a sense of nostalgia and longing, with clean negative space for overlaid text.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 59,
+      "fecha": "2026-07-04T05:05:09.234770-05:00",
+      "titulo": "Puño sereno y firme",
+      "tema": "Rabia tranquila",
+      "archivo": "docs/_posts/2026-07-04-escrito-0059.md",
+      "imagen": "/assets/social/escrito-0059.png",
+      "background_image": "/assets/backgrounds/escrito-0059.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20serene%2C%20empty%20room%20with%20a%20subtle%20paper%20texture%20and%20muted%20tones%2C%20featuring%20a%20closed%20fist%20and%20a%20small%2C%20widening%20crack%20on%20a%20wall%2C%20evoking%20a%20sense%20of%20quiet%20longing%20and%20contemplation.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Soft, warm light on a serene, empty room with a subtle paper texture and muted tones, featuring a closed fist and a small, widening crack on a wall, evoking a sense of quiet longing and contemplation.",
       "puntuacion_emocional": 8
     }
   ]
