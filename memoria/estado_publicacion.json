@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 59,
-  "fecha_ultima_publicacion": "2026-07-04",
+  "ultimo_id": 60,
+  "fecha_ultima_publicacion": "2026-07-05",
   "publicaciones": [
     {
       "id": 1,
@@ -612,6 +612,18 @@
       "background_image": "/assets/backgrounds/escrito-0059.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20serene%2C%20empty%20room%20with%20a%20subtle%20paper%20texture%20and%20muted%20tones%2C%20featuring%20a%20closed%20fist%20and%20a%20small%2C%20widening%20crack%20on%20a%20wall%2C%20evoking%20a%20sense%20of%20quiet%20longing%20and%20contemplation.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Soft, warm light on a serene, empty room with a subtle paper texture and muted tones, featuring a closed fist and a small, widening crack on a wall, evoking a sense of quiet longing and contemplation.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 60,
+      "fecha": "2026-07-05T05:07:48.165581-05:00",
+      "titulo": "En el silencio me busco",
+      "tema": "Volver a mí",
+      "archivo": "docs/_posts/2026-07-05-escrito-0060.md",
+      "imagen": "/assets/social/escrito-0060.png",
+      "background_image": "/assets/backgrounds/escrito-0060.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20minimalist%20bedroom%20scene%20with%20a%20bare%20wall%2C%20a%20person%27s%20subtle%20silhouette%20on%20the%20bed%27s%20edge%2C%20and%20muted%20tones%2C%20evoking%20a%20sense%20of%20introspection%20and%20calm%2C%20with%20a%20gentle%2C%20cinematic%20glow%20and%20subtle%20texture.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Soft, warm light on a minimalist bedroom scene with a bare wall, a person's subtle silhouette on the bed's edge, and muted tones, evoking a sense of introspection and calm, with a gentle, cinematic glow and subtle texture.",
       "puntuacion_emocional": 8
     }
   ]
