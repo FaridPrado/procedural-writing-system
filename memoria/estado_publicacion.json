@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 60,
-  "fecha_ultima_publicacion": "2026-07-05",
+  "ultimo_id": 61,
+  "fecha_ultima_publicacion": "2026-07-06",
   "publicaciones": [
     {
       "id": 1,
@@ -624,6 +624,18 @@
       "background_image": "/assets/backgrounds/escrito-0060.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20minimalist%20bedroom%20scene%20with%20a%20bare%20wall%2C%20a%20person%27s%20subtle%20silhouette%20on%20the%20bed%27s%20edge%2C%20and%20muted%20tones%2C%20evoking%20a%20sense%20of%20introspection%20and%20calm%2C%20with%20a%20gentle%2C%20cinematic%20glow%20and%20subtle%20texture.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Soft, warm light on a minimalist bedroom scene with a bare wall, a person's subtle silhouette on the bed's edge, and muted tones, evoking a sense of introspection and calm, with a gentle, cinematic glow and subtle texture.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 61,
+      "fecha": "2026-07-06T07:00:33.007958-05:00",
+      "titulo": "Puerta entreabierta",
+      "tema": "Miedo a empezar",
+      "archivo": "docs/_posts/2026-07-06-escrito-0061.md",
+      "imagen": "/assets/social/escrito-0061.png",
+      "background_image": "/assets/backgrounds/escrito-0061.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20slightly%20ajar%20door%20with%20soft%2C%20cinematic%20natural%20light%2C%20and%20clean%20negative%20space%20for%20overlaid%20text%2C%20evoking%20a%20sense%20of%20uncertainty%20and%20hesitation.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring a slightly ajar door with soft, cinematic natural light, and clean negative space for overlaid text, evoking a sense of uncertainty and hesitation.",
       "puntuacion_emocional": 8
     }
   ]
