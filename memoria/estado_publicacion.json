@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 61,
-  "fecha_ultima_publicacion": "2026-07-06",
+  "ultimo_id": 62,
+  "fecha_ultima_publicacion": "2026-07-07",
   "publicaciones": [
     {
       "id": 1,
@@ -636,6 +636,18 @@
       "background_image": "/assets/backgrounds/escrito-0061.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20slightly%20ajar%20door%20with%20soft%2C%20cinematic%20natural%20light%2C%20and%20clean%20negative%20space%20for%20overlaid%20text%2C%20evoking%20a%20sense%20of%20uncertainty%20and%20hesitation.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring a slightly ajar door with soft, cinematic natural light, and clean negative space for overlaid text, evoking a sense of uncertainty and hesitation.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 62,
+      "fecha": "2026-07-07T05:51:35.923999-05:00",
+      "titulo": "Noches sin descanso",
+      "tema": "Cansancio silencioso",
+      "archivo": "docs/_posts/2026-07-07-escrito-0062.md",
+      "imagen": "/assets/social/escrito-0062.png",
+      "background_image": "/assets/backgrounds/escrito-0062.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20photograph%20of%20a%20worn%2C%20empty%20chair%20with%20a%20rumpled%20shirt%2C%20set%20against%20a%20soft%2C%20textured%20background%2C%20with%20a%20withered%20plant%20and%20subtle%2C%20cinematic%20natural%20light%2C%20evoking%20a%20sense%20of%20fatigue%20and%20stillness.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, muted photograph of a worn, empty chair with a rumpled shirt, set against a soft, textured background, with a withered plant and subtle, cinematic natural light, evoking a sense of fatigue and stillness.",
       "puntuacion_emocional": 8
     }
   ]
