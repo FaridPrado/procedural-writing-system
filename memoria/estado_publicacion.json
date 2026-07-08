@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 62,
-  "fecha_ultima_publicacion": "2026-07-07",
+  "ultimo_id": 63,
+  "fecha_ultima_publicacion": "2026-07-08",
   "publicaciones": [
     {
       "id": 1,
@@ -648,6 +648,18 @@
       "background_image": "/assets/backgrounds/escrito-0062.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20photograph%20of%20a%20worn%2C%20empty%20chair%20with%20a%20rumpled%20shirt%2C%20set%20against%20a%20soft%2C%20textured%20background%2C%20with%20a%20withered%20plant%20and%20subtle%2C%20cinematic%20natural%20light%2C%20evoking%20a%20sense%20of%20fatigue%20and%20stillness.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Warm, muted photograph of a worn, empty chair with a rumpled shirt, set against a soft, textured background, with a withered plant and subtle, cinematic natural light, evoking a sense of fatigue and stillness.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 63,
+      "fecha": "2026-07-08T05:12:26.637503-05:00",
+      "titulo": "Cicatrices que perduran",
+      "tema": "Perdonarme despacio",
+      "archivo": "docs/_posts/2026-07-08-escrito-0063.md",
+      "imagen": "/assets/social/escrito-0063.png",
+      "background_image": "/assets/backgrounds/escrito-0063.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20tones%20of%20a%20gentle%2C%20scarred%20hand%20on%20a%20soft%2C%20textured%20paper%20background%2C%20with%20subtle%20grain%20and%20cinematic%20natural%20light%2C%20evoking%20a%20sense%20of%20quiet%20contemplation%20and%20healing.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, muted tones of a gentle, scarred hand on a soft, textured paper background, with subtle grain and cinematic natural light, evoking a sense of quiet contemplation and healing.",
       "puntuacion_emocional": 8
     }
   ]
