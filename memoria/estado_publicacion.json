@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 63,
-  "fecha_ultima_publicacion": "2026-07-08",
+  "ultimo_id": 64,
+  "fecha_ultima_publicacion": "2026-07-09",
   "publicaciones": [
     {
       "id": 1,
@@ -660,6 +660,18 @@
       "background_image": "/assets/backgrounds/escrito-0063.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20tones%20of%20a%20gentle%2C%20scarred%20hand%20on%20a%20soft%2C%20textured%20paper%20background%2C%20with%20subtle%20grain%20and%20cinematic%20natural%20light%2C%20evoking%20a%20sense%20of%20quiet%20contemplation%20and%20healing.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Warm, muted tones of a gentle, scarred hand on a soft, textured paper background, with subtle grain and cinematic natural light, evoking a sense of quiet contemplation and healing.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 64,
+      "fecha": "2026-07-09T05:50:44.583664-05:00",
+      "titulo": "Silencio en el pasillo",
+      "tema": "Después del ruido",
+      "archivo": "docs/_posts/2026-07-09-escrito-0064.md",
+      "imagen": "/assets/social/escrito-0064.png",
+      "background_image": "/assets/backgrounds/escrito-0064.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20worn%2C%20empty%20armchair%20in%20a%20deserted%20hallway%20with%20faded%20carpet%20and%20natural%20light%2C%20evoking%20a%20sense%20of%20abandonment%20and%20stillness.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring a worn, empty armchair in a deserted hallway with faded carpet and natural light, evoking a sense of abandonment and stillness.",
       "puntuacion_emocional": 8
     }
   ]
