@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 64,
-  "fecha_ultima_publicacion": "2026-07-09",
+  "ultimo_id": 65,
+  "fecha_ultima_publicacion": "2026-07-10",
   "publicaciones": [
     {
       "id": 1,
@@ -672,6 +672,18 @@
       "background_image": "/assets/backgrounds/escrito-0064.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20worn%2C%20empty%20armchair%20in%20a%20deserted%20hallway%20with%20faded%20carpet%20and%20natural%20light%2C%20evoking%20a%20sense%20of%20abandonment%20and%20stillness.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring a worn, empty armchair in a deserted hallway with faded carpet and natural light, evoking a sense of abandonment and stillness.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 65,
+      "fecha": "2026-07-10T05:49:11.720568-05:00",
+      "titulo": "Páginas en silencio",
+      "tema": "Domingos raros",
+      "archivo": "docs/_posts/2026-07-10-escrito-0065.md",
+      "imagen": "/assets/social/escrito-0065.png",
+      "background_image": "/assets/backgrounds/escrito-0065.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20square%20editorial%20background%20with%20a%20soft%2C%20worn%20notebook%20on%20a%20wooden%20table%2C%20warm%20natural%20light%2C%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20nostalgic%20melancholy%20and%20forgotten%20memories.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a square editorial background with a soft, worn notebook on a wooden table, warm natural light, and subtle grain, evoking a sense of nostalgic melancholy and forgotten memories.",
       "puntuacion_emocional": 8
     }
   ]
