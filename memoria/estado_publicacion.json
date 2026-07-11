@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 65,
-  "fecha_ultima_publicacion": "2026-07-10",
+  "ultimo_id": 66,
+  "fecha_ultima_publicacion": "2026-07-11",
   "publicaciones": [
     {
       "id": 1,
@@ -684,6 +684,18 @@
       "background_image": "/assets/backgrounds/escrito-0065.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20square%20editorial%20background%20with%20a%20soft%2C%20worn%20notebook%20on%20a%20wooden%20table%2C%20warm%20natural%20light%2C%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20nostalgic%20melancholy%20and%20forgotten%20memories.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a square editorial background with a soft, worn notebook on a wooden table, warm natural light, and subtle grain, evoking a sense of nostalgic melancholy and forgotten memories.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 66,
+      "fecha": "2026-07-11T04:23:55.430872-05:00",
+      "titulo": "La oscuridad espera",
+      "tema": "Esperar sin romperse",
+      "archivo": "docs/_posts/2026-07-11-escrito-0066.md",
+      "imagen": "/assets/social/escrito-0066.png",
+      "background_image": "/assets/backgrounds/escrito-0066.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20texture%20and%20subtle%20grain%2C%20featuring%20a%20dimly%20lit%20room%20with%20a%20stopped%20clock%2C%20a%20lone%20chair%2C%20and%20a%20fallen%20book%2C%20illuminated%20by%20cinematic%20natural%20light%20through%20an%20ajar%20door.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, muted editorial background with soft texture and subtle grain, featuring a dimly lit room with a stopped clock, a lone chair, and a fallen book, illuminated by cinematic natural light through an ajar door.",
       "puntuacion_emocional": 8
     }
   ]
