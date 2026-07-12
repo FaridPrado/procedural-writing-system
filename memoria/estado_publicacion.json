@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 66,
-  "fecha_ultima_publicacion": "2026-07-11",
+  "ultimo_id": 67,
+  "fecha_ultima_publicacion": "2026-07-12",
   "publicaciones": [
     {
       "id": 1,
@@ -697,6 +697,18 @@
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20texture%20and%20subtle%20grain%2C%20featuring%20a%20dimly%20lit%20room%20with%20a%20stopped%20clock%2C%20a%20lone%20chair%2C%20and%20a%20fallen%20book%2C%20illuminated%20by%20cinematic%20natural%20light%20through%20an%20ajar%20door.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, muted editorial background with soft texture and subtle grain, featuring a dimly lit room with a stopped clock, a lone chair, and a fallen book, illuminated by cinematic natural light through an ajar door.",
       "puntuacion_emocional": 8
+    },
+    {
+      "id": 67,
+      "fecha": "2026-07-12T04:47:06.730460-05:00",
+      "titulo": "Rastro de ausencia",
+      "tema": "Soledad fértil",
+      "archivo": "docs/_posts/2026-07-12-escrito-0067.md",
+      "imagen": "/assets/social/escrito-0067.png",
+      "background_image": "/assets/backgrounds/escrito-0067.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20serene%2C%20empty%20room%20with%20muted%20tones%20and%20cinematic%20natural%20light%2C%20incorporating%20a%20rumpled%20garment%20and%20abandoned%20shoes%2C%20with%20plenty%20of%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, minimalist editorial background with soft paper texture and subtle grain, featuring a serene, empty room with muted tones and cinematic natural light, incorporating a rumpled garment and abandoned shoes, with plenty of clean negative space for overlaid text.",
+      "puntuacion_emocional": 9
     }
   ]
 }
