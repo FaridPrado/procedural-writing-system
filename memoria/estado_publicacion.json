@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 68,
-  "fecha_ultima_publicacion": "2026-07-13",
+  "ultimo_id": 69,
+  "fecha_ultima_publicacion": "2026-07-14",
   "publicaciones": [
     {
       "id": 1,
@@ -721,6 +721,18 @@
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20worn%2C%20rusty%20key%20on%20a%20dusty%20shelf%2C%20illuminated%20by%20soft%2C%20cinematic%20natural%20light%2C%20with%20plenty%20of%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring a worn, rusty key on a dusty shelf, illuminated by soft, cinematic natural light, with plenty of clean negative space.",
       "puntuacion_emocional": 9
+    },
+    {
+      "id": 69,
+      "fecha": "2026-07-14T04:54:01.838149-05:00",
+      "titulo": "Llave en la penumbra",
+      "tema": "Alegría discreta",
+      "archivo": "docs/_posts/2026-07-14-escrito-0069.md",
+      "imagen": "/assets/social/escrito-0069.png",
+      "background_image": "/assets/backgrounds/escrito-0069.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Softly%20lit%2C%20worn%20wooden%20shelf%20with%20a%20vintage%20key%2C%20subtle%20grain%2C%20and%20warm%2C%20muted%20tones%2C%20set%20against%20a%20clean%2C%20minimalist%20background%20with%20cinematic%20natural%20light%20and%20gentle%20paper%20texture.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Softly lit, worn wooden shelf with a vintage key, subtle grain, and warm, muted tones, set against a clean, minimalist background with cinematic natural light and gentle paper texture.",
+      "puntuacion_emocional": 8
     }
   ]
 }
