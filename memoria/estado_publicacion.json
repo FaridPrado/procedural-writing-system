@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 69,
-  "fecha_ultima_publicacion": "2026-07-14",
+  "ultimo_id": 70,
+  "fecha_ultima_publicacion": "2026-07-15",
   "publicaciones": [
     {
       "id": 1,
@@ -732,6 +732,18 @@
       "background_image": "/assets/backgrounds/escrito-0069.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Softly%20lit%2C%20worn%20wooden%20shelf%20with%20a%20vintage%20key%2C%20subtle%20grain%2C%20and%20warm%2C%20muted%20tones%2C%20set%20against%20a%20clean%2C%20minimalist%20background%20with%20cinematic%20natural%20light%20and%20gentle%20paper%20texture.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Softly lit, worn wooden shelf with a vintage key, subtle grain, and warm, muted tones, set against a clean, minimalist background with cinematic natural light and gentle paper texture.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 70,
+      "fecha": "2026-07-15T04:58:14.366919-05:00",
+      "titulo": "La llave olvidada",
+      "tema": "Volver a mí",
+      "archivo": "docs/_posts/2026-07-15-escrito-0070.md",
+      "imagen": "/assets/social/escrito-0070.png",
+      "background_image": "/assets/backgrounds/escrito-0070.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20worn%2C%20old%20key%20on%20a%20minimalist%20surface%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, muted editorial background with soft paper texture and subtle grain, featuring a worn, old key on a minimalist surface, illuminated by cinematic natural light, with clean negative space for overlaid text.",
       "puntuacion_emocional": 8
     }
   ]
