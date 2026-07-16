@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 70,
-  "fecha_ultima_publicacion": "2026-07-15",
+  "ultimo_id": 71,
+  "fecha_ultima_publicacion": "2026-07-16",
   "publicaciones": [
     {
       "id": 1,
@@ -744,6 +744,18 @@
       "background_image": "/assets/backgrounds/escrito-0070.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20worn%2C%20old%20key%20on%20a%20minimalist%20surface%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Warm, muted editorial background with soft paper texture and subtle grain, featuring a worn, old key on a minimalist surface, illuminated by cinematic natural light, with clean negative space for overlaid text.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 71,
+      "fecha": "2026-07-16T05:04:26.742237-05:00",
+      "titulo": "Entre las líneas",
+      "tema": "Amor consciente",
+      "archivo": "docs/_posts/2026-07-16-escrito-0071.md",
+      "imagen": "/assets/social/escrito-0071.png",
+      "background_image": "/assets/backgrounds/escrito-0071.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20rumpled%20bed%2C%20with%20an%20open%20notebook%20and%20a%20subtle%2C%20muted%20color%20palette%2C%20featuring%20gentle%20paper%20texture%20and%20cinematic%20shadows%2C%20creating%20a%20peaceful%20atmosphere%20for%20overlaid%20poetic%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Soft, warm light on a rumpled bed, with an open notebook and a subtle, muted color palette, featuring gentle paper texture and cinematic shadows, creating a peaceful atmosphere for overlaid poetic text.",
       "puntuacion_emocional": 8
     }
   ]
