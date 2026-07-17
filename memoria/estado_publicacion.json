@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 71,
-  "fecha_ultima_publicacion": "2026-07-16",
+  "ultimo_id": 72,
+  "fecha_ultima_publicacion": "2026-07-17",
   "publicaciones": [
     {
       "id": 1,
@@ -756,6 +756,18 @@
       "background_image": "/assets/backgrounds/escrito-0071.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20rumpled%20bed%2C%20with%20an%20open%20notebook%20and%20a%20subtle%2C%20muted%20color%20palette%2C%20featuring%20gentle%20paper%20texture%20and%20cinematic%20shadows%2C%20creating%20a%20peaceful%20atmosphere%20for%20overlaid%20poetic%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Soft, warm light on a rumpled bed, with an open notebook and a subtle, muted color palette, featuring gentle paper texture and cinematic shadows, creating a peaceful atmosphere for overlaid poetic text.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 72,
+      "fecha": "2026-07-17T04:52:59.016686-05:00",
+      "titulo": "Un día sin rumbo",
+      "tema": "Domingos raros",
+      "archivo": "docs/_posts/2026-07-17-escrito-0072.md",
+      "imagen": "/assets/social/escrito-0072.png",
+      "background_image": "/assets/backgrounds/escrito-0072.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20warm%2C%20minimalist%20interior%20with%20soft%2C%20muted%20tones%20and%20cinematic%20natural%20light.%20A%20worn%2C%20empty%20armchair%20sits%20in%20a%20quiet%20room%2C%20with%20a%20subtle%20paper%20texture%20and%20grain%2C%20evoking%20a%20sense%20of%20stillness%20and%20contemplation%2C%20leaving%20ample%20negative%20space%20for%20text%20overlay.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A warm, minimalist interior with soft, muted tones and cinematic natural light. A worn, empty armchair sits in a quiet room, with a subtle paper texture and grain, evoking a sense of stillness and contemplation, leaving ample negative space for text overlay.",
       "puntuacion_emocional": 8
     }
   ]
