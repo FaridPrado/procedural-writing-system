@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 73,
-  "fecha_ultima_publicacion": "2026-07-18",
+  "ultimo_id": 74,
+  "fecha_ultima_publicacion": "2026-07-19",
   "publicaciones": [
     {
       "id": 1,
@@ -780,6 +780,18 @@
       "background_image": "/assets/backgrounds/escrito-0073.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20an%20empty%20room%20with%20a%20single%20shoe%20by%20the%20door%2C%20a%20crumpled%20paper%20on%20the%20floor%2C%20and%20a%20quiet%2C%20cinematic%20natural%20light%2C%20leaving%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring an empty room with a single shoe by the door, a crumpled paper on the floor, and a quiet, cinematic natural light, leaving clean negative space for overlaid text.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 74,
+      "fecha": "2026-07-19T04:48:22.913437-05:00",
+      "titulo": "Marcas en el papel",
+      "tema": "Cicatrices",
+      "archivo": "docs/_posts/2026-07-19-escrito-0074.md",
+      "imagen": "/assets/social/escrito-0074.png",
+      "background_image": "/assets/backgrounds/escrito-0074.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20open%20notebook%20with%20folded%20pages%2C%20soft%20natural%20light%2C%20and%20subtle%20grain%2C%20featuring%20a%20small%20crease%20resembling%20a%20scar%2C%20on%20a%20warm%2C%20minimalist%20background%20with%20muted%20tones%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A worn, open notebook with folded pages, soft natural light, and subtle grain, featuring a small crease resembling a scar, on a warm, minimalist background with muted tones and clean negative space.",
       "puntuacion_emocional": 8
     }
   ]
