@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 74,
-  "fecha_ultima_publicacion": "2026-07-19",
+  "ultimo_id": 75,
+  "fecha_ultima_publicacion": "2026-07-20",
   "publicaciones": [
     {
       "id": 1,
@@ -792,6 +792,18 @@
       "background_image": "/assets/backgrounds/escrito-0074.jpg",
       "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20open%20notebook%20with%20folded%20pages%2C%20soft%20natural%20light%2C%20and%20subtle%20grain%2C%20featuring%20a%20small%20crease%20resembling%20a%20scar%2C%20on%20a%20warm%2C%20minimalist%20background%20with%20muted%20tones%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "A worn, open notebook with folded pages, soft natural light, and subtle grain, featuring a small crease resembling a scar, on a warm, minimalist background with muted tones and clean negative space.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 75,
+      "fecha": "2026-07-20T05:47:47.157321-05:00",
+      "titulo": "Peso de la mano",
+      "tema": "Rabia tranquila",
+      "archivo": "docs/_posts/2026-07-20-escrito-0075.md",
+      "imagen": "/assets/social/escrito-0075.png",
+      "background_image": "/assets/backgrounds/escrito-0075.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20rusty%20key%20rests%20on%20a%20soft%2C%20textured%20surface%2C%20illuminated%20by%20warm%2C%20cinematic%20natural%20light%2C%20with%20muted%20tones%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20quiet%20desperation%20and%20emotional%20exhaustion.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A worn, rusty key rests on a soft, textured surface, illuminated by warm, cinematic natural light, with muted tones and subtle grain, evoking a sense of quiet desperation and emotional exhaustion.",
       "puntuacion_emocional": 8
     }
   ]
