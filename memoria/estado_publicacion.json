@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 75,
-  "fecha_ultima_publicacion": "2026-07-20",
+  "ultimo_id": 76,
+  "fecha_ultima_publicacion": "2026-07-21",
   "publicaciones": [
     {
       "id": 1,
@@ -804,6 +804,18 @@
       "background_image": "/assets/backgrounds/escrito-0075.jpg",
       "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20rusty%20key%20rests%20on%20a%20soft%2C%20textured%20surface%2C%20illuminated%20by%20warm%2C%20cinematic%20natural%20light%2C%20with%20muted%20tones%20and%20subtle%20grain%2C%20evoking%20a%20sense%20of%20quiet%20desperation%20and%20emotional%20exhaustion.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "A worn, rusty key rests on a soft, textured surface, illuminated by warm, cinematic natural light, with muted tones and subtle grain, evoking a sense of quiet desperation and emotional exhaustion.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 76,
+      "fecha": "2026-07-21T05:21:50.526947-05:00",
+      "titulo": "Páginas en silencio",
+      "tema": "Cansancio silencioso",
+      "archivo": "docs/_posts/2026-07-21-escrito-0076.md",
+      "imagen": "/assets/social/escrito-0076.png",
+      "background_image": "/assets/backgrounds/escrito-0076.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20a%20soft%2C%20textured%20paper%20surface%2C%20subtle%20grain%2C%20and%20cinematic%20natural%20light%2C%20evoking%20a%20sense%20of%20stillness%20and%20fatigue%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, muted editorial background with a soft, textured paper surface, subtle grain, and cinematic natural light, evoking a sense of stillness and fatigue, with clean negative space for overlaid text.",
       "puntuacion_emocional": 8
     }
   ]
