@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 76,
-  "fecha_ultima_publicacion": "2026-07-21",
+  "ultimo_id": 77,
+  "fecha_ultima_publicacion": "2026-07-22",
   "publicaciones": [
     {
       "id": 1,
@@ -816,6 +816,18 @@
       "background_image": "/assets/backgrounds/escrito-0076.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20a%20soft%2C%20textured%20paper%20surface%2C%20subtle%20grain%2C%20and%20cinematic%20natural%20light%2C%20evoking%20a%20sense%20of%20stillness%20and%20fatigue%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, muted editorial background with a soft, textured paper surface, subtle grain, and cinematic natural light, evoking a sense of stillness and fatigue, with clean negative space for overlaid text.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 77,
+      "fecha": "2026-07-22T05:21:35.633563-05:00",
+      "titulo": "Página en blanco",
+      "tema": "Miedo a empezar",
+      "archivo": "docs/_posts/2026-07-22-escrito-0077.md",
+      "imagen": "/assets/social/escrito-0077.png",
+      "background_image": "/assets/backgrounds/escrito-0077.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20editorial%20background%20with%20a%20soft%2C%20blank%20paper%20texture%2C%20subtle%20grain%2C%20and%20muted%20tones%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20leaving%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, minimalist editorial background with a soft, blank paper texture, subtle grain, and muted tones, illuminated by cinematic natural light, leaving clean negative space for overlaid text.",
       "puntuacion_emocional": 8
     }
   ]
