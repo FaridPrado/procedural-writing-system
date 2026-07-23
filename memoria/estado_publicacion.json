@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 77,
-  "fecha_ultima_publicacion": "2026-07-22",
+  "ultimo_id": 78,
+  "fecha_ultima_publicacion": "2026-07-23",
   "publicaciones": [
     {
       "id": 1,
@@ -828,6 +828,18 @@
       "background_image": "/assets/backgrounds/escrito-0077.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20editorial%20background%20with%20a%20soft%2C%20blank%20paper%20texture%2C%20subtle%20grain%2C%20and%20muted%20tones%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20leaving%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, minimalist editorial background with a soft, blank paper texture, subtle grain, and muted tones, illuminated by cinematic natural light, leaving clean negative space for overlaid text.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 78,
+      "fecha": "2026-07-23T05:16:46.105388-05:00",
+      "titulo": "Rincón de la quietud",
+      "tema": "La casa interior",
+      "archivo": "docs/_posts/2026-07-23-escrito-0078.md",
+      "imagen": "/assets/social/escrito-0078.png",
+      "background_image": "/assets/backgrounds/escrito-0078.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20minimalist%20interior%20with%20soft%20paper%20texture%2C%20muted%20tones%2C%20and%20cinematic%20natural%20light.%20A%20quiet%2C%20comforting%20space%20with%20a%20worn%20desk%2C%20a%20vintage%20pen%2C%20and%20a%20stack%20of%20yellowed%20papers%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20warmth.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, minimalist interior with soft paper texture, muted tones, and cinematic natural light. A quiet, comforting space with a worn desk, a vintage pen, and a stack of yellowed papers, evoking a sense of nostalgia and warmth.",
       "puntuacion_emocional": 8
     }
   ]
