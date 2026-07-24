@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 78,
-  "fecha_ultima_publicacion": "2026-07-23",
+  "ultimo_id": 79,
+  "fecha_ultima_publicacion": "2026-07-24",
   "publicaciones": [
     {
       "id": 1,
@@ -840,6 +840,18 @@
       "background_image": "/assets/backgrounds/escrito-0078.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20minimalist%20interior%20with%20soft%20paper%20texture%2C%20muted%20tones%2C%20and%20cinematic%20natural%20light.%20A%20quiet%2C%20comforting%20space%20with%20a%20worn%20desk%2C%20a%20vintage%20pen%2C%20and%20a%20stack%20of%20yellowed%20papers%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20warmth.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Warm, minimalist interior with soft paper texture, muted tones, and cinematic natural light. A quiet, comforting space with a worn desk, a vintage pen, and a stack of yellowed papers, evoking a sense of nostalgia and warmth.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 79,
+      "fecha": "2026-07-24T05:12:44.599780-05:00",
+      "titulo": "Páginas en silencio",
+      "tema": "Despedidas y duelos",
+      "archivo": "docs/_posts/2026-07-24-escrito-0079.md",
+      "imagen": "/assets/social/escrito-0079.png",
+      "background_image": "/assets/backgrounds/escrito-0079.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20a%20soft%2C%20textured%20paper%20sheet%2C%20subtle%20grain%2C%20and%20cinematic%20natural%20light%2C%20featuring%20a%20worn%20notebook%20with%20crumpled%20pages%20and%20a%20dried%20pen%2C%20evoking%20a%20sense%20of%20longing%20and%20farewell.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, muted editorial background with a soft, textured paper sheet, subtle grain, and cinematic natural light, featuring a worn notebook with crumpled pages and a dried pen, evoking a sense of longing and farewell.",
       "puntuacion_emocional": 8
     }
   ]
