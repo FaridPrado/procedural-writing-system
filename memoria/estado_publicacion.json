@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 79,
-  "fecha_ultima_publicacion": "2026-07-24",
+  "ultimo_id": 80,
+  "fecha_ultima_publicacion": "2026-07-25",
   "publicaciones": [
     {
       "id": 1,
@@ -852,6 +852,18 @@
       "background_image": "/assets/backgrounds/escrito-0079.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20a%20soft%2C%20textured%20paper%20sheet%2C%20subtle%20grain%2C%20and%20cinematic%20natural%20light%2C%20featuring%20a%20worn%20notebook%20with%20crumpled%20pages%20and%20a%20dried%20pen%2C%20evoking%20a%20sense%20of%20longing%20and%20farewell.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, muted editorial background with a soft, textured paper sheet, subtle grain, and cinematic natural light, featuring a worn notebook with crumpled pages and a dried pen, evoking a sense of longing and farewell.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 80,
+      "fecha": "2026-07-25T04:42:08.728231-05:00",
+      "titulo": "En el silencio profundo",
+      "tema": "Volver a mí",
+      "archivo": "docs/_posts/2026-07-25-escrito-0080.md",
+      "imagen": "/assets/social/escrito-0080.png",
+      "background_image": "/assets/backgrounds/escrito-0080.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20worn%2C%20blank%20notebook%2C%20with%20a%20subtle%20paper%20texture%20and%20muted%20tones%2C%20against%20a%20calm%2C%20minimalist%20background%2C%20with%20a%20gentle%2C%20cinematic%20glow%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Soft, warm light on a worn, blank notebook, with a subtle paper texture and muted tones, against a calm, minimalist background, with a gentle, cinematic glow and clean negative space.",
       "puntuacion_emocional": 8
     }
   ]
