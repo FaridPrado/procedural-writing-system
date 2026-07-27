@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 81,
-  "fecha_ultima_publicacion": "2026-07-26",
+  "ultimo_id": 82,
+  "fecha_ultima_publicacion": "2026-07-27",
   "publicaciones": [
     {
       "id": 1,
@@ -877,6 +877,18 @@
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20worn%20wooden%20desk%20with%20empty%20space%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20evoking%20a%20sense%20of%20quiet%20contemplation.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, muted editorial background with soft paper texture and subtle grain, featuring a worn wooden desk with empty space, illuminated by cinematic natural light, evoking a sense of quiet contemplation.",
       "puntuacion_emocional": 8
+    },
+    {
+      "id": 82,
+      "fecha": "2026-07-27T06:15:23.514095-05:00",
+      "titulo": "Rastros de su presencia",
+      "tema": "Amor consciente",
+      "archivo": "docs/_posts/2026-07-27-escrito-0082.md",
+      "imagen": "/assets/social/escrito-0082.png",
+      "background_image": "/assets/backgrounds/escrito-0082.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20serene%2C%20minimalist%20interior%20with%20natural%20light%2C%20and%20a%20few%20scattered%2C%20rumpled%20clothes%2C%20evoking%20a%20sense%20of%20intimate%2C%20quiet%20moments%20and%20gentle%20care.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, muted editorial background with soft paper texture and subtle grain, featuring a serene, minimalist interior with natural light, and a few scattered, rumpled clothes, evoking a sense of intimate, quiet moments and gentle care.",
+      "puntuacion_emocional": 9
     }
   ]
 }
