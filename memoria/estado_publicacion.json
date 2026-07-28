@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 82,
-  "fecha_ultima_publicacion": "2026-07-27",
+  "ultimo_id": 83,
+  "fecha_ultima_publicacion": "2026-07-28",
   "publicaciones": [
     {
       "id": 1,
@@ -889,6 +889,18 @@
       "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20serene%2C%20minimalist%20interior%20with%20natural%20light%2C%20and%20a%20few%20scattered%2C%20rumpled%20clothes%2C%20evoking%20a%20sense%20of%20intimate%2C%20quiet%20moments%20and%20gentle%20care.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Warm, muted editorial background with soft paper texture and subtle grain, featuring a serene, minimalist interior with natural light, and a few scattered, rumpled clothes, evoking a sense of intimate, quiet moments and gentle care.",
       "puntuacion_emocional": 9
+    },
+    {
+      "id": 83,
+      "fecha": "2026-07-28T05:30:16.761394-05:00",
+      "titulo": "Una línea fina queda",
+      "tema": "Cicatrices",
+      "archivo": "docs/_posts/2026-07-28-escrito-0083.md",
+      "imagen": "/assets/social/escrito-0083.png",
+      "background_image": "/assets/backgrounds/escrito-0083.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20gentle%2C%20curved%20scar%20on%20a%20finger%2C%20set%20against%20a%20muted%2C%20textured%20background%2C%20with%20subtle%20grain%20and%20cinematic%20natural%20light%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20introspection.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Soft, warm light on a gentle, curved scar on a finger, set against a muted, textured background, with subtle grain and cinematic natural light, evoking a sense of nostalgia and introspection.",
+      "puntuacion_emocional": 8
     }
   ]
 }
