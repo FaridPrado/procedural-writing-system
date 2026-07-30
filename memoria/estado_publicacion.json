@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 84,
-  "fecha_ultima_publicacion": "2026-07-29",
+  "ultimo_id": 85,
+  "fecha_ultima_publicacion": "2026-07-30",
   "publicaciones": [
     {
       "id": 1,
@@ -912,6 +912,18 @@
       "background_image": "/assets/backgrounds/escrito-0084.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20still%20life%20of%20an%20old%20key%20on%20a%20worn%20wooden%20surface%2C%20soft%20natural%20light%2C%20subtle%20grain%20and%20texture%2C%20with%20a%20gentle%20shadow%2C%20calm%20and%20serene%20atmosphere.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Warm, muted still life of an old key on a worn wooden surface, soft natural light, subtle grain and texture, with a gentle shadow, calm and serene atmosphere.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 85,
+      "fecha": "2026-07-30T05:20:50.215711-05:00",
+      "titulo": "Entre líneas olvidadas",
+      "tema": "Soledad fértil",
+      "archivo": "docs/_posts/2026-07-30-escrito-0085.md",
+      "imagen": "/assets/social/escrito-0085.png",
+      "background_image": "/assets/backgrounds/escrito-0085.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20rumpled%2C%20empty%20page%20with%20subtle%20grain%20and%20texture%2C%20minimal%20composition%2C%20and%20muted%20tones%2C%20evoking%20solitude%20and%20introspection.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Soft, warm light on a rumpled, empty page with subtle grain and texture, minimal composition, and muted tones, evoking solitude and introspection.",
       "puntuacion_emocional": 8
     }
   ]
