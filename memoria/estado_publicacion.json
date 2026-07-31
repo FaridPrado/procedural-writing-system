@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 85,
-  "fecha_ultima_publicacion": "2026-07-30",
+  "ultimo_id": 86,
+  "fecha_ultima_publicacion": "2026-07-31",
   "publicaciones": [
     {
       "id": 1,
@@ -924,6 +924,18 @@
       "background_image": "/assets/backgrounds/escrito-0085.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20rumpled%2C%20empty%20page%20with%20subtle%20grain%20and%20texture%2C%20minimal%20composition%2C%20and%20muted%20tones%2C%20evoking%20solitude%20and%20introspection.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Soft, warm light on a rumpled, empty page with subtle grain and texture, minimal composition, and muted tones, evoking solitude and introspection.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 86,
+      "fecha": "2026-07-31T05:34:21.634369-05:00",
+      "titulo": "Páginas de silencio",
+      "tema": "La casa interior",
+      "archivo": "docs/_posts/2026-07-31-escrito-0086.md",
+      "imagen": "/assets/social/escrito-0086.png",
+      "background_image": "/assets/backgrounds/escrito-0086.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20tones%20of%20a%20vacant%20room.%20A%20worn%2C%20leather%20armchair%20sits%20alone%2C%20with%20a%20closed%2C%20worn%20notebook%20on%20its%20seat%2C%20soft%20natural%20light%20casting%20a%20gentle%20glow%2C%20and%20a%20subtle%20grain%20texture%2C%20evoking%20a%20sense%20of%20abandonment%20and%20nostalgia.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, muted tones of a vacant room. A worn, leather armchair sits alone, with a closed, worn notebook on its seat, soft natural light casting a gentle glow, and a subtle grain texture, evoking a sense of abandonment and nostalgia.",
       "puntuacion_emocional": 8
     }
   ]
