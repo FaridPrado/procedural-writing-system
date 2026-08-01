@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 86,
-  "fecha_ultima_publicacion": "2026-07-31",
+  "ultimo_id": 87,
+  "fecha_ultima_publicacion": "2026-08-01",
   "publicaciones": [
     {
       "id": 1,
@@ -936,6 +936,18 @@
       "background_image": "/assets/backgrounds/escrito-0086.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20tones%20of%20a%20vacant%20room.%20A%20worn%2C%20leather%20armchair%20sits%20alone%2C%20with%20a%20closed%2C%20worn%20notebook%20on%20its%20seat%2C%20soft%20natural%20light%20casting%20a%20gentle%20glow%2C%20and%20a%20subtle%20grain%20texture%2C%20evoking%20a%20sense%20of%20abandonment%20and%20nostalgia.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Warm, muted tones of a vacant room. A worn, leather armchair sits alone, with a closed, worn notebook on its seat, soft natural light casting a gentle glow, and a subtle grain texture, evoking a sense of abandonment and nostalgia.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 87,
+      "fecha": "2026-08-01T04:54:09.798302-05:00",
+      "titulo": "Después del silencio",
+      "tema": "Después del ruido",
+      "archivo": "docs/_posts/2026-08-01-escrito-0087.md",
+      "imagen": "/assets/social/escrito-0087.png",
+      "background_image": "/assets/backgrounds/escrito-0087.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20square%20editorial%20background%20with%20a%20soft%2C%20warm%2C%20and%20muted%20tone%2C%20featuring%20a%20dimly%20lit%20empty%20hallway%20with%20a%20subtle%20gradient%20of%20light%2C%20and%20a%20narrow%20slit%20of%20brightness%2C%20evoking%20a%20sense%20of%20quiet%20contemplation%20and%20stillness.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a square editorial background with a soft, warm, and muted tone, featuring a dimly lit empty hallway with a subtle gradient of light, and a narrow slit of brightness, evoking a sense of quiet contemplation and stillness.",
       "puntuacion_emocional": 8
     }
   ]
