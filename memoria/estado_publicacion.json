@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 87,
-  "fecha_ultima_publicacion": "2026-08-01",
+  "ultimo_id": 88,
+  "fecha_ultima_publicacion": "2026-08-02",
   "publicaciones": [
     {
       "id": 1,
@@ -948,6 +948,18 @@
       "background_image": "/assets/backgrounds/escrito-0087.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20square%20editorial%20background%20with%20a%20soft%2C%20warm%2C%20and%20muted%20tone%2C%20featuring%20a%20dimly%20lit%20empty%20hallway%20with%20a%20subtle%20gradient%20of%20light%2C%20and%20a%20narrow%20slit%20of%20brightness%2C%20evoking%20a%20sense%20of%20quiet%20contemplation%20and%20stillness.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a square editorial background with a soft, warm, and muted tone, featuring a dimly lit empty hallway with a subtle gradient of light, and a narrow slit of brightness, evoking a sense of quiet contemplation and stillness.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 88,
+      "fecha": "2026-08-02T04:52:06.995748-05:00",
+      "titulo": "Entre las sombras",
+      "tema": "Domingos raros",
+      "archivo": "docs/_posts/2026-08-02-escrito-0088.md",
+      "imagen": "/assets/social/escrito-0088.png",
+      "background_image": "/assets/backgrounds/escrito-0088.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20cluttered%2C%20nostalgic%20room%20with%20old%20books%2C%20a%20wrinkled%20white%20shirt%2C%20and%20a%20vintage%20clock%2C%20bathed%20in%20cinematic%20natural%20light%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, muted editorial background with soft paper texture and subtle grain, featuring a cluttered, nostalgic room with old books, a wrinkled white shirt, and a vintage clock, bathed in cinematic natural light, with clean negative space for overlaid text.",
       "puntuacion_emocional": 8
     }
   ]
