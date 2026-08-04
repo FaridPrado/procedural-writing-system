@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 89,
-  "fecha_ultima_publicacion": "2026-08-03",
+  "ultimo_id": 90,
+  "fecha_ultima_publicacion": "2026-08-04",
   "publicaciones": [
     {
       "id": 1,
@@ -972,6 +972,18 @@
       "background_image": "/assets/backgrounds/escrito-0089.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20square%20background%20with%20soft%20paper%20texture%2C%20subtle%20grain%2C%20and%20muted%20tones%2C%20featuring%20a%20dusty%2C%20old%2C%20oxidized%20key%20on%20a%20worn%20wooden%20surface%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, minimalist square background with soft paper texture, subtle grain, and muted tones, featuring a dusty, old, oxidized key on a worn wooden surface, illuminated by cinematic natural light, with clean negative space for overlaid text.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 90,
+      "fecha": "2026-08-04T05:33:17.940005-05:00",
+      "titulo": "Páginas de silencio",
+      "tema": "Vínculos humanos",
+      "archivo": "docs/_posts/2026-08-04-escrito-0090.md",
+      "imagen": "/assets/social/escrito-0090.png",
+      "background_image": "/assets/backgrounds/escrito-0090.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20editorial%20background%20with%20a%20soft%2C%20worn%20paper%20texture%2C%20subtle%20grain%2C%20and%20muted%20tones%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20forgotten%20memories%2C%20with%20cinematic%20natural%20light%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, minimalist editorial background with a soft, worn paper texture, subtle grain, and muted tones, evoking a sense of nostalgia and forgotten memories, with cinematic natural light and clean negative space.",
       "puntuacion_emocional": 8
     }
   ]
