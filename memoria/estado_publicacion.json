@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 90,
-  "fecha_ultima_publicacion": "2026-08-04",
+  "ultimo_id": 91,
+  "fecha_ultima_publicacion": "2026-08-05",
   "publicaciones": [
     {
       "id": 1,
@@ -984,6 +984,18 @@
       "background_image": "/assets/backgrounds/escrito-0090.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20editorial%20background%20with%20a%20soft%2C%20worn%20paper%20texture%2C%20subtle%20grain%2C%20and%20muted%20tones%2C%20evoking%20a%20sense%20of%20nostalgia%20and%20forgotten%20memories%2C%20with%20cinematic%20natural%20light%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, minimalist editorial background with a soft, worn paper texture, subtle grain, and muted tones, evoking a sense of nostalgia and forgotten memories, with cinematic natural light and clean negative space.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 91,
+      "fecha": "2026-08-05T05:30:06.044660-05:00",
+      "titulo": "Olor a veranos pasados",
+      "tema": "Cuerpo y memoria",
+      "archivo": "docs/_posts/2026-08-05-escrito-0091.md",
+      "imagen": "/assets/social/escrito-0091.png",
+      "background_image": "/assets/backgrounds/escrito-0091.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20worn%2C%20white%20shirt%2C%20draped%20over%20a%20rustic%20wooden%20hanger%2C%20with%20subtle%20grain%20and%20muted%20tones%2C%20set%20against%20a%20clean%2C%20minimalist%20background%20with%20a%20soft%20paper%20texture.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Soft, warm light on a worn, white shirt, draped over a rustic wooden hanger, with subtle grain and muted tones, set against a clean, minimalist background with a soft paper texture.",
       "puntuacion_emocional": 8
     }
   ]
