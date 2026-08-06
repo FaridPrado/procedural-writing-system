@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 91,
-  "fecha_ultima_publicacion": "2026-08-05",
+  "ultimo_id": 92,
+  "fecha_ultima_publicacion": "2026-08-06",
   "publicaciones": [
     {
       "id": 1,
@@ -996,6 +996,18 @@
       "background_image": "/assets/backgrounds/escrito-0091.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20worn%2C%20white%20shirt%2C%20draped%20over%20a%20rustic%20wooden%20hanger%2C%20with%20subtle%20grain%20and%20muted%20tones%2C%20set%20against%20a%20clean%2C%20minimalist%20background%20with%20a%20soft%20paper%20texture.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Soft, warm light on a worn, white shirt, draped over a rustic wooden hanger, with subtle grain and muted tones, set against a clean, minimalist background with a soft paper texture.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 92,
+      "fecha": "2026-08-06T05:34:10.331785-05:00",
+      "titulo": "Páginas en silencio",
+      "tema": "Despedidas y duelos",
+      "archivo": "docs/_posts/2026-08-06-escrito-0092.md",
+      "imagen": "/assets/social/escrito-0092.png",
+      "background_image": "/assets/backgrounds/escrito-0092.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/A%20worn%2C%20empty%20leather%20journal%20lies%20on%20a%20bed%2C%20with%20a%20torn%20page%20edge%2C%20in%20soft%2C%20warm%2C%20cinematic%20light%2C%20with%20muted%20tones%20and%20subtle%20grain%2C%20against%20a%20clean%2C%20minimalist%20background.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "A worn, empty leather journal lies on a bed, with a torn page edge, in soft, warm, cinematic light, with muted tones and subtle grain, against a clean, minimalist background.",
       "puntuacion_emocional": 8
     }
   ]
