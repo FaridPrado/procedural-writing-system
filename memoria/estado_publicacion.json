@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 93,
-  "fecha_ultima_publicacion": "2026-08-07",
+  "ultimo_id": 94,
+  "fecha_ultima_publicacion": "2026-08-08",
   "publicaciones": [
     {
       "id": 1,
@@ -1020,6 +1020,18 @@
       "background_image": "/assets/backgrounds/escrito-0093.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20minimalist%20background%20with%20subtle%20grain%20and%20paper%20texture%2C%20featuring%20a%20delicate%2C%20injured%20hand%20or%20a%20broken%20glass%20fragment%2C%20in%20muted%20tones%2C%20with%20clean%20negative%20space%20for%20text%20overlay.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Soft, warm light on a minimalist background with subtle grain and paper texture, featuring a delicate, injured hand or a broken glass fragment, in muted tones, with clean negative space for text overlay.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 94,
+      "fecha": "2026-08-08T03:35:22.147352-05:00",
+      "titulo": "Momentos de suavidad",
+      "tema": "Alegría discreta",
+      "archivo": "docs/_posts/2026-08-08-escrito-0094.md",
+      "imagen": "/assets/social/escrito-0094.png",
+      "background_image": "/assets/backgrounds/escrito-0094.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20serene%2C%20neatly%20folded%20garment%20on%20a%20bed%2C%20bathed%20in%20cinematic%20natural%20light%2C%20with%20muted%20tones%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, minimalist editorial background with soft paper texture and subtle grain, featuring a serene, neatly folded garment on a bed, bathed in cinematic natural light, with muted tones and clean negative space.",
       "puntuacion_emocional": 8
     }
   ]
