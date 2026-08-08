@@ -241,6 +241,10 @@ a { color: inherit; }
   transform: translateX(3px);
 }
 
+.pagination-controls[hidden] {
+  display: none !important;
+}
+
 .pagination-controls {
   width: min(760px, 100%);
   margin: 2.3rem auto 0;
