@@ -1,17 +1,28 @@
-name: Generar y publicar Ecos del Alma
+name: Pinterest - configurar y sincronizar
 
 on:
-  schedule:
-    # 08:00 UTC = 3:00 a. m. Colombia
-    - cron: "0 8 * * *"
   workflow_dispatch:
+    inputs:
+      accion:
+        description: "Qué quieres hacer"
+        required: true
+        type: choice
+        options:
+          - probar
+          - listar_tableros
+          - historico
+        default: probar
+      max_pins:
+        description: "Solo para histórico: máximo de Pins nuevos (0 = todos)"
+        required: true
+        default: "0"
 
 concurrency:
   group: ecos-del-alma-pinterest
   cancel-in-progress: false
 
 jobs:
-  generate-and-publish:
+  pinterest:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -33,21 +44,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Generar nuevo escrito
-        env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          GROQ_MODEL: llama-3.3-70b-versatile
-          PROJECT_TIMEZONE: America/Bogota
-        run: python main.py
-
-      - name: Guardar publicación generada
-        run: |
-          git config --global user.name "Ecos del Alma Bot"
-          git config --global user.email "bot@ecosdelalma.local"
-          git add docs/_posts/ docs/assets/social/ docs/assets/backgrounds/ memoria/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Nuevo escrito generado" && git push)
-
-      - name: Publicar pendientes en Pinterest
+      - name: Ejecutar acción de Pinterest
         id: pinterest
         continue-on-error: true
         env:
@@ -57,17 +54,36 @@ jobs:
           PINTEREST_BOARD_NAME: ${{ vars.PINTEREST_BOARD_NAME }}
           PINTEREST_SITE_URL: https://faridsprado.github.io/procedural-writing-system
           PINTEREST_AI_DISCLOSURE: "true"
-        run: python utils/publish_pinterest.py
+        run: |
+          case "${{ inputs.accion }}" in
+            probar)
+              python utils/publish_pinterest.py --test-pin
+              ;;
+            listar_tableros)
+              python utils/publish_pinterest.py --list-boards
+              ;;
+            historico)
+              python utils/publish_pinterest.py --limit "${{ inputs.max_pins }}"
+              ;;
+            *)
+              echo "Acción no válida"
+              exit 1
+              ;;
+          esac
 
-      - name: Guardar estado de Pinterest
+      - name: Guardar estado del histórico
         if: always()
         run: |
+          git config --global user.name "Ecos del Alma Bot"
+          git config --global user.email "bot@ecosdelalma.local"
           git add memoria/pinterest_publicados.json
           if ! git diff --staged --quiet; then
             git commit -m "Actualizar estado de Pinterest"
             git push
           fi
 
-      - name: Avisar si Pinterest falló
+      - name: Marcar error de Pinterest
         if: steps.pinterest.outcome == 'failure'
-        run: echo "⚠️ El escrito fue guardado, pero Pinterest falló. En la próxima ejecución se volverá a intentar automáticamente."
+        run: |
+          echo "La operación de Pinterest falló. Revisa el paso 'Ejecutar acción de Pinterest'."
+          exit 1
