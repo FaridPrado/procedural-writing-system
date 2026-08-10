@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 95,
-  "fecha_ultima_publicacion": "2026-08-09",
+  "ultimo_id": 96,
+  "fecha_ultima_publicacion": "2026-08-10",
   "publicaciones": [
     {
       "id": 1,
@@ -1044,6 +1044,18 @@
       "background_image": "/assets/backgrounds/escrito-0095.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Softly%20lit%2C%20empty%20room%20with%20warm%2C%20muted%20tones%2C%20and%20subtle%20grain%2C%20featuring%20a%20dusty%20sofa%20with%20a%20rumpled%20blanket%2C%20and%20a%20stopped%20clock%20on%20the%20wall%2C%20surrounded%20by%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Softly lit, empty room with warm, muted tones, and subtle grain, featuring a dusty sofa with a rumpled blanket, and a stopped clock on the wall, surrounded by clean negative space.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 96,
+      "fecha": "2026-08-10T04:14:31.261383-05:00",
+      "titulo": "Silencio en el vacío",
+      "tema": "Después del ruido",
+      "archivo": "docs/_posts/2026-08-10-escrito-0096.md",
+      "imagen": "/assets/social/escrito-0096.png",
+      "background_image": "/assets/backgrounds/escrito-0096.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20square%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20serene%2C%20empty%20room%20with%20a%20single%20shoe%20beside%20a%20closed%20door%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, minimalist square background with soft paper texture and subtle grain, featuring a serene, empty room with a single shoe beside a closed door, illuminated by cinematic natural light, with clean negative space for overlaid text.",
       "puntuacion_emocional": 8
     }
   ]
