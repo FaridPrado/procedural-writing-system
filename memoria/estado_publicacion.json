@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 96,
-  "fecha_ultima_publicacion": "2026-08-10",
+  "ultimo_id": 97,
+  "fecha_ultima_publicacion": "2026-08-11",
   "publicaciones": [
     {
       "id": 1,
@@ -1057,6 +1057,18 @@
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20square%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20serene%2C%20empty%20room%20with%20a%20single%20shoe%20beside%20a%20closed%20door%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20with%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, minimalist square background with soft paper texture and subtle grain, featuring a serene, empty room with a single shoe beside a closed door, illuminated by cinematic natural light, with clean negative space for overlaid text.",
       "puntuacion_emocional": 8
+    },
+    {
+      "id": 97,
+      "fecha": "2026-08-11T03:49:04.477541-05:00",
+      "titulo": "La llave en mi mano",
+      "tema": "Rabia tranquila",
+      "archivo": "docs/_posts/2026-08-11-escrito-0097.md",
+      "imagen": "/assets/social/escrito-0097.png",
+      "background_image": "/assets/backgrounds/escrito-0097.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20tones%20of%20a%20softly%20lit%2C%20empty%20room%20with%20a%20subtle%20paper%20texture%2C%20gentle%20grain%2C%20and%20cinematic%20natural%20light%2C%20featuring%20a%20lone%2C%20oxidized%20key%20on%20a%20simple%20surface%2C%20surrounded%20by%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, muted tones of a softly lit, empty room with a subtle paper texture, gentle grain, and cinematic natural light, featuring a lone, oxidized key on a simple surface, surrounded by clean negative space.",
+      "puntuacion_emocional": 9
     }
   ]
 }
