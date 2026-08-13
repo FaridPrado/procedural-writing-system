@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 98,
-  "fecha_ultima_publicacion": "2026-08-12",
+  "ultimo_id": 99,
+  "fecha_ultima_publicacion": "2026-08-13",
   "publicaciones": [
     {
       "id": 1,
@@ -1080,6 +1080,18 @@
       "background_image": "/assets/backgrounds/escrito-0098.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20editorial%20background%20with%20a%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20worn%2C%20frayed%20fabric%20with%20visible%20stitching%20and%20gentle%2C%20cinematic%20natural%20light%2C%20in%20muted%20tones.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, minimalist editorial background with a soft paper texture and subtle grain, featuring a worn, frayed fabric with visible stitching and gentle, cinematic natural light, in muted tones.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 99,
+      "fecha": "2026-08-13T04:07:15.528840-05:00",
+      "titulo": "La llave del pasado",
+      "tema": "Esperanza realista",
+      "archivo": "docs/_posts/2026-08-13-escrito-0099.md",
+      "imagen": "/assets/social/escrito-0099.png",
+      "background_image": "/assets/backgrounds/escrito-0099.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20tones%20of%20a%20worn%2C%20old%20key%20on%20a%20rustic%20surface%2C%20softly%20lit%20by%20cinematic%20natural%20light%2C%20with%20subtle%20grain%20and%20texture%2C%20against%20a%20clean%2C%20minimalist%20background.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, muted tones of a worn, old key on a rustic surface, softly lit by cinematic natural light, with subtle grain and texture, against a clean, minimalist background.",
       "puntuacion_emocional": 8
     }
   ]
