@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 100,
-  "fecha_ultima_publicacion": "2026-08-14",
+  "ultimo_id": 101,
+  "fecha_ultima_publicacion": "2026-08-15",
   "publicaciones": [
     {
       "id": 1,
@@ -1104,6 +1104,18 @@
       "background_image": "/assets/backgrounds/escrito-0100.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalistic%20square%20background%20with%20a%20soft%2C%20textured%20paper%20surface%2C%20subtle%20grain%2C%20and%20muted%20tones%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20leaving%20ample%20clean%20negative%20space%20for%20overlaid%20text.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, minimalistic square background with a soft, textured paper surface, subtle grain, and muted tones, illuminated by cinematic natural light, leaving ample clean negative space for overlaid text.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 101,
+      "fecha": "2026-08-15T03:21:28.261506-05:00",
+      "titulo": "Entre líneas silenciosas",
+      "tema": "Lo que no dije",
+      "archivo": "docs/_posts/2026-08-15-escrito-0101.md",
+      "imagen": "/assets/social/escrito-0101.png",
+      "background_image": "/assets/backgrounds/escrito-0101.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20editorial%20background%20with%20a%20soft%2C%20worn%20paper%20texture%2C%20subtle%20grain%2C%20and%20muted%20tones%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20featuring%20a%20vintage%20notebook%20with%20blank%20pages%2C%20surrounded%20by%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Create a warm, minimalist editorial background with a soft, worn paper texture, subtle grain, and muted tones, illuminated by cinematic natural light, featuring a vintage notebook with blank pages, surrounded by clean negative space.",
       "puntuacion_emocional": 8
     }
   ]
