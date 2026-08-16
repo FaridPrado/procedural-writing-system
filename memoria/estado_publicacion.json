@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 101,
-  "fecha_ultima_publicacion": "2026-08-15",
+  "ultimo_id": 102,
+  "fecha_ultima_publicacion": "2026-08-16",
   "publicaciones": [
     {
       "id": 1,
@@ -1116,6 +1116,18 @@
       "background_image": "/assets/backgrounds/escrito-0101.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Create%20a%20warm%2C%20minimalist%20editorial%20background%20with%20a%20soft%2C%20worn%20paper%20texture%2C%20subtle%20grain%2C%20and%20muted%20tones%2C%20illuminated%20by%20cinematic%20natural%20light%2C%20featuring%20a%20vintage%20notebook%20with%20blank%20pages%2C%20surrounded%20by%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Create a warm, minimalist editorial background with a soft, worn paper texture, subtle grain, and muted tones, illuminated by cinematic natural light, featuring a vintage notebook with blank pages, surrounded by clean negative space.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 102,
+      "fecha": "2026-08-16T03:23:19.001754-05:00",
+      "titulo": "Rastro de lo olvidado",
+      "tema": "Domingos raros",
+      "archivo": "docs/_posts/2026-08-16-escrito-0102.md",
+      "imagen": "/assets/social/escrito-0102.png",
+      "background_image": "/assets/backgrounds/escrito-0102.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20vacant%2C%20naturally%20lit%20hallway%20with%20a%20withered%20plant%20and%20crumpled%20paper%2C%20evoking%20nostalgia%20and%20abandonment.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Warm, muted editorial background with soft paper texture and subtle grain, featuring a vacant, naturally lit hallway with a withered plant and crumpled paper, evoking nostalgia and abandonment.",
       "puntuacion_emocional": 8
     }
   ]
