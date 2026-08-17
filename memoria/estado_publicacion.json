@@ -1,6 +1,6 @@
 {
-  "ultimo_id": 102,
-  "fecha_ultima_publicacion": "2026-08-16",
+  "ultimo_id": 103,
+  "fecha_ultima_publicacion": "2026-08-17",
   "publicaciones": [
     {
       "id": 1,
@@ -1128,6 +1128,18 @@
       "background_image": "/assets/backgrounds/escrito-0102.jpg",
       "background_source": "https://image.pollinations.ai/prompt/Warm%2C%20muted%20editorial%20background%20with%20soft%20paper%20texture%20and%20subtle%20grain%2C%20featuring%20a%20vacant%2C%20naturally%20lit%20hallway%20with%20a%20withered%20plant%20and%20crumpled%20paper%2C%20evoking%20nostalgia%20and%20abandonment.?width=1080&height=1080&nologo=true&enhance=true",
       "prompt_visual": "Warm, muted editorial background with soft paper texture and subtle grain, featuring a vacant, naturally lit hallway with a withered plant and crumpled paper, evoking nostalgia and abandonment.",
+      "puntuacion_emocional": 8
+    },
+    {
+      "id": 103,
+      "fecha": "2026-08-17T03:36:54.737775-05:00",
+      "titulo": "Página arrancada",
+      "tema": "Despedidas y duelos",
+      "archivo": "docs/_posts/2026-08-17-escrito-0103.md",
+      "imagen": "/assets/social/escrito-0103.png",
+      "background_image": "/assets/backgrounds/escrito-0103.jpg",
+      "background_source": "https://image.pollinations.ai/prompt/Soft%2C%20warm%20light%20on%20a%20worn%2C%20empty%20notebook%20with%20a%20torn%20page%2C%20subtle%20paper%20texture%2C%20and%20muted%20tones%2C%20evoking%20a%20sense%20of%20longing%20and%20nostalgia%2C%20with%20a%20cinematic%20feel%20and%20clean%20negative%20space.?width=1080&height=1080&nologo=true&enhance=true",
+      "prompt_visual": "Soft, warm light on a worn, empty notebook with a torn page, subtle paper texture, and muted tones, evoking a sense of longing and nostalgia, with a cinematic feel and clean negative space.",
       "puntuacion_emocional": 8
     }
   ]
